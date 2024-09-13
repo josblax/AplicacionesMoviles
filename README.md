@@ -1,2 +1,2 @@
-# Aplicaciones-M-viles
+# Aplicaciones Móviles
 Practicas y Material del curso
