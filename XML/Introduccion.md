@@ -1,4 +1,4 @@
-# Escribir en XML
+# Escribir en XML Extensible Markup Language
 
 Con el vocabulario XML de Android, puedes diseñar rápidamente los diseños de la interfaz de usuario y los elementos de pantalla que contienen, de la misma manera que creas páginas web en HTML con una serie de elementos anidados.
 
