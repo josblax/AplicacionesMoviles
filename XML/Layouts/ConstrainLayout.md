@@ -17,5 +17,5 @@ Toda la potencia de ConstraintLayout está disponible directamente desde las her
   <img src="https://developer.android.com/static/training/constraint-layout/images/constraint-fail-fixed_2x.png" />
 </p>
 
-
+Aunque una restricción que falta no provoca un error de compilación, el Editor de diseño indica las restricciones que faltan como un error en la barra de herramientas. Para ver los errores y otras advertencias, haga clic en Mostrar advertencias y errores  . Para ayudarle a evitar la falta de restricciones, el Editor de diseño añade automáticamente restricciones con las funciones de conexión automática e inferencia de restricciones.
 
