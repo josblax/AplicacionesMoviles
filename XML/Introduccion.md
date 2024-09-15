@@ -6,6 +6,8 @@ Cada archivo de diseño debe contener exactamente un elemento raíz, que debe se
 
 Por ejemplo, este es un diseño XML que usa un LinearLayout vertical para contener un TextView y un Button:
 
+(https://github.com/josblax/AplicacionesMoviles/blob/main/Images/Captura%20de%20pantalla%202024-09-15%20113332.png)
+
 
 
 [Fuente](https://developer.android.com/develop/ui/views/layout/declaring-layout)
