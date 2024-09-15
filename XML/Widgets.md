@@ -13,6 +13,6 @@ Es usado para añadir texto en nuestra interfase gráfica y necesitemos mostrar 
 
 Es usado para añadir una imagen en nuestra interfase gráfica y necesitemos mostrar en nuestra actividad
 
-![ImageView Example]()
+![ImageView Example](https://github.com/josblax/AplicacionesMoviles/blob/main/Images/ImageView.png)
 
 
