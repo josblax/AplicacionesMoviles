@@ -10,10 +10,10 @@ restricción define la posición de la vista a lo largo del eje vertical u horiz
 ConstraintLayout permite crear diseños grandes y complejos con una jerarquía de vistas planas, sin grupos de vistas anidados. Es similar a RelativeLayout en el sentido de que todas las vistas se distribuyen de acuerdo con las relaciones entre las vistas del mismo nivel y el diseño principal, pero es más flexible que RelativeLayout y más fácil de usar con el editor de diseño de Android Studio.
 Toda la potencia de ConstraintLayout está disponible directamente desde las herramientas visuales del Editor de Diseño, ya que la API de diseño y el Editor de Diseño están especialmente diseñados el uno para el otro. Puede crear su diseño con ConstraintLayout completamente arrastrando en lugar de editar el XML.
 
-<p align="left">
+<p align="center">
   <img src="https://developer.android.com/static/training/constraint-layout/images/constraint-fail_2x.png" />
 </p>
-<p align="right">
+<p align="center">
   <img src="https://developer.android.com/static/training/constraint-layout/images/constraint-fail-fixed_2x.png" />
 </p>
 
