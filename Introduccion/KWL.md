@@ -1,6 +1,6 @@
 # Modelo Que Se - Que Quiero Aprender - Que aprendí
 
-## En base al módulo de introducción escriba que sabía, que quería saber si tenía alguna expectativa, que es lo que realmente aprendio 
+## En base al módulo de introducción escriba que sabía, que quería saber si tenía alguna expectativa o conocimiento previo, que es lo que realmente aprendio 
 
 1. Que es lo que sé?
 
