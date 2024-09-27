@@ -4,4 +4,5 @@
 2. Widget TextView
 3. Widget ImageView
 4. Constraint Layout
-5. Estableciendo Margenes de los widgets
+  4.1. Que es el Constraint Layout 
+6. Estableciendo Margenes de los widgets
