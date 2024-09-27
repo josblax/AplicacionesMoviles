@@ -18,3 +18,5 @@ Por ejemplo, si tiene un dispositivo con una densidad de pantalla de 320 ppp y d
 ## píxeles = 10× (320/160) = 10×2 = 20 píxeles
 
 El uso de dp garantiza que los elementos de la interfaz de usuario se escalen correctamente en diferentes dispositivos, manteniendo una apariencia coherente.
+
+[Más información](https://www.geeksforgeeks.org/understanding-density-independence-pixel-sp-dp-dip-in-android/)
