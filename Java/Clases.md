@@ -10,3 +10,11 @@ Lós métodos son contenedores que tienen dos componentes:
 2. Métodos. Que son funciones o acciones ineherentes a lo que el objeto debe de realizar. Por ejemplo un objeto tipo automóvil tiene acciones como: acelerar, frenar, maniobrar etc.
 
 ![Que es una clase?](https://github.com/josblax/AplicacionesMoviles/blob/main/Images/Clase-2.png)
+
+## API en Android Application Programming Interface)
+
+Una API es una colección de reglas y protocolos que permite a diferentes aplicaciones de software comunicarse una con otra a través de packages (paquetes). Estos en escencia están compuestos por clases. Estas permiten comunicarse con otras aplicaciones, servicios o dispositivos.
+
+Esto permite a los dispositivos ser herramientas poderosas, con las múltple bibliotecas disponibles para expandir la funcionalidad de los dispositivos móviles.
+
+![API en android](https://github.com/josblax/AplicacionesMoviles/blob/main/Images/Package%20Android.png)
