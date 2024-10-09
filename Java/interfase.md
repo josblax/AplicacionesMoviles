@@ -4,7 +4,7 @@ Define un conjunto de métodos que una clase debe implementar, pero no provee la
 
 En el ejemplo abajo se muestra que la implementación del botón necesita un escuchador asociado al widget, este escuchador tiene un método llamado "onClick()" que esta vacío, como un contenedor sin funcionalidad, en este caso, tenemos las instrucciones necesarias para recibir datos, calcular una formula y devolver el resultado a nuestra interfase gráfica.
 
-´´´Java
+```Java
 // Escuchador del boton
         boton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -15,4 +15,4 @@ En el ejemplo abajo se muestra que la implementación del botón necesita un esc
                 resultado.setText(String.format("%.2f",resdouble));
             }
         });
-´´´
+```
