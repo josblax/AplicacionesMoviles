@@ -35,5 +35,6 @@ El siguiente diseño de ejemplo tiene dos filas y dos celdas en cada una. La cap
     </TableRow>
 </TableLayout>
 ```
-
+<p align="center">
 ![Resultado](https://developer.android.com/static/images/table_layout.png)
+</p>
