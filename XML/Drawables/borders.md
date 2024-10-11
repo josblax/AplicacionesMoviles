@@ -8,8 +8,8 @@ Esta dentro del esquema de formas (shape), donde un marco puede ser añadido con
 
 ```XML
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#FFFFFF"/> <!-- Background color -->
-    <stroke android:width="2dp" android:color="#000000"/> <!-- Border width and color -->
-    <corners android:radius="5dp"/> <!-- Corner radius -->
+    <solid android:color="#FFFFFF"/> <!-- Fondo color blanco -->
+    <stroke android:width="3dp" android:color="#000000"/> <!-- Marco con color negro -->
+    <corners android:radius="2dp"/> <!-- Radio de las esquinas -->
 </shape>
 ```
