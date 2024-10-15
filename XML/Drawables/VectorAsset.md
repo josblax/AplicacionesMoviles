@@ -9,3 +9,10 @@ En el caso de las versiones anteriores de Android que no admiten elementos de di
 Vector Asset Studio agrega un gráfico vectorial al proyecto como un archivo XML que describe la imagen. Mantener un archivo XML puede ser más fácil que actualizar varios gráficos rasterizados en varias resoluciones.
 
 Android 4.4 (nivel de API 20) y versiones anteriores no admiten elementos de diseño vectoriales. Si el nivel mínimo de API se establece en uno de estos niveles de API, tiene dos opciones al utilizar Vector Asset Studio: generar archivos de gráficos de red portátiles (PNG) (el valor predeterminado) o utilizar la biblioteca de compatibilidad.
+
+# Agregar un vector asset
+
+# Layout
+<p align="center">
+<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector1.png" alt="Layout app" width="400" height="400">
+</p>
