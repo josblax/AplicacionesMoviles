@@ -1,4 +1,6 @@
-# Vector Asset
+# Vector Asset 
+
+[Fuente](https://developer.android.com/studio/write/vector-asset-studio)
 
 Android Studio incluye una herramienta llamada Vector Asset Studio que te ayuda a agregar íconos de materiales e importar archivos de gráficos vectoriales escalables (SVG) y documentos de Adobe Photoshop (PSD) a tu proyecto como recursos vectoriales de elementos de diseño. El uso de elementos de diseño vectoriales en lugar de mapas de bits reduce el tamaño de tu APK, ya que se puede cambiar el tamaño del mismo archivo para diferentes densidades de pantalla sin perder la calidad de la imagen. 
 
