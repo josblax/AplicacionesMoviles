@@ -41,3 +41,15 @@ Confirmar la ruta donde quieres guardar tus iconos. (Sugerencia, deja la ruta po
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector5.png" alt="Layout app" width="400" height="400">
 </p>
+
+Agregar el icono al XML usando el widget ImageView
+
+```XML
+<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/content1"
+                    android:src="@drawable/baseline_person_80"/>
+```
+
+
