@@ -12,7 +12,8 @@ Android 4.4 (nivel de API 20) y versiones anteriores no admiten elementos de dis
 
 # Agregar un vector asset
 
-# Layout
+Selecciona File->New->Vector Asset
+
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector1.png" alt="Layout app" width="400" height="400">
 </p>
