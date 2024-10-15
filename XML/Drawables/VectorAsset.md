@@ -18,20 +18,26 @@ Selecciona File->New->Vector Asset
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector1.png" alt="Layout app" width="400" height="400">
 </p>
 
-Da click en el click art
+Dar click en el click art
 
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector2.png" alt="Layout app" width="400" height="400">
 </p>
 
-Selecciona o busca el icono que deseas incluir en tu archivo XML
+Seleccionar o busca el icono que deseas incluir en tu archivo XML
 
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector3.png" alt="Layout app" width="400" height="400">
 </p>
 
-Cambia el Nombre, Tamaño o color del icono
+Cambiar el Nombre, Tamaño o color del icono
 
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector4.png" alt="Layout app" width="400" height="400">
+</p>
+
+Confirmar la ruta donde quieres guardar tus iconos. (Sugerencia, deja la ruta por default)
+
+<p align="center">
+<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector5.png" alt="Layout app" width="400" height="400">
 </p>
