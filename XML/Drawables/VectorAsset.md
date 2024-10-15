@@ -17,3 +17,9 @@ Selecciona File->New->Vector Asset
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector1.png" alt="Layout app" width="400" height="400">
 </p>
+
+Da click en el click art
+
+<p align="center">
+<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/vector2.png" alt="Layout app" width="400" height="400">
+</p>
