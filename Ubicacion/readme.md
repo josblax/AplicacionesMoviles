@@ -51,9 +51,11 @@ Android también intentará ver todas las redes WiFi de la zona y enviará infor
 
 En este momento, el GPS estará encendido. El dispositivo GPS necesita al menos 30 segundos desde un arranque en frío para obtener una solución, por lo que, si puede obtener una solución, devolverá la latitud y la longitud, pero nuevamente con una precisión que será la más alta posible para un ejemplo de 100 metros. Cuanto más tiempo funcione el GPS, mejor precisión obtendrá.
 
-Set up Google Play Services.
-fuente: https://developers.google.com/android/guides/setup
-fuente: https://maven.google.com/web/index.html#com.google.android.gms
+## Set up Google Play Services.
+
+* fuente: https://developers.google.com/android/guides/setup
+* fuente: https://maven.google.com/web/index.html#com.google.android.gms
+
 Para desarrollar una app con las API de los Servicios de Google Play, la página de la fuente contiene las implementaciones vigentes de Google Services para configurar tu proyecto con los SDK correspondientes.
 
 ## Declarar dependencias para los Servicios de Google Play.
