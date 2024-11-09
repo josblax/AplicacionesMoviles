@@ -12,8 +12,8 @@ Tipos de acceso a la ubicación
 
 Cada permiso tiene una combinación de las siguientes características: 
 
-Categoría: Ubicación en primer plano o ubicación en segundo plano. 
-Precisión: Ubicación precisa o ubicación aproximada.
+* Categoría: Ubicación en primer plano o ubicación en segundo plano. 
+* Precisión: Ubicación precisa o ubicación aproximada.
 
 Si la aplicación contiene una función que comparte o recibe información de ubicación solo una vez o durante un período de tiempo definido, esa función requiere acceso a la ubicación en primer plano. Algunos ejemplos son los siguientes:
 
