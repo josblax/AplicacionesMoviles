@@ -87,7 +87,7 @@ En nuestro caso es para aplicar la llave proporcionada por Google Maps API.
 ```XML
 uses-library android:name="com.google.android.maps" android:required="true"/>
 
-<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCki8i5lnTKNSnRKN56FyR4QpAJohv05H0"/>
+<meta-data android:name="com.google.android.geo.API_KEY" android:value=""/>
 ```
 
 ## SupportMapFragment
