@@ -82,7 +82,7 @@ Ejemplo:
 ```
 
 En nuestro caso es para aplicar la llave proporcionada por Google Maps API.
-# android manifest xml (metada), va entre el código de <application> & <activity>
+# android manifest xml (metada), va entre el código de application & activity
 
 ```XML
 <uses-library android:name="com.google.android.maps" android:required="true"/>
