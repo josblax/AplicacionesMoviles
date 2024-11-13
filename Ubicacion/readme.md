@@ -137,7 +137,9 @@ Si se agregan varios agentes de escucha, se les llamará en el orden en que se a
 
 ## getMapAsync
 Es parte de la actividad MapFragment.
-fuente: https://developers.google.com/maps/documentation/android-sdk/reference/com/google/android/libraries/maps/MapFragment
+
+(fuente: https://developers.google.com/maps/documentation/android-sdk/reference/com/google/android/libraries/maps/MapFragment)
+
 Método Público.
 
 public void getMapAsync (OnMapReadyCallback callback)
