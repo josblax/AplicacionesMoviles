@@ -162,17 +162,20 @@ En el raro caso de que el mapa de Google se destruya inmediatamente después de 
 
 El objeto GoogleMap proporcionado por la devolución de llamada no es nulo.
 
-LatLng.
+## LatLng.
+
 Clase inmutable que representa un par de coordenadas de latitud y longitud, almacenadas como grados.
+
 La latitud y la longitud son los dos tipos de coordenadas geográficas angulares que conforman el sistema de referencia planetario y que permiten ubicar un punto cualquiera en la superficie del planeta Tierra. Este sistema es el empleado por tecnologías como el GPS (Global Positioning System).
 
-fuente: https://definicion.edu.lat/concepto/latitud-y-longitud.html
+(fuente: https://definicion.edu.lat/concepto/latitud-y-longitud.html)
 
 Así, la latitud es el ángulo imaginario que un punto ocupa respecto del ecuador (la línea imaginaria que divide el mundo en dos hemisferios: Norte y Sur), si trazamos una línea desde su ubicación hacia el centro de la Tierra. La latitud se simboliza con la letra griega phi, ϕ.
 
 En cambio, la longitud es un ángulo imaginario similar, pero determinado por el Meridiano de Greenwich o Meridiano 0, que atraviesa la localidad del mismo nombre en Londres, Inglaterra, en donde está el Real Observatorio inglés.
 
 Dicho meridiano divide el mundo en dos regiones, la occidental (Oeste) y la oriental (Este). Sirve para trazar los demás meridianos que cruzan imaginariamente el globo de manera paralela al meridiano de referencia. La longitud se simboliza con la letra griega lambda, λ.
+
 La posición absoluta es la combinatoria de coordenadas que ubica un punto en la superficie terrestre.
 
 En otras palabras, se trata de qué tan lejos o tan cerca se encuentra un punto de la referencia del ecuador, y de los trópicos que le son paralelos: el Trópico de Cáncer y el de Capricornio. Los paralelos sirven de referencia para calcular la latitud.
