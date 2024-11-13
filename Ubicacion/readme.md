@@ -119,8 +119,7 @@ addOnSuccessListener.
 Agrega un agente de escucha al que se llama si la tarea se completa correctamente.
 Si se agregan varios agentes de escucha, se les llamará en el orden en que se agregaron. Si la tarea ya se ha completado correctamente, se programará inmediatamente una llamada al agente de escucha.
 
-![Listener](<img width="468" alt="image" src="https://github.com/user-attachments/assets/199d9f6f-069e-4fc6-b164-6b31009bc1fe">)
-)
+![AddOnSuccessListener](https://github.com/josblax/AplicacionesMoviles/blob/main/Images/listenertask.png)
 
 ## getMapAsync
 Es parte de la actividad MapFragment.
