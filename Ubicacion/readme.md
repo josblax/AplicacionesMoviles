@@ -32,7 +32,7 @@ Declaras la necesidad de una ubicación en primer plano cuando la aplicación so
 ##android manifest xml(permissions)
 
 ```XML
-<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 ```
@@ -119,7 +119,7 @@ addOnSuccessListener.
 Agrega un agente de escucha al que se llama si la tarea se completa correctamente.
 Si se agregan varios agentes de escucha, se les llamará en el orden en que se agregaron. Si la tarea ya se ha completado correctamente, se programará inmediatamente una llamada al agente de escucha.
 
-![Listener](<img width="468" alt="image" src="https://github.com/user-attachments/assets/199d9f6f-069e-4fc6-b164-6b31009bc1fe">
+![Listener](<img width="468" alt="image" src="https://github.com/user-attachments/assets/199d9f6f-069e-4fc6-b164-6b31009bc1fe">)
 )
 
 ## getMapAsync
