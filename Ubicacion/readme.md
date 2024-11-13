@@ -130,9 +130,6 @@ Si se agregan varios agentes de escucha, se les llamará en el orden en que se a
             @Override
             public void onSuccess(Location location) {
                 actual = location;
-                SupportMapFragment mapFragment = (SupportMapFragment)
-                        getSupportFragmentManager().findFragmentById(R.id.mapa);
-                mapFragment.getMapAsync(MainActivity.this);
             }
         });
 
@@ -150,6 +147,12 @@ Establece un objeto de devolución de llamada que se activará cuando la instanc
 * Se debe llamar a este método desde el subproceso principal.
 
 * La devolución de llamada se ejecutará en el hilo principal.
+
+```Java
+  SupportMapFragment mapFragment = (SupportMapFragment)
+                        getSupportFragmentManager().findFragmentById(R.id.mapa);
+                mapFragment.getMapAsync(MainActivity.this);
+```
 
 
 En el caso de que los servicios de Google Play no estén instalados en el dispositivo del usuario, la devolución de llamada no se activará hasta que el usuario la instale.
