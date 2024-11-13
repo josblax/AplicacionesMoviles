@@ -121,6 +121,23 @@ Si se agregan varios agentes de escucha, se les llamará en el orden en que se a
 
 ![AddOnSuccessListener](https://github.com/josblax/AplicacionesMoviles/blob/main/Images/listenertask.png)
 
+## Ejemplo de código:
+
+```Java
+
+ Task<Location> task = fusedLocationProviderClient.getLastLocation();
+        task.addOnSuccessListener(new OnSuccessListener<Location>() {
+            @Override
+            public void onSuccess(Location location) {
+                actual = location;
+                SupportMapFragment mapFragment = (SupportMapFragment)
+                        getSupportFragmentManager().findFragmentById(R.id.mapa);
+                mapFragment.getMapAsync(MainActivity.this);
+            }
+        });
+
+```
+
 ## getMapAsync
 Es parte de la actividad MapFragment.
 fuente: https://developers.google.com/maps/documentation/android-sdk/reference/com/google/android/libraries/maps/MapFragment
