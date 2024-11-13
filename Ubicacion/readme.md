@@ -138,7 +138,7 @@ Si se agregan varios agentes de escucha, se les llamará en el orden en que se a
 ## getMapAsync
 Es parte de la actividad MapFragment.
 
-(fuente: https://developers.google.com/maps/documentation/android-sdk/reference/com/google/android/libraries/maps/MapFragment)
+fuente: https://developers.google.com/maps/documentation/android-sdk/reference/com/google/android/libraries/maps/MapFragment
 
 Método Público.
 
@@ -168,7 +168,7 @@ Clase inmutable que representa un par de coordenadas de latitud y longitud, alma
 
 La latitud y la longitud son los dos tipos de coordenadas geográficas angulares que conforman el sistema de referencia planetario y que permiten ubicar un punto cualquiera en la superficie del planeta Tierra. Este sistema es el empleado por tecnologías como el GPS (Global Positioning System).
 
-(fuente: https://definicion.edu.lat/concepto/latitud-y-longitud.html)
+fuente: https://definicion.edu.lat/concepto/latitud-y-longitud.html
 
 Así, la latitud es el ángulo imaginario que un punto ocupa respecto del ecuador (la línea imaginaria que divide el mundo en dos hemisferios: Norte y Sur), si trazamos una línea desde su ubicación hacia el centro de la Tierra. La latitud se simboliza con la letra griega phi, ϕ.
 
