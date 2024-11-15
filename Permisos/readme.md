@@ -61,4 +61,6 @@ El micrófono y la cámara proporcionan acceso a información especialmente sens
 
 El sistema asigna el nivel de protección peligroso a los permisos de tiempo de ejecución.
 
+## ¿Como se requiere un permiso en tiempo de ejecución?
 
+Todas las aplicaciones de Android se ejecutan en un entorno aislado de acceso limitado. Si tu app necesita usar recursos o información fuera de su propio entorno, puedes [declarar un permiso de tiempo de ejecución](https://developer.android.com/training/permissions/declaring) y configurar una solicitud de permiso que proporcione este acceso. Estos pasos forman parte del flujo de [trabajo para usar permisos](https://developer.android.com/guide/topics/permissions/overview#workflow).
