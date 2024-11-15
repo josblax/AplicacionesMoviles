@@ -64,3 +64,7 @@ El sistema asigna el nivel de protección peligroso a los permisos de tiempo de 
 ## ¿Como se requiere un permiso en tiempo de ejecución?
 
 Todas las aplicaciones de Android se ejecutan en un entorno aislado de acceso limitado. Si tu app necesita usar recursos o información fuera de su propio entorno, puedes [declarar un permiso de tiempo de ejecución](https://developer.android.com/training/permissions/declaring) y configurar una solicitud de permiso que proporcione este acceso. Estos pasos forman parte del flujo de [trabajo para usar permisos](https://developer.android.com/guide/topics/permissions/overview#workflow).
+
+___Si declaras permisos considerados [peligrosos](https://developer.android.com/guide/topics/permissions/overview#dangerous_permissions) y si tu app está instalada en un dispositivo con Android 6.0 (nivel de API 23) o versiones posteriores, debes solicitar los permisos peligrosos en el tiempo de ejecución siguiendo los pasos de esta guía.___
+
+___Si no declaras ningún permiso peligroso o si tu app está instalada en un dispositivo con Android 5.1 (nivel de API 22) o versiones anteriores, los permisos se otorgan automáticamente y no es necesario que completes ninguno de los pasos restantes de esta página.___
