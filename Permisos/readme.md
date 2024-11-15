@@ -82,4 +82,4 @@ Antes de declarar y solicitar permisos de tiempo de ejecución en tu app, [eval�
 
 Si llegas a la conclusión de que tu app necesita declarar y solicitar permisos en tiempo de ejecución, completa estos pasos:
 
-1. En el archivo de ___AndroidManifiest.xml___ de tu app, declara los permisos que tu app podría necesitar solicitar. Añadir declaración en el ___AndroidManifiest.xml___ de la aplicación Para declarar un permiso que tu app podría solicitar, incluye el elemento ___<uses-permission>___ adecuado en el archivo de manifiesto de tu app. Por ejemplo, una aplicación que necesita acceder a la cámara tiene esta línea en ___AndroidManifest.xml___:
+1. En el archivo de ___AndroidManifiest.xml___ de tu app, declara los permisos que tu app podría necesitar solicitar. Añadir declaración en el ___AndroidManifiest.xml___ de la aplicación Para declarar un permiso que tu app podría solicitar, incluye el elemento ```XML <uses-permission> ``` adecuado en el archivo de manifiesto de tu app. Por ejemplo, una aplicación que necesita acceder a la cámara tiene esta línea en ___AndroidManifest.xml___:
