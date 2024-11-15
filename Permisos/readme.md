@@ -91,3 +91,35 @@ tu app acceda a datos privados de los usuarios.
 
 ![image](https://github.com/user-attachments/assets/cafe742c-5063-48b6-833e-ffd4c7c229b6)
 
+3. [Espera a que el usuario](https://developer.android.com/training/permissions/requesting#principles) invoque la tarea o acción en tu app que requiere acceso a datos privados específicos del usuario. En ese momento, la aplicación puede solicitar el permiso de tiempo de ejecución necesario para acceder a esos datos.
+
+4. [Comprueba si el usuario ya ha concedido el permiso](https://developer.android.com/training/permissions/requesting#already-granted) de tiempo de ejecución que requiere tu aplicación. Si es así, la aplicación puede acceder a los datos privados del usuario. Si no es así, continúe con el siguiente paso.
+
+Debe comprobar si tiene un permiso cada vez que realice una operación que requiera ese permiso.
+
+![image](https://github.com/user-attachments/assets/95a89da4-9177-4fea-829b-07cc1919a579)
+
+5. [Verifica si tu app debe mostrar una justificación al usuario](https://developer.android.com/training/permissions/requesting#explain), explicando por qué tu app necesita que el usuario otorgue un permiso de tiempo de ejecución en particular. Si el sistema determina que la aplicación no debe mostrar una
+justificación, continúa directamente con el siguiente paso, sin mostrar un elemento de la interfaz de usuario.
+
+Sin embargo, si el sistema determina que la aplicación debe mostrar una justificación, preséntala al usuario en un elemento de la interfaz de usuario. En este razonamiento, explica claramente a qué datos intenta acceder tu aplicación
+y qué beneficios puede proporcionar al usuario si concede el permiso de tiempo de ejecución. Una vez que el usuario reconozca la justificación, continúe con el siguiente paso.
+
+6. Solicita el permiso de tiempo de ejecución que requiere tu app para acceder a los datos privados del usuario. El sistema muestra una solicitud de permisos en tiempo de ejecución:
+
+![image](https://github.com/user-attachments/assets/d5a7e499-17a5-473d-9c8d-81dac6352232)
+
+7. Compruebe la respuesta del usuario, si ha elegido conceder o denegar el permiso de tiempo de ejecución. Este método esta predefinido y se accesa escribiendo onReques…
+
+![image](https://github.com/user-attachments/assets/b49cf0fb-0344-4806-957b-c02249fcc8e7)
+
+8. Si el usuario concedió el permiso a tu aplicación, puedes acceder a los datos privados del usuario. Si el usuario denegó el permiso en su lugar, [degrada correctamente la experiencia de la aplicación para que proporcione funcionalidad
+al usuario sin la información protegida por ese permiso](https://developer.android.com/training/permissions/requesting#handle-denial).
+
+9. Diagrama de Flujo
+
+![image](https://github.com/user-attachments/assets/b4b042e6-22ff-41b3-9af4-1a15078760ea)
+
+
+
+
