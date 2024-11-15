@@ -78,4 +78,8 @@ Los principios básicos para solicitar permisos en tiempo de ejecución son los 
 3. Si el usuario deniega o revoca un permiso que necesita una característica, degrada la aplicación de forma correcta para que el usuario pueda seguir usándola, posiblemente inhabilitando la función que requiere el permiso.
 4. No asumas ningún comportamiento del sistema. Por ejemplo, no suponga que los permisos aparecen en el mismo grupo de permisos. Un grupo de permisos simplemente ayuda al sistema a minimizar el número de cuadros de diálogo del sistema que se presentan al usuario cuando una aplicación solicita permisos estrechamente relacionados.
 
+Antes de declarar y solicitar permisos de tiempo de ejecución en tu app, [evalúa si es necesario hacerlo](https://developer.android.com/privacy-and-security/minimize-permission-requests). Puede cumplir muchos casos de uso en su aplicación, como tomar fotos, pausar la reproducción multimedia y mostrar anuncios relevantes, sin necesidad de declarar ningún permiso.
 
+Si llegas a la conclusión de que tu app necesita declarar y solicitar permisos en tiempo de ejecución, completa estos pasos:
+
+1. En el archivo de ___AndroidManifiest.xml___ de tu app, declara los permisos que tu app podría necesitar solicitar. Añadir declaración en el ___AndroidManifiest.xml___ de la aplicación Para declarar un permiso que tu app podría solicitar, incluye el elemento ___<uses-permission>___ adecuado en el archivo de manifiesto de tu app. Por ejemplo, una aplicación que necesita acceder a la cámara tiene esta línea en ___AndroidManifest.xml___:
