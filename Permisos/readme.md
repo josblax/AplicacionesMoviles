@@ -68,3 +68,14 @@ Todas las aplicaciones de Android se ejecutan en un entorno aislado de acceso li
 ___Si declaras permisos considerados [peligrosos](https://developer.android.com/guide/topics/permissions/overview#dangerous_permissions) y si tu app está instalada en un dispositivo con Android 6.0 (nivel de API 23) o versiones posteriores, debes solicitar los permisos peligrosos en el tiempo de ejecución siguiendo los pasos de esta guía.___
 
 ___Si no declaras ningún permiso peligroso o si tu app está instalada en un dispositivo con Android 5.1 (nivel de API 22) o versiones anteriores, los permisos se otorgan automáticamente y no es necesario que completes ninguno de los pasos restantes de esta página.___
+
+# Principios básicos para solicitar permisos
+
+Los principios básicos para solicitar permisos en tiempo de ejecución son los siguientes:
+
+1. Pida un permiso en contexto, cuando el usuario comience a interactuar con la característica que lo requiera.
+2. No bloquees al usuario. Proporcione siempre la opción de cancelar un flujo de interfaz de usuario educativo, como un flujo que explique la razón por la que se solicitan permisos.
+3. Si el usuario deniega o revoca un permiso que necesita una característica, degrada la aplicación de forma correcta para que el usuario pueda seguir usándola, posiblemente inhabilitando la función que requiere el permiso.
+4. No asumas ningún comportamiento del sistema. Por ejemplo, no suponga que los permisos aparecen en el mismo grupo de permisos. Un grupo de permisos simplemente ayuda al sistema a minimizar el número de cuadros de diálogo del sistema que se presentan al usuario cuando una aplicación solicita permisos estrechamente relacionados.
+
+
