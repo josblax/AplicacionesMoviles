@@ -1,4 +1,4 @@
-# SQL (Structured QUery Language)
+# SQL (Structured Query Language)
 
 Para que una aplicación sea significativa, debe capturar gran cantidad de datos, existen muchos recursos como JSON, CSV para administrar datos en línea. Otro recurso es SQL, para manejar y administrar datos localmente.
 
