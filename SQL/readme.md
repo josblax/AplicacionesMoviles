@@ -15,3 +15,5 @@ Que es una base de Datos?
 
 Es un recurso para guardar y obtener información, así como la manipulación de la misma. La data es guardada en forma de tabla, semejante a una hoja de excel, conde las columnas representan los campos, y los reglones los registros o entradas a la base de datos.
 
+![image](https://github.com/user-attachments/assets/ff3e48b5-98a6-4ef9-9947-2c2d16a135f8)
+
