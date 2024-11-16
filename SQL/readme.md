@@ -11,3 +11,7 @@ Para que una aplicación sea significativa, debe capturar gran cantidad de datos
 * Crear una pequeña aplicación con SQLite
 
   
+Que es una base de Datos?
+
+Es un recurso para guardar y obtener información, así como la manipulación de la misma. La data es guardada en forma de tabla, semejante a una hoja de excel, conde las columnas representan los campos, y los reglones los registros o entradas a la base de datos.
+
