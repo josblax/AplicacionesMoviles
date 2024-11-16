@@ -17,3 +17,12 @@ Es un recurso para guardar y obtener información, así como la manipulación de
 
 ![image](https://github.com/user-attachments/assets/ff3e48b5-98a6-4ef9-9947-2c2d16a135f8)
 
+La suma de todos los componentes, se denominan tablas.
+
+# Que es SQL?
+
+SQL significa Lenguaje Estructurado de Querys o Structured Query Language, que es la sintaxis que es usada para ejecutar las operaciones en las bases de datos.
+
+# Que es SQLite?
+
+Es una aplicación de bases de datos que será usada en Android, y tiene una versión customizada de SQL, es decir, las características pueden variar un poco.
