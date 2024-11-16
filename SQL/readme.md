@@ -26,3 +26,10 @@ SQL significa Lenguaje Estructurado de Querys o Structured Query Language, que e
 # Que es SQLite?
 
 Es una aplicación de bases de datos que será usada en Android, y tiene una versión customizada de SQL, es decir, las características pueden variar un poco.
+
+# Sintaxis SQL.
+
+## Funciones SQL
+
+* **INSERT** Permite añadir datos nuevos registros a la base de datos.
+* **DELETE** Remueve datos de la base de datos
