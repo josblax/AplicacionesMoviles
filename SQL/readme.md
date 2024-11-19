@@ -33,3 +33,22 @@ Es una aplicación de bases de datos que será usada en Android, y tiene una ver
 
 * **INSERT** Permite añadir datos nuevos registros a la base de datos.
 * **DELETE** Remueve datos de la base de datos
+* **SELECT** Permite leer datos de la base de datos
+* **WHERE** Nos permite seleccionar partes de la base de datos que cumplan con los criterios seleccionados ya sea para alguna de las tres acciones anteriores.
+* **FROM** Se usa pra especificar una tabla o columna en la base de datos.
+
+## Tipos de datos en SQL
+
+* **integer** nos sirve para guardar numeros enteros.
+* **text** nos sirve para guardar datos alfanumericos.
+* **real** nos sirve para guardar datos com punto flotante.
+
+## Crear una tabla
+
+Las bases de datos son privadas a la app. Una vez creada una base de datos podremos crear una tabla, por ejemplo:
+
+**create** table Estudiantes **_ID integer** primary key autoincrement not null,
+**nombre** text not null,
+**grado** int;
+
+
