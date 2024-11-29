@@ -31,4 +31,6 @@ Si va a usar `RecyclerView`, hay algunas cosas que debe hacer:
 
 ![Como trabaja](https://www.andreasjakl.com/wp-content/uploads/2018/01/Android-RecyclerView-Adapter-Flow.png)
 
+Fuente: https://www.andreasjakl.com/kotlin-recyclerview-for-high-performance-lists-in-android/
+
 
