@@ -16,3 +16,12 @@ Varias clases trabajan juntas para crear su lista dinámica.
 
 4.	El administrador de diseño organiza los elementos individuales en su lista. Puede utilizar uno de los administradores de diseño proporcionados por la biblioteca RecyclerView o puede definir el suyo propio. Todos los administradores de diseño se basan en la  clase abstracta LayoutManager de la biblioteca.
 
+Pasos para implementar RecyclerView
+
+Si va a usar `RecyclerView`, hay algunas cosas que debe hacer:
+
+1.	Decidir cómo se ve la lista o la cuadrícula. Normalmente, puede utilizar uno de los administradores de diseño estándar de la biblioteca RecyclerView.
+2.	Diseñar cómo se ve y se comporta cada elemento de la lista. En función de este diseño, extienda la clase `ViewHolder`. Su versión de ViewHolder proporciona toda la funcionalidad para los elementos de su lista. El contenedor de vista es un contenedor alrededor de una vista, y esa vista es administrada por `RecyclerView`.
+3.	Defina el adaptador que asocia los datos con las vistas de `ViewHolder`.
+
+
