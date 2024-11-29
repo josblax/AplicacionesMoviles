@@ -1,7 +1,6 @@
 # Recycler View Class
 
-![RecyclerView](![image](https://github.com/user-attachments/assets/84cec7a6-0859-4621-bd01-a0ef23180afb)
-)
+
 
 `RecyclerView` facilita la visualización eficiente de grandes conjuntos de datos. Usted proporciona los datos y define el aspecto de cada elemento, y la biblioteca RecyclerView crea dinámicamente los elementos cuando son necesarios.
 
