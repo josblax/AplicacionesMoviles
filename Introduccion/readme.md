@@ -63,3 +63,6 @@ Nueva version
 ![image](https://github.com/user-attachments/assets/b27cea9a-1217-40bd-87ac-732822627feb)
 
 
+### 2. Selecciona el simbolo + 
+
+<img width="606" alt="image" src="https://github.com/user-attachments/assets/af796113-bd1f-4eb7-9fea-2658ea849d76" />
