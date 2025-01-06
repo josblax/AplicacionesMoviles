@@ -17,3 +17,12 @@ ___
 ### 3. Asegurate que baje en tu equipo de computo
 
 <img width="653" alt="image" src="https://github.com/user-attachments/assets/9d6a1000-6236-49ba-9132-81145da1937f" />
+
+### 4. Comienza la instalación
+
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/0d81681c-8c7e-4d5a-aae2-274566cf281b" />
+
+### 5. Selecciona "Android Virtual Device"
+
+<img width="684" alt="image" src="https://github.com/user-attachments/assets/06b3a3a2-5073-46d6-b12a-a71b6d59c284" />
+
