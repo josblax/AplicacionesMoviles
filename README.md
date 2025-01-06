@@ -112,5 +112,24 @@ Una plataforma abierta móvil, para dispositivos móviles, embebidos (ejemplo, d
 
 [fuente](https://techjury.net/blog/android-market-share/)
 
+## Mercado Actual
+
+* Android tiene una cuota del 71,77%, mientras que iOS representó el 27,6% del mercado de sistemas operativos móviles. 
+
+* Hay más de 2.500 millones de usuarios activos de Android en más de 190 países. 
+
+* Un total de 1.570 millones de dispositivos Android vendidos en 2022, frente a los 0.980 millones de 2021. 
+
+* Android representó el 44,86% del mercado de sistemas operativos móviles, mientras que iOS representó el 54,74% en enero de 2023. 
+
+* El 97% del malware para teléfonos inteligentes se dirige a teléfonos Android. 
+
+* Las ventas de Android están aumentando en Estados Unidos, Europa, Japón, India y China. 
+
+* La cuota de mercado de Samsung en Estados Unidos fue del 28,57% en 2023, frente al 26,45% de 2022. 
+
+* La participación de Android en todos los dispositivos conocidos fue del 70,97%.
+
+[fuente actualizada 2024](https://techjury.net/blog/android-market-share/)
 
 
