@@ -94,3 +94,8 @@ Nueva version
 ### 8. Selecciona Emulador o "Running Devices"
 
 <img width="582" alt="image" src="https://github.com/user-attachments/assets/eb556547-850f-4fd7-a6e2-c0d49d071de6" />
+
+### 9. Si te aparece la siguiente pantalla, presiona play para activar el emulador.
+
+<img width="644" alt="image" src="https://github.com/user-attachments/assets/34e93205-18c3-4378-8184-7b1c0edc7ec7" />
+
