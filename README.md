@@ -6,7 +6,7 @@ ____
 ```bash
 ├──PARTE I: Introducción
     ├── Instalación de Android Studio
-        ├── Instalación de Visual Studio.
+        ├── Instalación de Android Studio.
         ├── Como crear un programa
     ├── Porque C++
     ├── Control de un programa
