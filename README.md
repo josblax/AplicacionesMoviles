@@ -3,16 +3,19 @@
 ![50%](https://progress-bar.xyz/50)
 ____
 
+## Mapa de aprendizaje
+
 ```bash
 ├──PARTE I: Introducción
     ├── Instalación de Android Studio
         ├── Instalación de Android Studio.
-        ├── Como crear un programa. "Hola Mundo"
-    ├── Porque C++
-    ├── Control de un programa
-        ├── Control Secuencial
-        ├── Control de Decisión
-        ├── Control Iterativo o Cíclico
+        ├── Instalación del Emulador para Android Estudio.
+    ├── Crear un proyecto con Android Studio
+        ├── Conocer el ambiente de desarrollo integrado
+        ├── Conocer la interfase de usuario de Android Studio
+        ├── Conocer los diferentes componentes que se integran al desarrollo de una app
+        ├── Uso de dispositivos virtuales y fisicos para crear una app.
+        ├── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
 ├── PARTE II Fundamentos de Programación.
     ├── Funciones principales de un lenguaje de programación.
     ├── Que es una palabra reservada?
@@ -72,4 +75,4 @@ ____
 ```
 
 
-
+## Que es Android?
