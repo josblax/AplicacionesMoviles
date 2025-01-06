@@ -52,4 +52,8 @@ ___
 
 <img width="474" alt="image" src="https://github.com/user-attachments/assets/9879501c-9507-4243-9a9d-d38dd4e2afe9" />
 
+## Como el emulador de Android Studio.
+
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/c0e4a235-8a7e-4ff4-96b8-9da4162279d3" />
+
 
