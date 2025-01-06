@@ -19,15 +19,15 @@ ___
 
 ### 4. Comienza la instalación
 
-<img width="352" alt="image" src="https://github.com/user-attachments/assets/0d81681c-8c7e-4d5a-aae2-274566cf281b" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/0d81681c-8c7e-4d5a-aae2-274566cf281b" />
 
 ### 5. Selecciona "Android Virtual Device"
 
-<img width="352" alt="image" src="https://github.com/user-attachments/assets/06b3a3a2-5073-46d6-b12a-a71b6d59c284" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/06b3a3a2-5073-46d6-b12a-a71b6d59c284" />
 
 ### 6. Permite que instale el ADB, si estás en Windows.
 
-<img width="362" alt="image" src="https://github.com/user-attachments/assets/175f6e95-2401-443a-9fb3-844e296a9d64" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/175f6e95-2401-443a-9fb3-844e296a9d64" />
 
 > ADB. Android debug bridge. Nos permite instalar y depurar aplicaciones. Nos permite usar unix Shell para realizar comandos en el dispositivo.
 
@@ -41,11 +41,11 @@ ___
 
 ### 1. Cuando se ejecuta por primera vez aparecerá esta pantalla.
 
-<img width="456" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
 
 ### 2. Cuando se ejecuta subsecuentemente aparecerá de la siguiente forma.
 
-<img width="456" alt="image" src="https://github.com/user-attachments/assets/c8f1c36f-2e9b-4f8f-a893-892ce8b2154b" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/c8f1c36f-2e9b-4f8f-a893-892ce8b2154b" />
 
 ### 3. Algunas opciones de customizacion (Preferencias de ejecución)
 
@@ -68,11 +68,11 @@ Nueva version
 
 ### 3. Selecciona “Phone” y “Pixel 8 Pro” y oprime el botón “Next”
 
-<img width="624" alt="image" src="https://github.com/user-attachments/assets/99133891-23ea-4439-9a10-9a3675d9f32c" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/99133891-23ea-4439-9a10-9a3675d9f32c" />
 
 ### 4. Selecciona Tiramisu version 33, este bajará el software como se muestra en la siguiente lamina y al finalizar presiona “Next”.
 
-<img width="545" alt="image" src="https://github.com/user-attachments/assets/66c310ec-02c4-4888-8219-d4bd690d67eb" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/66c310ec-02c4-4888-8219-d4bd690d67eb" />
 
 
 > La ultima version es Blakava que equivale a la version 16 de Android, las versiones anteriores son: API 35 para la version 15 de Android, UpsideDownCake para la version 14 de Android y Tiramisu para la version 13 de Android.
