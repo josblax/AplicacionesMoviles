@@ -54,6 +54,7 @@ ___
 
 ## Como el emulador de Android Studio.
 
-<img width="582" alt="image" src="https://github.com/user-attachments/assets/c0e4a235-8a7e-4ff4-96b8-9da4162279d3" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/45b4e7fc-cc1d-407d-b775-32911093e408" />
+
 
 
