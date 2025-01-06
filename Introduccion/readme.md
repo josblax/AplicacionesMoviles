@@ -97,7 +97,7 @@ Nueva version
 
 ### 9. Si te aparece la siguiente pantalla, presiona play para activar el emulador.
 
-<img width="644" alt="image" src="https://github.com/user-attachments/assets/34e93205-18c3-4378-8184-7b1c0edc7ec7" />
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/34e93205-18c3-4378-8184-7b1c0edc7ec7" />
 
 ### 10. Finalmente tendras listo el emulador
 
