@@ -63,7 +63,12 @@ Nueva version
 ![image](https://github.com/user-attachments/assets/b27cea9a-1217-40bd-87ac-732822627feb)
 
 
-### 2. Selecciona el simbolo + 
+### 2. Selecciona el simbolo + y seleccionar "Create Virtual Device"
 
 ![image](https://github.com/user-attachments/assets/b82ff95c-21bf-40cd-9d5c-8d9969135a09)
+
+### 3. Selecciona “Phone” y “Pixel 8 Pro” y oprime el botón “Next”
+
+<img width="624" alt="image" src="https://github.com/user-attachments/assets/99133891-23ea-4439-9a10-9a3675d9f32c" />
+
 
