@@ -24,7 +24,7 @@ ___
 
 ### 5. Selecciona "Android Virtual Device"
 
-<img width="684" alt="image" src="https://github.com/user-attachments/assets/06b3a3a2-5073-46d6-b12a-a71b6d59c284" />
+<img width="352" alt="image" src="https://github.com/user-attachments/assets/06b3a3a2-5073-46d6-b12a-a71b6d59c284" />
 
 ### 6. Permite que instale el ADB, si estás en Windows.
 
@@ -42,7 +42,7 @@ ___
 
 ### 1. Cuando se ejecuta por primera vez aparecerá esta pantalla.
 
-<img width="250" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
 
 ### 2. Cuando se ejecuta subsecuentemente aparecerá de la siguiente forma.
 
