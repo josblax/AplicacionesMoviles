@@ -82,6 +82,18 @@ ____
 * Puede ser programado en C y C++ pero se hace más desarrollo de aplicaciones en Java (Java accesa a bibliotecas C vía JNI (Java native Interface). Google ha seleccionado Kotlin como el lenguaje predominante para que todas las aplicaciones lo usen en el futuro.
 * Soporta Bluetooth, Wi-Fi y redes 3G, 4G y 5G.
 
- 
+ ## Android y Java
+
+* Después de escribir un programa en Java o Kotlin para Android, hacemos clic en un botón y nuestro código se transforma en un nuevo código, el código que entiende Android. 
+
+* Esta otra forma se denomina **dalvik bytecode** y el proceso de transformación se denomina compilación.  
+
+* Luego, cuando el usuario instala nuestra aplicación, el código de **dalvik bytecode** es es traducido por otro proceso conocido como Android Runtime (ART) en código máquina.
+
+* Este es el formato de ejecución más rápido posible, bytecode se cambia a código máquina que es rápido para el dispositivo. Este proceso de compilación añade a nuestra app la optimización necesaria para la administración de batería y memoria.
+
+* El proceso correcto es **java byte code -> dalvik bytecode**
+
+
 
 
