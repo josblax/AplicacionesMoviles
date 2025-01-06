@@ -37,7 +37,7 @@ ___
 
 <img width="64" alt="Screenshot 2025-01-06 at 11 36 07 AM" src="https://github.com/user-attachments/assets/5c85c8d3-3377-4c30-b973-afd7a67cd6d0" />
 
-## Como crear un programa "Hola Mundo"
+## Instalacion de Emulador para Android Studio
 
 ### 1. Cuando se ejecuta por primera vez aparecerá esta pantalla.
 
