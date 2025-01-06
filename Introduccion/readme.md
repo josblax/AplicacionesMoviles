@@ -100,8 +100,8 @@ Nueva version
 <img width="644" alt="image" src="https://github.com/user-attachments/assets/34e93205-18c3-4378-8184-7b1c0edc7ec7" />
 
 ### 10. Finalmente tendras listo el emulador
-<p align="center">
-<img src="[https://github.com/josblax/AplicacionesMoviles/blob/main/Images/estacionamiento.jpg" alt="Layout app](https://github.com/user-attachments/assets/10db5052-555b-4c7e-97ac-7dba025fb8a7)" width="200" height="400">
-</p>
+
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/5c6b9d12-28d7-4b27-857b-714ff5e5899c" />
+
 
 
