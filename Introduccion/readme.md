@@ -26,3 +26,12 @@ ___
 
 <img width="684" alt="image" src="https://github.com/user-attachments/assets/06b3a3a2-5073-46d6-b12a-a71b6d59c284" />
 
+### 6. Permite que instale el ADB, si estás en Windows.
+
+<img width="362" alt="image" src="https://github.com/user-attachments/assets/175f6e95-2401-443a-9fb3-844e296a9d64" />
+
+> ADB. Android debug bridge. Nos permite instalar y depurar aplicaciones. Nos permite usar unix Shell para realizar comandos en el dispositivo.
+
+
+
+### 7.
