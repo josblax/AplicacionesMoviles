@@ -1,6 +1,6 @@
 # Introducción
 
-## Como instalar android studio?
+## Instalacion de Android Studio
 
 1. Usar la siguiente liga:
 
@@ -65,10 +65,6 @@ ___
 3. Algunas opciones de customizacion (Preferencias de ejecución)
 
 <img width="474" alt="image" src="https://github.com/user-attachments/assets/9879501c-9507-4243-9a9d-d38dd4e2afe9" />
-
-___
-
-## Como el emulador de Android Studio.
 
 ___
 
