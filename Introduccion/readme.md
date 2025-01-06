@@ -42,8 +42,9 @@ ___
 
 ### 1. Cuando se ejecuta por primera vez aparecerá esta pantalla.
 
-<img width="350" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
+<img width="456" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
 
 ### 2. Cuando se ejecuta subsecuentemente aparecerá de la siguiente forma.
 
-![image](https://github.com/user-attachments/assets/0d8cb080-1027-4e5e-8720-6f7735ba46aa)
+<img width="456" alt="image" src="https://github.com/user-attachments/assets/c8f1c36f-2e9b-4f8f-a893-892ce8b2154b" />
+
