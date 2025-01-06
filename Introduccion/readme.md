@@ -92,3 +92,5 @@ Nueva version
 <img width="630" alt="image" src="https://github.com/user-attachments/assets/21b44330-131c-4c1a-bf73-49be00ae6ffe" />
 
 ### 8. Selecciona Emulador o "Running Devices"
+
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/eb556547-850f-4fd7-a6e2-c0d49d071de6" />
