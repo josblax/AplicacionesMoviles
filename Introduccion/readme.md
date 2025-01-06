@@ -60,7 +60,7 @@ ___
 
 Nueva version
 
-![image](https://github.com/user-attachments/assets/b27cea9a-1217-40bd-87ac-732822627feb)
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/b27cea9a-1217-40bd-87ac-732822627feb" />
 
 
 ### 2. Selecciona el simbolo + y seleccionar "Create Virtual Device"
