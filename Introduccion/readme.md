@@ -6,8 +6,7 @@
 
 [Liga](https://developer.android.com/studio?gclid=Cj0KCQjwpv2TBhDoARIsALBnVnkwzQ1DRsss8q_ANTFfekEjGFhifyWJYiLiQUXcq4EU9fVAn_7NmtAaAqYWEALw_wcB&gclsrc=aw.ds)
 
-![image](https://github.com/user-attachments/assets/4886f52d-ebbd-46c0-b15a-9b70d758adbb)
-
+<img width="582" alt="image" src="https://github.com/user-attachments/assets/4886f52d-ebbd-46c0-b15a-9b70d758adbb" />
 ___
 
 ### 2. Acepta los términos y condiciones 
