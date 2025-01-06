@@ -5,7 +5,7 @@ ____
 
 ```bash
 ├──PARTE I: Introducción
-    ├── Instalación de Android Studio [Liga Instalación]("https://developer.android.com/studio")
+    ├── Instalación de Android Studio ![Liga Instalación]("https://developer.android.com/studio")
         ├── Instalación de Visual Studio.
         ├── Como crear un programa
     ├── Porque C++
