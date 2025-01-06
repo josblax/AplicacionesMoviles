@@ -44,3 +44,6 @@ ___
 
 <img width="380" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
 
+### Cuando se ejecuta subsecuentemente aparecerá de la siguiente forma.
+
+![image](https://github.com/user-attachments/assets/0d8cb080-1027-4e5e-8720-6f7735ba46aa)
