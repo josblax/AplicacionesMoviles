@@ -102,6 +102,15 @@ Una plataforma abierta móvil, para dispositivos móviles, embebidos (ejemplo, d
 
 * Cada fabricante de dispositivos móviles puede adaptar “customize” Android a sus necesidades.
 
+## Situacion Actual de Android
+
+* Android es el sistema operativo más utilizado en el mundo.  
+
+* Incluso Windows está rezagado con respecto a la adopción generalizada de la plataforma funcional de teléfonos inteligentes propiedad de Google. iOS ni siquiera está cerca.  
+
+* Cuando se trata de dispositivos móviles, Apple ha ganado algo de terreno en los últimos años, pero Android todavía impulsa alrededor del 75% de todos los teléfonos inteligentes y tabletas.
+
+[fuente](https://techjury.net/blog/android-market-share/)
 
 
 
