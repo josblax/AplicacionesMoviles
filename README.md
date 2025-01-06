@@ -138,9 +138,14 @@ La arquitectura de Android está organizada en varias capas, cada una con su pro
 
 * Aplicaciones: La capa más alta donde se encuentran las aplicaciones que los usuarios instalan y utilizan.
 
-* Marco de Aplicaciones (Application Framework): Proporciona varias APIs que los desarrolladores pueden usar para construir sus aplicaciones.
+* Marco de Aplicaciones (Application Framework): Proporciona varias APIs que los desarrolladores pueden usar para construir sus aplicaciones. Aqui residen los siguientes sistemas: View System, Content Provider, Resoure Manager, Notification Manager, Activity Manager.
 
 * Bibliotecas y Android Runtime: Incluye bibliotecas nativas escritas en C/C++ y la máquina virtual ART (Android Runtime) que ejecuta las aplicaciones.
+
+* Dalvik Virtual Machine. Entorno en el que cada aplicación Android corre android cada aplicación se ejecuta en su propio proceso, con su propia instancia de la VM Dalvik.
+
+* Dalvik ha sido escrito tal que un dispositivo puede correr múltiples máquinas virtuales eficientemente. Virtual machine basada en registros.
+
 
 * Bibliotecas Principales: Ofrecen funcionalidades básicas como gráficos, bases de datos y navegación web.
 
