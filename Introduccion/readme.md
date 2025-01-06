@@ -1,6 +1,6 @@
 # Introducción
 
-## Como instalar android studio_
+## Como instalar android studio?
 
 Usar la siguiente liga:
 
