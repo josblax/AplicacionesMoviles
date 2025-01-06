@@ -134,4 +134,14 @@ Una plataforma abierta móvil, para dispositivos móviles, embebidos (ejemplo, d
 
 ## Arquitectura de Android
 
+La arquitectura de Android está organizada en varias capas, cada una con su propia función específica:
 
+* Aplicaciones: La capa más alta donde se encuentran las aplicaciones que los usuarios instalan y utilizan.
+
+* Marco de Aplicaciones (Application Framework): Proporciona varias APIs que los desarrolladores pueden usar para construir sus aplicaciones.
+
+* Bibliotecas y Android Runtime: Incluye bibliotecas nativas escritas en C/C++ y la máquina virtual ART (Android Runtime) que ejecuta las aplicaciones.
+
+* Bibliotecas Principales: Ofrecen funcionalidades básicas como gráficos, bases de datos y navegación web.
+
+* Kernel de Linux: La base del sistema operativo Android, que maneja la gestión de memoria, procesos, seguridad y controladores de hardware
