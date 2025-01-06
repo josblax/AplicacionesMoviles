@@ -132,4 +132,6 @@ Una plataforma abierta móvil, para dispositivos móviles, embebidos (ejemplo, d
 
 [fuente actualizada 2024](https://techjury.net/blog/android-market-share/)
 
+## Arquitectura de Android
+
 
