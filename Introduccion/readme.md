@@ -70,10 +70,19 @@ Nueva version
 ### 3. Selecciona “Phone” y “Pixel 8 Pro” y oprime el botón “Next”
 
 <img width="624" alt="image" src="https://github.com/user-attachments/assets/99133891-23ea-4439-9a10-9a3675d9f32c" />
-### 4. Selecciona “Download” en el Tiramisu version 33, este bajará el software como se muestra en la siguiente lamina y al finalizar presiona “Next”.
+
+### 4. Selecciona Tiramisu version 33, este bajará el software como se muestra en la siguiente lamina y al finalizar presiona “Next”.
 
 <img width="545" alt="image" src="https://github.com/user-attachments/assets/66c310ec-02c4-4888-8219-d4bd690d67eb" />
 
 
 > La ultima version es Blakava que equivale a la version 16 de Android, las versiones anteriores son: API 35 para la version 15 de Android, UpsideDownCake para la version 14 de Android y Tiramisu para la version 13 de Android.
 > La version Blakava no tiene version, ni nombre de postre, ni numero de API. 
+
+### 5. Selecciona download 
+
+<img width="516" alt="image" src="https://github.com/user-attachments/assets/2c8a1fef-c25a-485c-91a8-5d4f11a0e3e4" />
+
+### 6. Finalmente selecciona "finish" o "finalizar" deja las opciones por default.
+
+<img width="597" alt="image" src="https://github.com/user-attachments/assets/ae4302c5-9085-42be-9dac-34fc8a2c60a1" />
