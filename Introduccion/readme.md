@@ -54,7 +54,12 @@ ___
 
 ## Como el emulador de Android Studio.
 
+### 1. Ubicar la pestana de Device Manager
+
 <img width="582" alt="image" src="https://github.com/user-attachments/assets/45b4e7fc-cc1d-407d-b775-32911093e408" />
 
+Nueva version
+
+![image](https://github.com/user-attachments/assets/b27cea9a-1217-40bd-87ac-732822627feb)
 
 
