@@ -48,3 +48,8 @@ ___
 
 <img width="456" alt="image" src="https://github.com/user-attachments/assets/c8f1c36f-2e9b-4f8f-a893-892ce8b2154b" />
 
+### 3. Algunas opciones de customizacion (Preferencias de ejecución)
+
+<img width="474" alt="image" src="https://github.com/user-attachments/assets/9879501c-9507-4243-9a9d-d38dd4e2afe9" />
+
+
