@@ -86,3 +86,9 @@ Nueva version
 ### 6. Finalmente selecciona "finish" o "finalizar" deja las opciones por default.
 
 <img width="597" alt="image" src="https://github.com/user-attachments/assets/ae4302c5-9085-42be-9dac-34fc8a2c60a1" />
+
+### 7. De regreso en la interfase principal podrás ver que el dispositivo virtual ha sido creado, corre el dispositivo seleecionando el icono de play.
+
+<img width="630" alt="image" src="https://github.com/user-attachments/assets/21b44330-131c-4c1a-bf73-49be00ae6ffe" />
+
+### 8. Selecciona Emulador o "Running Devices"
