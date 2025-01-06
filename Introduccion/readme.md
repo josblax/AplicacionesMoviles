@@ -42,7 +42,7 @@ ___
 
 ### 1. Cuando se ejecuta por primera vez aparecerá esta pantalla.
 
-<img width="380" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
+<img width="250" alt="image" src="https://github.com/user-attachments/assets/c3eb31d1-eb75-4b70-a7da-a25cfad2d7ea" />
 
 ### 2. Cuando se ejecuta subsecuentemente aparecerá de la siguiente forma.
 
