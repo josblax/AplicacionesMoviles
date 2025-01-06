@@ -94,6 +94,14 @@ ____
 
 * El proceso correcto es **java byte code -> dalvik bytecode**
 
+## Ecosistema de Android
+
+Una plataforma abierta móvil, para dispositivos móviles, embebidos (ejemplo, dispositivo Android para autos, TV’s etc.) y usables en nuestro cuerpo.
+
+* Google es el principal responsable de su actualización, aunque otras personas contribuyen al sistema.
+
+* Cada fabricante de dispositivos móviles puede adaptar “customize” Android a sus necesidades.
+
 
 
 
