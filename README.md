@@ -145,3 +145,6 @@ La arquitectura de Android está organizada en varias capas, cada una con su pro
 * Bibliotecas Principales: Ofrecen funcionalidades básicas como gráficos, bases de datos y navegación web.
 
 * Kernel de Linux: La base del sistema operativo Android, que maneja la gestión de memoria, procesos, seguridad y controladores de hardware
+
+
+![Arquitectura](https://source.android.com/static/images/android-stack.svg?hl=es-419)
