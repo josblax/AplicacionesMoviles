@@ -14,3 +14,6 @@ ___
 
 <img width="665" alt="image" src="https://github.com/user-attachments/assets/5cdc2cf7-3eb6-4e5e-8510-ebd448c67b45" />
 
+### 3. Asegurate que baje en tu equipo de computo
+
+<img width="653" alt="image" src="https://github.com/user-attachments/assets/9d6a1000-6236-49ba-9132-81145da1937f" />
