@@ -99,3 +99,7 @@ Nueva version
 
 <img width="644" alt="image" src="https://github.com/user-attachments/assets/34e93205-18c3-4378-8184-7b1c0edc7ec7" />
 
+### 10. Finalmente tendras listo el emulador
+
+![image](https://github.com/user-attachments/assets/10db5052-555b-4c7e-97ac-7dba025fb8a7)
+
