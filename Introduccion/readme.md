@@ -134,7 +134,8 @@ ___
 
 10. Finalmente tendras listo el emulador
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/5c6b9d12-28d7-4b27-857b-714ff5e5899c" />
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/e1d722f4-4f9f-4df1-b2a8-f3fcf8d70cca" />
+
 
 
 
