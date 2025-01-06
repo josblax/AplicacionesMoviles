@@ -76,3 +76,12 @@ ____
 
 
 ## Que es Android?
+
+* Android es un sistema operativo de código abierto, creado por Google específicamente para su uso en dispositivos móviles (teléfonos celulares y tabletas).
+* Basado en Linux (kernel 6.1)
+* Puede ser programado en C y C++ pero se hace más desarrollo de aplicaciones en Java (Java accesa a bibliotecas C vía JNI (Java native Interface). Google ha seleccionado Kotlin como el lenguaje predominante para que todas las aplicaciones lo usen en el futuro.
+* Soporta Bluetooth, Wi-Fi y redes 3G, 4G y 5G.
+
+ 
+
+
