@@ -71,4 +71,5 @@ Nueva version
 
 <img width="624" alt="image" src="https://github.com/user-attachments/assets/99133891-23ea-4439-9a10-9a3675d9f32c" />
 
-
+> La ultima version es Blakava que equivale a la version 16 de Android, las versiones anteriores son: API 35 para la version 15 de Android, UpsideDownCake para la version 14 de Android y Tiramisu para la version 13 de Android.
+> La version Blakava no tiene version, ni nombre de postre, ni numero de API. 
