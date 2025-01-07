@@ -164,6 +164,15 @@ ___
   * Mantiene el contenido de un mensaje
   * Ejemplo: actividad como agregar comentarios a una imagen presentada al usuario.
 
+## Que es una actividad?
+
+* Una actividad representa una pantalla como una pantalla o un marco (“frame”) y esta es una subclase de la clase ContextThemeWrapper.
+  
+* Como en lo lenguajes de programación C, C++ o Java que en su programa parte de la función main(). De manera muy similar, sistema Android inicia su programa con una actividad a partir de una llamada en el método onCreate(). 
+
+* Hay una secuencia de métodos de devolución de llamada que comienzan una actividad y una secuencia de métodos de devolución (“callback”) de llamada que quita una actividad como se muestra en el siguiente diagrama de ciclo de vida de actividad.
+
+![ciclo de vida de una actividad](https://developer.android.com/guide/components/images/activity_lifecycle.png?hl=es-419)
 
 
 
