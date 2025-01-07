@@ -137,5 +137,34 @@ ___
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/e1d722f4-4f9f-4df1-b2a8-f3fcf8d70cca" />
 
 
+## Fundamentos de una app
+
+* Apps son escritas en Java
+* Contenida en: Android Asset Packaging Tool
+* Cada aplicación corre en su propio proceso Linux.
+* Cada proceso tiene su propia Java Virtual Machine
+* Para cada aplicación es asignada un único identificación de usuario Linux
+* Apps pueden compartir el mismo usuario para poder compartir archivos.
+
+## Componentes Generales de una aplicación
+
+1. Actividades
+  * Es una interface visual enfocada al usuario.
+  * Ejemplo: una lista de items que los usuarios pueden escoger.
+2. Servicios
+  * Corren en “background” por tiempo indefinido.
+  * Ejemplo: calcular y proveer el resultado de las actividades que son necesarias.
+3. Broadcast Receivers
+  * Reciben y toman acción a notificaciones.
+  * Ejemplo: notificación de una noticia importante.
+4. Content Providers
+  * Guarda y recupera información para hacerla accesible a todas las aplicaciones.
+  * Ejemplo: Android provee con algunos proveedores de contenido para tipos comúnes de tipos de datos. (ej., audio, video, imagenes, información personal, etc.)
+5. Intents
+  * Mantiene el contenido de un mensaje
+  * Ejemplo: actividad como agregar comentarios a una imagen presentada al usuario.
+
+
+
 
 
