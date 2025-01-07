@@ -175,5 +175,21 @@ ___
 ![ciclo de vida de una actividad](https://developer.android.com/guide/components/images/activity_lifecycle.png?hl=es-419)
 
 
+## Que es una API?
+
+Una API simplifica la programación del APP’s usando interfases que nos ayudan a acceder los componentes necesarios que requerimos para nuestra aplicación.
+
+Por ejemplo si queremos obtener la ubicación del dispositivo usaremos la siguiente interfase:
+
+**locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER)**
+
+
+## Java y Kotlin son lenguajes OOP
+
+* Java es un lenguaje de programación que existe desde hace mucho más tiempo que Android. 
+
+* Es un lenguaje orientado a objetos. Esto significa que utiliza el concepto de objetos de programación reutilizables. 
+
+
 
 
