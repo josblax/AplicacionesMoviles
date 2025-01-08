@@ -19,8 +19,11 @@ ____
         ├── Conocer los diferentes componentes que se integran al desarrollo de una app
         ├── Uso de dispositivos virtuales y fisicos para crear una app.
         ├── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
-├── PARTE II Fundamentos de Programación.
-    ├── Funciones principales de un lenguaje de programación.
+├── PARTE II Crear un proyecto en Android Studio
+    ├── Creacion de un proyecto basado en XML y Java.
+        ├── Tipo de Actividad (Empty Views Activity)
+        ├── Seleccion de Nombre del Proyecto, Lenguaje y SDK.
+        ├── Interfase de Usuario
     ├── Que es una palabra reservada?
     ├── Estructuras de Salida.
         ├── Instrucción de Salida cout
