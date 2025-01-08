@@ -42,7 +42,27 @@ ____
             ├── Gradle Scripts
                 ├── build.gradle.kts (Project)
                 ├── build.gradle.kts (Module:app)
-    ├── Que es una palabra reservada?
+├── PARTE III XML
+    ├── activity_main.xml
+        ├── layouts
+                ├── constraint layout
+                ├── linear layout
+                ├── relative layout
+                ├── table layout
+                ├── FrameLayout
+                ├── grid layout
+        ├── Text widgets
+            ├── TextView
+            ├── EditText
+        ├── Button widgets
+            ├── Button
+            ├── ImageButton
+        ├── Image Widgets
+            ├── ImageView
+        ├── Input Widgets
+            ├── CheckBox
+            ├── RadioButton
+            ├── Switch
     ├── Estructuras de Salida.
         ├── Instrucción de Salida cout
     ├── Nombres de Variables/Identificadores
