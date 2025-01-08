@@ -29,11 +29,13 @@ ____
                     ├── Android Manifests
                 ├── Folder Java
                     ├── main Java folder
+                        ├── MainActiivity.java*
                     ├── androidTest folder
                     ├── test folder
                 ├── res folder
                     ├── drawable folder
                     ├── layout folder
+                        ├── activity_main.xml*
                     ├── mipmap folder
                     ├── values folder
                     ├── xml folder
