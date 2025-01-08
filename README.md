@@ -10,6 +10,9 @@ ____
     ├── Instalación de Android Studio
         ├── Instalación de Android Studio.
         ├── Instalación del Emulador para Android Estudio.
+        ├── Fundamentos de una app
+        ├── Componentes generales de una aplicación
+        ├── Que es una actividad?
     ├── Crear un proyecto con Android Studio
         ├── Conocer el ambiente de desarrollo integrado
         ├── Conocer la interfase de usuario de Android Studio
