@@ -24,6 +24,22 @@ ____
         ├── Tipo de Actividad (Empty Views Activity)
         ├── Seleccion de Nombre del Proyecto, Lenguaje y SDK.
         ├── Interfase de Usuario
+            ├── Arbol del Proyecto.
+                ├── Folder manifests
+                    ├── Android Manifests
+                ├── Folder Java
+                    ├── main Java folder
+                    ├── androidTest folder
+                    ├── test folder
+                ├── res folder
+                    ├── drawable folder
+                    ├── layout folder
+                    ├── mipmap folder
+                    ├── values folder
+                    ├── xml folder
+            ├── Gradle Scripts
+                ├── build.gradle.kts (Project)
+                ├── build.gradle.kts (Module:app)
     ├── Que es una palabra reservada?
     ├── Estructuras de Salida.
         ├── Instrucción de Salida cout
