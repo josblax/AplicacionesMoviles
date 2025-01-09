@@ -13,13 +13,9 @@ ____
         ├── Fundamentos de una app
         ├── Componentes generales de una aplicación
         ├── Que es una actividad?
-    ├── Instalacion del Emulador para Android Studio
-    ├── Fundamentos de una app
-    ├── Componentes Generales de una aplicación
-    ├── Que es una actividad?
-    ├── Que es una API?
-    ├── Java y Kotlin son lenguajes orientados a objetos
-    ├── Como trabajan Java y Android juntos
+        ├── Que es una API?
+        ├── Java y Kotlin son lenguajes orientados a objetos
+        ├── Como trabajan Java y Android juntos
 ├── PARTE II Crear un proyecto en Android Studio
      ├── Preeliminar para crear un proyecto con Android Studio
         ├── Conocer el ambiente de desarrollo integrado
