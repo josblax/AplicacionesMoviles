@@ -22,7 +22,7 @@ ____
     ├── Como trabajan Java y Android juntos
 ├── PARTE II Crear un proyecto en Android Studio
      ├── Preeliminar para crear un proyecto con Android Studio
-        ├── Conocer el ambiente     de desarrollo integrado
+        ├── Conocer el ambiente de desarrollo integrado
         ├── Conocer la interfase de usuario de Android Studio
         ├── Conocer los diferentes componentes que se integran al desarrollo de una app
         ├── Uso de dispositivos virtuales y fisicos para crear una app.
