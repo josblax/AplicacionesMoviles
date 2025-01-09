@@ -17,7 +17,7 @@ ____
         ├── Java y Kotlin son lenguajes orientados a objetos
         ├── Como trabajan Java y Android juntos
 ├── PARTE II Crear un proyecto en Android Studio
-     ├── Preeliminar para crear un proyecto con Android Studio
+    ├── Preeliminar para crear un proyecto con Android Studio
         ├── Conocer el ambiente de desarrollo integrado
         ├── Conocer la interfase de usuario de Android Studio
         ├── Conocer los diferentes componentes que se integran al desarrollo de una app
