@@ -29,13 +29,13 @@ ____
                     ├── Android Manifests
                 ├── Folder Java
                     ├── main Java folder
-                        ├── MainActiivity.java*
+                        ├── MainActiivity.java!
                     ├── androidTest folder
                     ├── test folder
                 ├── res folder
                     ├── drawable folder
                     ├── layout folder
-                        ├── activity_main.xml*
+                        ├── activity_main.xml!
                     ├── mipmap folder
                     ├── values folder
                     ├── xml folder
@@ -45,7 +45,7 @@ ____
 ├── PARTE III XML
     ├── activity_main.xml
         ├── layouts
-                ├── constraint layout
+                ├── constraint layout!
                 ├── linear layout
                 ├── relative layout
                 ├── table layout
