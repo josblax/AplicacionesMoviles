@@ -13,13 +13,20 @@ ____
         ├── Fundamentos de una app
         ├── Componentes generales de una aplicación
         ├── Que es una actividad?
-    ├── Crear un proyecto con Android Studio
-        ├── Conocer el ambiente de desarrollo integrado
+    ├── Instalacion del Emulador para Android Studio
+    ├── Fundamentos de una app
+    ├── Componentes Generales de una aplicación
+    ├── Que es una actividad?
+    ├── Que es una API?
+    ├── Java y Kotlin son lenguajes orientados a objetos
+    ├── Como trabajan Java y Android juntos
+├── PARTE II Crear un proyecto en Android Studio
+     ├── Preeliminar para crear un proyecto con Android Studio
+        ├── Conocer el ambiente     de desarrollo integrado
         ├── Conocer la interfase de usuario de Android Studio
         ├── Conocer los diferentes componentes que se integran al desarrollo de una app
         ├── Uso de dispositivos virtuales y fisicos para crear una app.
         ├── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
-├── PARTE II Crear un proyecto en Android Studio
     ├── Creacion de un proyecto basado en XML y Java.
         ├── Tipo de Actividad (Empty Views Activity)
         ├── Seleccion de Nombre del Proyecto, Lenguaje y SDK.
