@@ -66,6 +66,16 @@ ____
         ├── Progress Widgets
             ├── ProgressBar
 ├── Parte IV Java (Instrucciones Comunes)
+    ├── Tipos basicos de variables
+        ├── Enteros: byte, short, int, long
+        ├── Fraccionarios: float, double
+        ├── Texto: char, String
+        ├── Boleanos: boolean
+    ├── Tipos no basicos de estructuras
+        ├── String
+        ├── Arrays (arreglos)
+        ├── Class (clase)
+        ├── Interface (interfases)    
     
 ```
 
