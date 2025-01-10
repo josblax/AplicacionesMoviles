@@ -26,3 +26,19 @@ Contiene el archivo AndroidManifest.xml, que define la estructura básica de la 
 #### Archivos de configuración de Gradle. 
 
 build.gradle, que definen cómo se compila y construye la aplicación. Esta estructura ayuda a mantener el proyecto organizado y facilita la gestión del código y los recursos.
+
+## Donde necesito codificar la logica de mi app?
+
+
+```bash
+app/
+├── src/
+│   ├── main/
+│       └── java/
+│           └── com/example/myapp/
+│               └── MainActivity.java
+│
+├── res/
+    ├── layout/
+        └── activity_main.xml
+```
