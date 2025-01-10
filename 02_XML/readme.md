@@ -21,7 +21,8 @@ Por ejemplo, este es un diseño XML que usa un LinearLayout vertical para conten
 * **Lenguaje de marcado:** XML utiliza etiquetas para anotar datos, proporcionando contexto y estructura.
 
 * **Etiquetas definidas por el usuario:**  Usted crea sus propias etiquetas para representar los datos con los que está trabajando. Esto hace que XML sea muy flexible y adaptable.
-Almacenamiento e intercambio de datos: XML está diseñado para almacenar y transportar datos. Su formato estandarizado facilita el intercambio de datos entre diferentes sistemas y plataformas.
+
+* **Almacenamiento e intercambio de datos:** XML está diseñado para almacenar y transportar datos. Su formato estandarizado facilita el intercambio de datos entre diferentes sistemas y plataformas.
 
 * **Legibles por humanos y máquinas:** Los documentos XML están basados en texto, lo que los hace fáciles de leer y entender para los humanos. Al mismo tiempo, el formato estructurado permite que el software analice y procese los datos de manera eficiente.
 
