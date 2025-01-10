@@ -47,3 +47,7 @@ app/
 # Interfase Grafica de Android Studio
 
 ![image](https://github.com/user-attachments/assets/1564bcc0-36af-4c6c-ba0a-b6b9aee62c77)
+
+## Barra de Herramientas
+
+![image](https://github.com/user-attachments/assets/e6d98d0a-374c-43a6-9052-768a2355c043)
