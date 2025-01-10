@@ -63,3 +63,7 @@ app/
 ## Ventana Editor Java
 
 ![image](https://github.com/user-attachments/assets/4b3f29e0-dc21-42d6-8644-ed8dc2c172a2)
+
+## Barra izquierda de herramientas 
+
+![image](https://github.com/user-attachments/assets/f1df622d-49b7-40d6-8ef7-14fcfe5c9c41)
