@@ -42,3 +42,8 @@ app/
     ├── layout/
         └── activity_main.xml
 ```
+
+
+# Interfase Grafica de Android Studio
+
+![image](https://github.com/user-attachments/assets/1564bcc0-36af-4c6c-ba0a-b6b9aee62c77)
