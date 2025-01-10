@@ -68,3 +68,6 @@ app/
 
 ![image](https://github.com/user-attachments/assets/e2775c8c-ed6d-434f-ade6-68f9a112a401)
 
+## Ventana del Emulador
+
+![image](https://github.com/user-attachments/assets/857ee838-b46b-4dc9-b9e9-ab5cb5a0ce45)
