@@ -23,6 +23,6 @@ Contiene el archivo AndroidManifest.xml, que define la estructura básica de la 
 
 ### Gradle Scripts:
 
-## Archivos de configuración de Gradle. 
+#### Archivos de configuración de Gradle. 
 
 build.gradle, que definen cómo se compila y construye la aplicación. Esta estructura ayuda a mantener el proyecto organizado y facilita la gestión del código y los recursos.
