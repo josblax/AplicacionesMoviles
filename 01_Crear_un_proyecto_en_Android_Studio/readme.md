@@ -6,13 +6,13 @@ En Android Studio, la estructura del folder java es fundamental para organizar e
 
 ### Manifests Folder:
 
-Contiene el archivo AndroidManifest.xml, que define la estructura básica de la aplicación, incluyendo los componentes como actividades, servicios, receptores y proveedores de contenido1.
+Contiene el archivo AndroidManifest.xml, que define la estructura básica de la aplicación, incluyendo los componentes como permisos y definiciones meta que usara la app.
 
 ### Java Folder:
 
-* src/main/java: Aquí se encuentran todos los archivos de código fuente en Java o Kotlin. Este es el lugar donde escribirás la lógica principal de tu aplicación.
+* src/main/java: Aquí se encuentran todos los archivos de código fuente en Java o Kotlin.
 * src/androidTest/java: Contiene los archivos de prueba de instrumentación, que se ejecutan en un dispositivo Android.
-* src/test/java: Contiene los archivos de prueba locales, que se ejecutan en la JVM de tu máquina de desarrollo1.
+* src/test/java: Contiene los archivos de prueba locales, que se ejecutan en la JVM de tu máquina de desarrollo
 
 ### Resource (res) Folder:
 
