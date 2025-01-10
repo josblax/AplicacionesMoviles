@@ -51,3 +51,8 @@ app/
 ## Barra de Herramientas
 
 ![image](https://github.com/user-attachments/assets/e6d98d0a-374c-43a6-9052-768a2355c043)
+
+## Barra de Navegacion
+
+![image](https://github.com/user-attachments/assets/b8e6e8f6-dcc5-4532-8eec-0692c4d3c16f)
+
