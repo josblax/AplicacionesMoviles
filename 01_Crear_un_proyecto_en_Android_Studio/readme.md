@@ -66,4 +66,5 @@ app/
 
 ## Barra izquierda de herramientas 
 
-![image](https://github.com/user-attachments/assets/f1df622d-49b7-40d6-8ef7-14fcfe5c9c41)
+![image](https://github.com/user-attachments/assets/e2775c8c-ed6d-434f-ade6-68f9a112a401)
+
