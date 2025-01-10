@@ -56,3 +56,6 @@ app/
 
 ![image](https://github.com/user-attachments/assets/b8e6e8f6-dcc5-4532-8eec-0692c4d3c16f)
 
+## Ventana Editor de XML
+
+![image](https://github.com/user-attachments/assets/4d137f78-f7bb-44ad-981b-1153002a8ebd)
