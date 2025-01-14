@@ -1,12 +1,28 @@
-# Funciones principales de un lenguaje de programación.
+# Java
 
-* 1\. **Comunicación con una computadora.** Usando instrucciones permite crear programas, funciones que cumplen un propósito específico.
-* 2\. **Creación de Software.** El software cumple objetivos de solucionar problemas o satisfacer necesidades específicas en una área especpifica de aplicación.
-* 3\. **Automatización.** Se usan en procesos repetitivos optimizando o substituyendo interacción humana, desde procesos sencillos, hasta muy complejos.
-* 4\. **Resolución de problemas.** Usando algoritmos y estructuras de datos.
-* 5\. **Interacción usuario-máquina.** Usando interfaces que permiten satisfacer necesidades de aquellos que lo usan.
+Java es un lenguaje de programación de alto nivel, basado en clases y orientado a objetos, diseñado para tener el menor número posible de dependencias de implementación. Fue desarrollado por Sun Microsystems a mediados de la década de 1990 y ahora es propiedad de Oracle Corporation.
 
-[Información adicional Unidad de Apoyo de Aprendizaje UNAM](https://programas.cuaed.unam.mx/repositorio/moodle/pluginfile.php/1023/mod_resource/content/1/contenido/index.html)
+## Características principales:
+
+* Independencia de la plataforma: el código Java se compila en código de bytes, que puede ejecutarse en cualquier máquina con la máquina virtual Java (JVM). Esto hace que Java sea un lenguaje de "escribir una vez, ejecutar en cualquier lugar".
+
+* Orientado a objetos: Java sigue el paradigma de programación orientada a objetos, lo que permite un código modular, reutilizable y mantenible.
+
+* Robusto y seguro: Java hace hincapié en la comprobación temprana de posibles errores, la comprobación en tiempo de ejecución y la asignación segura de memoria.
+
+* Multithreading: Java soporta multithreading, lo que permite la ejecución simultánea de dos o más hilos para la máxima utilización de la CPU.
+
+* Biblioteca estándar enriquecida: Java viene con una vasta biblioteca estándar que proporciona muchas utilidades para tareas comunes (por ejemplo, colecciones, manejo de entrada/salida, redes).
+
+# Casos de uso:
+
+* Desarrollo web: Java es ampliamente utilizado para crear aplicaciones y servicios web a gran escala (por ejemplo, utilizando marcos como Spring).
+
+* Desarrollo móvil: Java es el lenguaje principal para el desarrollo de aplicaciones Android.
+
+* Aplicaciones empresariales: Java es popular en el sector empresarial para crear aplicaciones empresariales escalables y robustas.
+
+* Big Data: Java se utiliza en tecnologías de big data como Apache Hadoop.
 
 ___
 
