@@ -129,8 +129,8 @@ ___
 Ejemplo:
 
 ```cplusplus
-bool llueve = true; 
-bool tiene_sombrilla = false; 
+boolean llueve = true; 
+boolean tiene_sombrilla = false; 
 ```
 
 
