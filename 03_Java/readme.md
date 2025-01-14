@@ -34,71 +34,6 @@ Los nombres de variables deben de reflejar el uso para el que es usado la variab
 
 ___
 
-# Estructuras de Salida
-
-## Instrucción de salida cout
-
-**cout:** Se utiliza para imprimir texto o valores de consola. Pertenece a la biblioteca "Estandar" (std) de entrada y salida (iostream) se usa en combinación con el operador de inserción (<<).
-
-Ejemplo:
-
-```cplusplus
-
-// Como se imprime?
-
-cout << "Mi nombre es : " << "Alumno" << endl;
-
-```
-
-Las comillas ("") se usan para definir rotúlos o letreros fijos que no cambian a lo largo de la ejecución de un programa. 
-
-> Los valores que contiene una variable también pueden ser impresos mediante esta instrucción, abajo se muestran los ejemplos de cada tipo de variable.
-___
-
-# Estructuras de Entrada
-
-## Instrucción de entrada cin
-
-**cin:** La instrucción cout se utiliza para recibir entradas desde la consola, normalmente utilizando el teclado, pero no esta reducido a este dispositivo, pueden ser escaners, joysticks, control de videojuegos etc. Pertenece a la biblioteca "Estandar" (std) de entrada y salida (iostream)
-
-### Impresión de valores básicos
-
-Ejemplo:
-
-```cplusplus
-
-// Como se imprime?
-
-int a;
-cout << "Ingresa un número entero: ";
-cin >> a;
-cout << "El número ingresado es: " << a << endl;
-
-```
-
-____
-
-# Manipulador endl
-
-**endl:** Se utiliza en cojunto con la instrucción cout, que corresponde a un comando que mueve el "cursor" a una nueva linea y funciona igual que la tecla retorno que normalmente usas en una computadora através de un teclado.
-
-> El uso de endl no solo mueve el cursor a una nueva línea, sino que también garantiza que cualquier contenido pendiente en el búfer se envíe a la salida. Esto puede ser útil para asegurarse de que los datos se impriman inmediatamente,
-> especialmente en situaciones de depuración o cuando se trabaja con dispositivos de salida que requieren una actualización inmediata.
-
-Ejemplo:
-
-```cplusplus
-
-// Como se usa:?
-
-
-cout << "Línea 1: "  << endl;
-cout << "Línea 2: "  << endl;
-
-```
-
-> En este caso, endl asegura que cada mensaje se imprima en una nueva línea y que el búfer de salida se vacíe después de cada inserción.
-___
 
 # Tipos de Variable
 
@@ -115,14 +50,8 @@ ___
 
 Ejemplo: 
 
-```cplusplus
+```Java
 short a = 100;
-// Como se asignan valores desde consola?
-cout << "Ingresa un número short: ";
-cin >> a;
-// Como se imprime en consola?
-cout << "El número ingresado es: " << a << endl;
-
 ```
 ---
 
@@ -132,11 +61,8 @@ cout << "El número ingresado es: " << a << endl;
 
 Ejemplo:
 
-```cplusplus
+```Java
 int b = 1000;
-cout << "Ingresa un número entero: ";
-cin >> b;
-cout << "El número ingresado es: " << b << endl;
 ```
 ---
 
@@ -146,41 +72,13 @@ cout << "El número ingresado es: " << b << endl;
 
 Ejemplo:
 
-```cplusplus
-long long c = 555688722;
-cout << "Ingresa un número entero: ";
-cin >> c;
-cout << "El número ingresado es: " << c << endl;
-```
-
-#### Como se imprime una variable long long separado por comas
-```cplusplus
-long long d = 123456789012345; 
-// Crear un objeto de configuración regional para los números separados por comas 
-locale loc(""); 
-cout.imbue(loc); 
-// Imprimir el número usando la configuración regional establecida 
-cout << d << endl;
+```Java
+long c = 555688722;
 ```
 ---
 
-### unsigned. Variable que solo registra números positivos.
+___
 
-> Limite: Rango de una variable int 0 a 4,294,967,295
-
-Ejemplo:
-
-```cplusplus
-unsigned int e = 2000;
-cout << "Ingresa un número entero: ";
-cin >> e;
-cout << "El número ingresado es: " << e << endl;
-```
-
-> Que pasa si asigno un número negativo a una variable declarada unsigned? Si asignas un número negativo a una variable declarada como unsigned en C++, el comportamiento que observarás es debido a cómo se representa y se trata la información en binario. Esto puede ser un tanto confuso porque C++ no arroja un error inmediato, sino que realiza una conversión de los bits del valor negativo al rango no negativo representable por el tipo unsigned.
-
-> Qué sucede exactamente? Cuando asignas un número negativo a una variable unsigned, el valor se convierte a su equivalente en el rango positivo utilizando aritmética de módulo. En términos simples, el valor binario del número negativo se interpreta como un número positivo en el espacio de los enteros sin signo.
----
 ## Números fraccionarios/con decimales
 
 ### float. Variable decimal con precisión simple. 
@@ -190,11 +88,8 @@ cout << "El número ingresado es: " << e << endl;
 
 Ejemplo:
 
-```cplusplus
+```Java
 float f = 3.14f;
-cout << "Ingresa un número entero: ";
-cin >> f;
-cout << "El número ingresado es: " << f << endl;
 ```
 ---
 
@@ -205,72 +100,23 @@ cout << "El número ingresado es: " << f << endl;
 
 Ejemplo:
 
-```cplusplus
+```Java
 double g = 3.1415926535;
-cout << "Ingresa un número entero: ";
-cin >> g;
-cout << "El número ingresado es: " << g << endl;
 ```
 ---
 
-### long double. Variable decimal con precisión extendida.
-
-> Limite: Varía según el compilador, pero generalmente más grande que double.
-> Precisión: 19-21 digitos
-
-Ejemplo:
-
-```cplusplus
-long double h = 3.141592653589793238L;
-cout << "Ingresa un número entero: ";
-cin >> h;
-cout << "El número ingresado es: " << h << endl;
-```
-> NOTA: Usa al final del número f o L para especificar el número que quieres manejar.
-
 ___
 
-## bool. Variable booleana que puede tener solo dos valores {0,1} o {falso,verdadero}.
+## boolean. Variable booleana que puede tener solo dos valores {falso,verdadero}.
 
-> Por que solo usa 1 o 0?
-
-* Las variables booleanas en C++ solo usan 1 y 0 porque representan los dos estados posibles de un valor booleano: verdadero (true) y falso (false). En los sistemas de computación, estos valores se representan internamente como 1 para true y 0 para false debido a la simplicidad y eficiencia en la operación binaria.
-
-* El uso de 1 y 0 tiene varias ventajas:
-
-1. Simplicidad: Es fácil trabajar con valores binarios en el nivel más bajo de hardware.
-
-2. Eficiencia: Las operaciones lógicas y de control se pueden realizar rápidamente utilizando estos dos valores.
-
-3. Compatibilidad: La representación binaria es estándar en casi todos los sistemas de programación y hardware.
 
 Ejemplo:
 
 ```cplusplus
-bool llueve = true; // Esto internamente es 1
-bool tiene_sombrilla = false; // Esto internamente es 0
+bool llueve = true; 
+bool tiene_sombrilla = false; 
 ```
 
-### La función boolalpha en C++ 
-
-Se utiliza para imprimir valores booleanos como true o false en lugar de 1 o 0. Esto puede ser útil para hacer que la salida de tu programa sea más legible y comprensible.
-
-Ejemplo:
-
-```cplusplus
-bool soleado = true;
-bool lloviendo = false;
-// Imprimir sin boolalpha
-cout << "Sin boolalpha:" << endl;
-cout << "es soleado? : " << soleado << endl;
-cout << "esta lloviendo? : " << lloviendo << endl;
-// Imprimir con boolalpha
-cout << boolalpha;
-// Activa boolalpha
-cout << "Con boolalpha:" << endl;
-cout << "es soleado? : " << soleado << endl;
-cout << "esta lloviendo?: " << lloviendo << endl;
-```
 
 ---
 
@@ -278,22 +124,14 @@ cout << "esta lloviendo?: " << lloviendo << endl;
 
 ### string. Es una representación de cadenas de caracteres que proporciona muchas funcionalidades útiles para manipular cadenas.
 
-En C++, puedes trabajar con cadenas de caracteres (strings) utilizando la clase std::string de la biblioteca estándar (Standard Template Library, STL)
+En Java, puedes trabajar con cadenas de caracteres (strings) utilizando la clase Strung
 
-> Limite: El límite máximo de una std::string depende de la memoria disponible en el sistema.
+
 
 Ejemplo:
 
-```cplusplus
-string saludo = "Hola, mundo!";
-cout << saludo << endl;
-
-// Otro ejemplo
-string nombre;
-cout << "¿Cómo te llamas? ";
-getline(cin, nombre);
-cout << "Encantado de conocerte, " << nombre << "!" << endl;
-
+```Java
+String saludo = "Hola, mundo!";
 ```
 
 ---
@@ -304,14 +142,10 @@ cout << "Encantado de conocerte, " << nombre << "!" << endl;
 
 Ejemplo:
 
-```cplusplus
+```Java
 char letra = 'a';
 char digito = '2';
 char simbolo = '%';
-// Como se imprime?
-cout << "Letra: " << letra << endl;
-cout << "digito: " << letra << endl;
-cout << "simbolo: " << letra << endl;
 ```
 
 ---
