@@ -198,7 +198,19 @@ char simbolo = '%';
 ```
 
 ---
+### Array. 
 
+Una colección de variables del mismo tipo.
+
+Ejemplo:
+
+```Java
+// tipo_variable[] identificador = {1,2,3,4,5};
+
+int[] miarreglo =  {1,2,3,4,5};
+```
+
+___
 ### ArrayList
 
 ```Java
