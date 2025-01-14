@@ -225,4 +225,39 @@ ArrayList<TipoVariable>
 * Los detalles de la política de crecimiento no se especifican más allá del hecho de que la adición de un elemento tiene un costo de tiempo amortizado constante.
 * Una aplicación puede aumentar la capacidad de una instancia de ArrayList antes de agregar un gran número de elementos mediante la operación ensureCapacity. Esto puede reducir la cantidad de reasignación incremental.
 
+Ejemplo:
+
+```Java
+
+import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        // Create an ArrayList to store Strings
+        ArrayList<String> nombres = new ArrayList<>();
+
+        // Agregar elementos
+        nombres.add("Jose");
+        nombres.add("Ana");
+        nombres.add("Claudia");
+
+        
+        // Obtener un elemento del arrayList
+        String fruit = nombres.get(1); // Obtener el elemento en el indice 1
+
+        // Quitar un elemento del ArrayList
+        fruitList.remove("Banana");
+        System.out.println("Fruit List after removal: " + fruitList);
+
+        // Moverse a través del ArrayList
+       
+        for (String f : nombres) {
+            System.out.println(f);
+        }
+    }
+}
+
+
+```
+
 ___
