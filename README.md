@@ -77,6 +77,7 @@ ____
     ├── Tipos no basicos de estructuras
         ├── String
         ├── Arrays (arreglos)
+        ├── ArrayList (Lista de arreglos)
         ├── Class (clase)
         ├── Interface (interfases)    
     
