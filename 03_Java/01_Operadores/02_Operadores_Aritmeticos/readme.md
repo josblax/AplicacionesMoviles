@@ -8,7 +8,7 @@
 int a = 10;
 int b = 5;
 int suma = a + b;
-cout << "Resultado de la suma es : " << suma << endl;
+System.out.println("Resultado de la suma es : " + suma);
 ```
 ___
 2. Resta **-**
@@ -19,7 +19,7 @@ Substrae el valor del segundo operando al primer operando.
 int a = 10;
 int b = 5;
 int resta = a - b;
-cout << "Resultado de la resta es : " << suma << endl;
+System.out.println("Resultado de la resta es : " + suma);
 ```
 ___
 
@@ -31,7 +31,7 @@ Multiplica el valor de dos o mas operandos.
 int a = 10;
 int b = 5;
 int multiplicacion = a * b;
-cout << "Resultado de la multiplicacion  es : " << multiplicacion << endl;
+System.out.println("Resultado de la multiplicacion  es : " + multiplicacion);
 ```
 ___
 
@@ -42,7 +42,7 @@ Divide el dividendo (operando que se encuentra en la parte izquierda entre el di
 int a = 10;
 int b = 5;
 int division = a / b;
-cout << "Resultado de la division  es : " << division << endl;
+System.out.println("Resultado de la division  es : " + division);
 ```
 ___
 
@@ -54,7 +54,7 @@ Es el residuo de la division (cuanto me resta después de haber aplicado la divi
 int a = 10;
 int b = 5;
 int residuo = a % b;
-cout << "Resultado del residuo  es : " << residuo << endl;
+System.out.println("Resultado del residuo  es : " + residuo);
 ```
 ___
 
@@ -67,7 +67,7 @@ Operador unitario que equivale a incrementar o sumar en 1 el valor de la variabl
 ```cplusplus
 int a = 10;
 a++;
-cout << "Incremento es  : " << a << endl;
+System.out.println("Incremento es  : " + a);
 ```
 ____
 * Decremento **--**
@@ -77,5 +77,5 @@ Operador unitario que equivale a decrementar o restar en 1 el valor de la variab
 ```cplusplus
 int a = 10;
 a--;
-cout << "Decremento es  : " << a << endl;
+System.out.println("Decremento es  : " + a);
 ```
