@@ -33,9 +33,12 @@ app/
         └── java/
             └── com/example/myapp/
                 └── MainActivity.java
-                    └── Intent // Clase Intent. Se usa de
+                    └── Intent // Clase Intent. 
                           └── intent.putExtra()
-
+                └── segundaActividad.java
+                        └── Bundle // Clase Bundle. 
+                            └── getIntente().getExtras()
+                            └── bundle.getStrung()                            
 ```
 
 # Clase Intent
