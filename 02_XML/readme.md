@@ -79,3 +79,54 @@ Ejemplo:
 ```XML
 android:layout_height="wrap_content"
 ```
+___
+
+### layout_margin (margenes)
+
+Define el espacio exterior alrededor de una vista o widget. Hay varias propiedades para establecer márgenes en distintas direcciones. Aquí tienes un resumen de todas sus variaciones:
+
+#### Propiedades de márgenes:
+
+* layout_margin:
+
+Define el margen en todos los lados de la vista.
+
+Ejemplo: 
+
+```
+android:layout_margin="16dp"
+```
+
+* layout_marginStart y layout_marginEnd:
+
+Define el margen al inicio y al final de la vista, respetando la direccionalidad del idioma (izquierda o derecha).
+
+Ejemplo:
+```
+android:layout_marginStart="8dp"
+android:layout_marginEnd="8dp"
+```
+
+* layout_marginLeft y layout_marginRight:
+
+Define el margen específicamente en el lado izquierdo o derecho de la vista.
+
+Ejemplo:
+
+```
+android:layout_marginLeft="8dp"
+android:layout_marginRight="8dp"
+```
+
+* layout_marginTop y layout_marginBottom:
+
+
+Define el margen en la parte superior o inferior de la vista.
+
+Ejemplo:
+
+```
+android:layout_marginTop="8dp"
+android:layout_marginBottom="8dp"
+```
+___
