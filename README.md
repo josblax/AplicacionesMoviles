@@ -80,7 +80,9 @@ ____
         ├── ArrayList (Lista de arreglos)
         ├── Class (clase)
         ├── Interface (interfases)    
-    
+├── Parte V Practicas 
+    ├── Practica #1 Calculo de Masa Corporal
+    ├── Practica #2 Calculo de Pago de Estacionamiento
 ```
 
 
