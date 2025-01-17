@@ -22,5 +22,13 @@ Características de los principales layouts
 
 4. Admite pesos (weight) para distribuir espacio entre los elementos.
 
+## Table Layout
 
+1. Dispone elementos en forma de tabla, usando filas y columnas.
+
+2. Cada fila es una instancia de **TableRow**, que a su vez puede contener varias vistas.
+
+3. Se puede definir el peso de las columnas para ajustar el tamaño de las mismas.
+
+4. Ideal para layouts que requieran una disposición tipo tabla, aunque puede ser menos flexible que otros tipos de layouts.
 
