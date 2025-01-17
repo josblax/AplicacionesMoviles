@@ -55,8 +55,9 @@ La clase Intent es una parte fundamental del sistema de mensajería de Android. 
 
 Su aplicación debe contar con los siguientes elementos gráficos:
 
-1. TextViews para representar las etiquetas de Entrada y Salida, así como la estancia en minutos representado por los 999999 y el monto a pagar representado por $$$$$,así como los dos puntos ":", que esta entre las horas y los minutos de la entrada y salida.
-2. EditText para representar las horas y los minutos de entrada y salida.
+1. TextViews. Para representar las etiquetas de Entrada y Salida, en este caso será ocupada en la segunda actividad para representar la clave y en la actividad principal se usará la palabra "clave".
+2. EditText. Para representar las horas y los minutos de entrada y salida.
+3. Button. Para ejecutar la acción enviar la clave a la segunda actividad.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/288c6bdb-6d9f-4a10-a47d-11161b6cd92f" alt="Layout app" width="200" height="400">
