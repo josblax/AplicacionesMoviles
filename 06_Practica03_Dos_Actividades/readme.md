@@ -24,6 +24,8 @@ Esta segunda actividad creará sus propios fuentes de XML y java, como se muestr
 ![image](https://github.com/user-attachments/assets/17770ec4-105a-4562-b771-b9c384eeed03)
 
 
+## Elementos nuevos a aprender
+
 Interface Gráfica del Usuario
 
 
