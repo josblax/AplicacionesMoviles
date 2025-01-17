@@ -13,15 +13,16 @@ app/
 │       └── java/
 │           └── com/example/myapp/
 │               └── MainActivity.java
-│                   └── **TextView** // Clase TextView
-│                   └── **EditText** // Clase EditText
-│                   └── **Button** // Clase Button
-│                   └── **findViewById** // Vincular XML con Java
-│                    └── ** setText**
+│                   └── TextView // Clase TextView
+│                   └── EditText // Clase EditText
+│                   └── Button // Clase Button
+│                   └── findViewById // Vincular XML con Java
+│                    └── setText // Desplegar resultados en Pantalla
 │
 ├── res/
     ├── layout/
         └── activity_main.xml
-            └── **EditText**
-            └── **Button**
+            └── ConstraintLayout
+                └── EditText
+                └── Button
 ```
