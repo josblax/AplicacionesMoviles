@@ -27,3 +27,15 @@ Por ejemplo, este es un diseño XML que usa un LinearLayout vertical para conten
 * **Legibles por humanos y máquinas:** Los documentos XML están basados en texto, lo que los hace fáciles de leer y entender para los humanos. Al mismo tiempo, el formato estructurado permite que el software analice y procese los datos de manera eficiente.
 
 * **Cómo funciona XML:** XML utiliza una estructura jerárquica, con elementos anidados unos dentro de otros. Cada elemento está definido por una etiqueta de inicio y una etiqueta de fin.
+
+## Principales propiedades usadas en XML
+
+### id (identificador de widgets)
+
+Se utiliza para identificar cada widget o vista dentro de un layout. Se puede referenciar a sí misma para alinear versus otros lyouts o widgets o para identificarlo en Java para manipulación de entrada y salida de datos.
+
+Ejemplo:
+
+```XML
+android:id="@+id/titulo"
+```
