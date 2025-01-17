@@ -51,8 +51,18 @@ La clase Intent es una parte fundamental del sistema de mensajería de Android. 
 
 2. **Intents Implícitos:** No especifican un componente exacto, sino que declaran una acción general a realizar, permitiendo que otros componentes de otras aplicaciones manejen el intent. Por ejemplo, puedes usar un intent implícito para accesar los permisos de la aplicación.
 
+# Clase Bundle
 
+La clase Bundle es una estructura de datos que permite almacenar pares clave-valor. Es muy útil para pasar datos entre actividades, fragmentos y otros componentes de la aplicación. 
 
+Ejemplo :
+
+```
+Bundle bundle = getIntent().getExtras();
+if (bundle != null) {
+    String valor = bundle.getString("Llave");
+}
+```
 # Interface Gráfica del Usuario
 
 
