@@ -7,7 +7,7 @@ ____
 
 ```bash
 ├──PARTE I: Introducción
-    ├── Instalación de Android Studio
+    └── Instalación de Android Studio
         ├── Instalación de Android Studio.
         ├── Instalación del Emulador para Android Estudio.
         ├── Fundamentos de una app
@@ -15,36 +15,36 @@ ____
         ├── Que es una actividad?
         ├── Que es una API?
         ├── Java y Kotlin son lenguajes orientados a objetos
-        ├── Como trabajan Java y Android juntos
+        └── Como trabajan Java y Android juntos
 ├── PARTE II Crear un proyecto en Android Studio
     ├── Preeliminar para crear un proyecto con Android Studio
         ├── Conocer el ambiente de desarrollo integrado
         ├── Conocer la interfase de usuario de Android Studio
         ├── Conocer los diferentes componentes que se integran al desarrollo de una app
         ├── Uso de dispositivos virtuales y fisicos para crear una app.
-        ├── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
+        └── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
     ├── Creacion de un proyecto basado en XML y Java.
         ├── Tipo de Actividad (Empty Views Activity)
         ├── Seleccion de Nombre del Proyecto, Lenguaje y SDK.
-        ├── Interfase de Usuario
-            ├── Arbol del Proyecto.
-                ├── Folder manifests
-                    ├── Android Manifests
-                ├── Folder Java
-                    ├── main Java folder
-                        ├── MainActiivity.java!
+        └── Interfase de Usuario
+            └── Arbol del Proyecto.
+                └── Folder manifests
+                    └── Android Manifests
+                └── Folder Java
+                    └── main Java folder
+                        └── MainActiivity.java!
                     ├── androidTest folder
-                    ├── test folder
+                    └── test folder
                 ├── res folder
                     ├── drawable folder
-                    ├── layout folder
-                        ├── activity_main.xml!
+                    └── layout folder
+                        └── activity_main.xml!
                     ├── mipmap folder
                     ├── values folder
-                    ├── xml folder
+                    └── xml folder
             ├── Gradle Scripts
                 ├── build.gradle.kts (Project)
-                ├── build.gradle.kts (Module:app)
+                └── build.gradle.kts (Module:app)
 ├── PARTE III XML
     ├── activity_main.xml
         ├── layouts
@@ -56,34 +56,34 @@ ____
                 ├── grid layout
         ├── Text widgets
             ├── TextView!
-            ├── EditText
+            └── EditText
         ├── Button widgets
             ├── Button
-            ├── ImageButton
+            └── ImageButton
         ├── Image Widgets
-            ├── ImageView!
+            └── ImageView!
         ├── Input Widgets
             ├── CheckBox
             ├── RadioButton
-            ├── Switch
+            └── Switch
         ├── Progress Widgets
-            ├── ProgressBar
+            └── ProgressBar
 ├── Parte IV Java (Instrucciones Comunes)
     ├── Tipos basicos de variables
         ├── Enteros: byte, short, int, long
         ├── Fraccionarios: float, double
         ├── Texto: char, String
-        ├── Boleanos: boolean
+        └── Boleanos: boolean
     ├── Tipos no basicos de estructuras
         ├── String
         ├── Arrays (arreglos)
         ├── ArrayList (Lista de arreglos)
         ├── Class (clase)
-        ├── Interface (interfases)    
+        └── Interface (interfases)    
 ├── Parte V Practicas 
     ├── Practica #1 Calculo de Masa Corporal
     ├── Practica #2 Calculo de Pago de Estacionamiento
-    ├── Practica #3 Crear actividades multiples y enviar información entre actividades
+    └── Practica #3 Crear actividades multiples y enviar información entre actividades
 ```
 
 
