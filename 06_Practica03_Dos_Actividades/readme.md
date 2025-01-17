@@ -4,6 +4,13 @@ Objetivo: Conocer como crear más de una actividad en android studio. La creaci�
 
 Realice la aplicación en Android Studio, que como entrada solicite un código, y esta información sea enviada a una segunda actividad
 
+## Como se añade una actividad?
+
+Los menús para añadir esta segunda actividad son contextuales, tienes que estar posicionado en el menú de Java "com.example.myapplication" y usar el botón derecho del mouse para añadir una nueva actividad como se muestra en la imagen.
+
+![image](https://github.com/user-attachments/assets/f74f20da-5597-44fa-86c9-3930b5549bdb)
+
+
 Racional:
 
 ## Se tiene que meter el boleto del estacionamiento, validarse, calcular el tiempo de entrada                                                                                  y de salida para poder cobrar:
