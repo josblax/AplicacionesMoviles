@@ -24,15 +24,40 @@ Esta segunda actividad creará sus propios fuentes de XML y java, como se muestr
 ![image](https://github.com/user-attachments/assets/17770ec4-105a-4562-b771-b9c384eeed03)
 
 
-## Elementos nuevos a aprender
+# Elementos a Aprender
 
-Interface Gráfica del Usuario
+```
+app/
+├── src/
+    ├── main/
+        └── java/
+            └── com/example/myapp/
+                └── MainActivity.java
+                    └── Intent // Clase Intent. Se usa de
+                          └── intent.putExtra()
+
+```
+
+# Clase Intent
+
+La clase Intent es una parte fundamental del sistema de mensajería de Android. Permite a los componentes de la aplicación (como actividades, servicios y receptores de difusión) comunicarse entre sí. 
+
+## Tipos de Intents
+
+1. **Intents Explícitos:** Especifican el componente exacto que debe manejar el intent, utilizando el nombre completo de la clase. Se usan comúnmente para iniciar una actividad o servicio dentro de tu propia aplicación.
+
+2. **Intents Implícitos:** No especifican un componente exacto, sino que declaran una acción general a realizar, permitiendo que otros componentes de otras aplicaciones manejen el intent. Por ejemplo, puedes usar un intent implícito para accesar los permisos de la aplicación.
+
+
+
+# Interface Gráfica del Usuario
 
 
 Su aplicación debe contar con los siguientes elementos gráficos:
 
 1. TextViews para representar las etiquetas de Entrada y Salida, así como la estancia en minutos representado por los 999999 y el monto a pagar representado por $$$$$,así como los dos puntos ":", que esta entre las horas y los minutos de la entrada y salida.
 2. EditText para representar las horas y los minutos de entrada y salida.
+
 <p align="center">
 <img src="https://github.com/user-attachments/assets/288c6bdb-6d9f-4a10-a47d-11161b6cd92f" alt="Layout app" width="200" height="400">
 </p>
