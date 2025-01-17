@@ -34,6 +34,8 @@ Por ejemplo, este es un diseño XML que usa un LinearLayout vertical para conten
 
 Se utiliza para identificar cada widget o vista dentro de un layout. Se puede referenciar a sí misma para alinear versus otros lyouts o widgets o para identificarlo en Java para manipulación de entrada y salida de datos.
 
+> Se usa el prefijo @+id/ seguido de un nombre de tu elección.
+
 Ejemplo:
 
 ```XML
