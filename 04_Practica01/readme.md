@@ -17,7 +17,8 @@ app/
 │                   └── EditText // Clase EditText
 │                   └── Button // Clase Button
 │                   └── findViewById // Vincular XML con Java
-│                    └── setText // Desplegar resultados en Pantalla
+│                   └── setText // Desplegar resultados en Pantalla
+                    └── getText // Obtener informacion de Pantalla
 │
 ├── res/
     ├── layout/
