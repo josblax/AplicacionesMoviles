@@ -54,7 +54,7 @@ La clase Intent es una parte fundamental del sistema de mensajería de Android. 
 Ejemplo:
 
 ```
-paso = et.getText().toString().trim();
+                paso = et.getText().toString().trim();
                 Intent intent = new Intent(MainActivity.this, Actividad2.class);
                 intent.putExtra("llave", paso);
                 startActivity(intent);
@@ -67,10 +67,11 @@ La clase Bundle es una estructura de datos que permite almacenar pares clave-val
 Ejemplo :
 
 ```
-Bundle bundle = getIntent().getExtras();
-if (bundle != null) {
-    String valor = bundle.getString("llave");
-}
+            Bundle bundle = getIntent().getExtras();
+            if (bundle != null)
+             {
+                String valor = bundle.getString("llave");
+             }
 ```
 # Interface Gráfica del Usuario
 
