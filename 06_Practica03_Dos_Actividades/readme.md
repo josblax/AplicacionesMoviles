@@ -59,7 +59,15 @@ Su aplicación debe contar con los siguientes elementos gráficos:
 2. EditText. Para representar las horas y los minutos de entrada y salida.
 3. Button. Para ejecutar la acción enviar la clave a la segunda actividad.
 
+* Actividad Principal
+  
 <p align="center">
 <img src="https://github.com/user-attachments/assets/288c6bdb-6d9f-4a10-a47d-11161b6cd92f" alt="Layout app" width="200" height="400">
+</p>
+
+* Actividad Secundaria 
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/a32526a2-c109-4345-8632-33a698134a8b" alt="Layout app" width="200" height="400">
 </p>
 
