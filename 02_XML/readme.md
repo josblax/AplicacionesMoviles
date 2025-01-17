@@ -41,3 +41,22 @@ Ejemplo:
 ```XML
 android:id="@+id/titulo"
 ```
+
+### layout_width (ancho de la vista)
+
+Define el ancho de un componente en un layout. Es una de las propiedades fundamentales que debes especificar al diseñar tu interfaz de usuario. Los valores comunes para layout_width son:
+
+* wrap_content: El ancho del componente se ajusta al tamaño de su contenido.
+
+* match_parent: El componente toma todo el ancho disponible del contenedor padre.
+
+* Valor específico en píxeles o dp (density-independent pixels):
+
+> Puedes establecer un valor fijo, como 100dp, para definir el ancho exacto del componente.
+
+
+Ejemplo:
+
+```XML
+android:layout_width="wrap_content"
+```
