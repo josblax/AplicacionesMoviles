@@ -10,6 +10,10 @@ Los menús para añadir esta segunda actividad son contextuales, tienes que esta
 
 ![image](https://github.com/user-attachments/assets/f74f20da-5597-44fa-86c9-3930b5549bdb)
 
+Aparecerá un submenú para nombrar y establecer el lenguaje de la segunda actividad, como se muestra en la imagen abajo:
+
+![image](https://github.com/user-attachments/assets/6c2e4bf4-2139-48a6-b372-769c6e4247c2)
+
 
 Racional:
 
