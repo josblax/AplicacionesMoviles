@@ -85,7 +85,7 @@ ___
 
 Define el espacio exterior alrededor de una vista o widget. Hay varias propiedades para establecer márgenes en distintas direcciones. Aquí tienes un resumen de todas sus variaciones:
 
-#### Propiedades de márgenes:
+#### Propiedades de los márgenes
 
 * layout_margin:
 
@@ -128,5 +128,100 @@ Ejemplo:
 ```
 android:layout_marginTop="8dp"
 android:layout_marginBottom="8dp"
+```
+___
+
+### gravity (gravedad/alineado)
+
+Se Define para especificar cómo se debe alinear el contenido de una vista dentro de sí misma. Es diferente de layout_gravity, que se usa para alinear una vista dentro de su contenedor padre.
+
+gravity: La propiedad gravity se usa principalmente en vistas como TextView, EditText, y Button. Aquí hay algunas de las opciones más comunes para usar con gravity:
+
+* top: Alinea el contenido en la parte superior de la vista.
+
+* bottom: Alinea el contenido en la parte inferior de la vista.
+
+* left: Alinea el contenido a la izquierda de la vista.
+
+* right: Alinea el contenido a la derecha de la vista.
+
+* center: Alinea el contenido en el centro de la vista, tanto horizontal como verticalmente.
+
+* center_horizontal: Alinea el contenido en el centro horizontal de la vista.
+
+* center_vertical: Alinea el contenido en el centro vertical de la vista.
+
+Ejemplo:
+
+```
+android:gravity="center"
+```
+___
+
+### text (texto)
+
+Se define para especificar el texto que se muestra en una vista, como un TextView, Button, EditText, entre otros. Esta propiedad es esencial para definir y mostrar contenido textual en la interfaz de usuario.
+
+Ejemplo:
+
+```
+android:text="Ingrese clave : "
+```
+___
+
+#### Otras propiedades relacionadas con text:
+
+Además de text, hay varias propiedades útiles que te permiten personalizar la apariencia y el comportamiento del texto:
+
+___
+
+##### textColor: Define el color del texto.
+
+Ejemplo:
+
+```
+android:textColor="#FF0000"  <!-- Texto en rojo -->
+```
+___
+
+##### textSize: Establece el tamaño del texto.
+
+Ejemplo:
+
+```
+android:textSize="18sp"  <!-- Tamaño de texto de 18sp -->
+```
+___
+
+##### textStyle: Permite aplicar estilos como negrita (bold) o itálica (italic).
+
+Ejemplo:
+
+```
+android:textStyle="bold"  <!-- Texto en negrita -->
+```
+___
+
+##### textAlignment: Define la alineación del texto dentro de la vista.
+
+Ejemplo:
+
+```
+android:textAlignment="center"  <!-- Texto centrado -->
+```
+___
+
+##### fontFamily: Especifica la familia de fuentes para el texto.
+
+Ejemplo:
+
+```
+android:fontFamily="sans-serif"  <!-- Texto en fuente sans-serif -->
+```
+
+##### maxLines: Limita el número de líneas de texto que se pueden mostrar.
+
+```
+android:maxLines="2"
 ```
 ___
