@@ -15,21 +15,14 @@ Aparecerá un submenú para nombrar y establecer el lenguaje de la segunda activ
 ![image](https://github.com/user-attachments/assets/6c2e4bf4-2139-48a6-b372-769c6e4247c2)
 
 
-Racional:
+## Racional:
 
-## Se tiene que meter el boleto del estacionamiento, validarse, calcular el tiempo de entrada                                                                                  y de salida para poder cobrar:
-* Los primeros 30 minutos son gratuitos.
-* Después del minuto 31 hasta la primera hora son $4.00. 
-* En el minuto 61 al 120, se cobrarán $12.00.
-* Del minuto 121 hasta el 180 se cobrarán $26.00.
+La actividad inicial llamada MainActivy.java y activity_main.xml son añadidas inicialmente al crear un nuevo proyecto, si queremos añadir actividades subsecuentes, para el propósito que se necesite, es cuando necesitamos añadir según se mostro en las imagenes anteriores.
 
-## A partir de la hora cuarta se cobrará de la siguiente forma: 
-* Del minuto 01 al 15 = 26 + 4.00 = $30
-* Del minuto 16 al 30 = 30 + 4.00 =$34
-* Del minuto 31 al 45 = 34 + 3.00 =$37
-* Del minuto 46 al 60 = 37 + 3.00 =$40
+Esta segunda actividad creará sus propios fuentes de XML y java, como se muestra en la imagen abajo:
 
-Considerar que la estancia puede ser cualquier numero de horas, 4,5,6 etc... para esto considerar un ciclo que pueda acumular horas completas.
+![image](https://github.com/user-attachments/assets/17770ec4-105a-4562-b771-b9c384eeed03)
+
 
 Interface Gráfica del Usuario
 
