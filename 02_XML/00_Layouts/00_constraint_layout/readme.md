@@ -165,5 +165,7 @@ Ejemplo:
 ```
 app:layout_goneMarginTop="16dp"
 ```
+___
+
 
 > Aunque una restricción que falta no provoca un error de compilación, el Editor de diseño indica las restricciones que faltan como un error en la barra de herramientas. 
