@@ -42,7 +42,7 @@ Ejemplo:
 android:id="@+id/titulo"
 ```
 
-### layout_width (ancho de la vista)
+### layout_width (ancho de la vista o widget)
 
 Define el ancho de un componente en un layout. Es una de las propiedades fundamentales que debes especificar al diseñar tu interfaz de usuario. Los valores comunes para layout_width son:
 
@@ -52,11 +52,30 @@ Define el ancho de un componente en un layout. Es una de las propiedades fundame
 
 * Valor específico en píxeles o dp (density-independent pixels):
 
-> Puedes establecer un valor fijo, como 100dp, para definir el ancho exacto del componente.
+> Puedes establecer un valor fijo, como 80dp, para definir el ancho exacto del componente.
 
 
 Ejemplo:
 
 ```XML
 android:layout_width="wrap_content"
+```
+
+### layout_height (alto de la vista o widget)
+
+definir la altura de un componente en un layout. Es una propiedad fundamental que necesitas especificar para diseñar tu interfaz de usuario. Los valores comunes para layout_height son:
+
+* wrap_content: La altura del componente se ajusta al tamaño de su contenido.
+
+* match_parent: El componente toma toda la altura disponible del contenedor padre.
+
+* Valor específico en píxeles o dp (density-independent pixels):
+
+> Puedes establecer un valor fijo, como 80dp, para definir la altura exacta del componente.
+
+
+Ejemplo:
+
+```XML
+android:layout_height="wrap_content"
 ```
