@@ -6,6 +6,7 @@
 
 # Elementos a Aprender
 
+```
 app/
 ├── src/
 │   ├── main/
@@ -23,3 +24,4 @@ app/
         └── activity_main.xml
             └── **EditText**
             └── **Button**
+```
