@@ -27,3 +27,5 @@ app/
                 └── EditText
                 └── Button
 ```
+
+https://github.com/josblax/AplicacionesMoviles/tree/main/02_XML#readme
