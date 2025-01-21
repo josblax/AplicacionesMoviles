@@ -28,4 +28,10 @@ app/
                 └── Button
 ```
 
+# Componentes comunmente usados:
+
 https://github.com/josblax/AplicacionesMoviles/tree/main/02_XML#readme
+
+# Widgets a usar:
+
+
