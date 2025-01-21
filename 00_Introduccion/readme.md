@@ -1,5 +1,9 @@
 # Introducción
 
+## Disclaimer de algunas imagenes usadas en esta sección 
+
+[*Shared by Open Source Project*](http://code.google.com/policies.html)
+
 ## Instalacion de Android Studio
 
 1. Usar la siguiente liga:
