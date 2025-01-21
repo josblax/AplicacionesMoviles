@@ -1,8 +1,9 @@
 # Introducción
-
+____
 ## Creditos & Disclaimer de algunas imagenes usadas en esta sección usadas bajo permiso explicito de Google 
 
-[*Shared by Open Source Project*](http://code.google.com/policies.html)
+[*Content License*](https://developer.android.com/license)
+___
 
 ## Instalacion de Android Studio
 
