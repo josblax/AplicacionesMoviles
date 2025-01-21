@@ -168,6 +168,17 @@ ___
             └── EditText*
             └── Button*
             └── TextView*
+└── Practica #5 MINI Encuesta 
+        └── Java
+            └── Clases
+                └── CheckBox
+            └── metodos/funciones
+                └── setOnCheckedChangeListener()
+                └── Toast.makeText(MainActivity.this, "Seleccion 2", Toast.LENGTH_SHORT).show())
+        └── XML
+            └── Constraint Layout*
+            └── CheckBox
+            └── com.google.android.material.button.MaterialButton
 ```
 
 
