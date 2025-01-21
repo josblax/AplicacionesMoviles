@@ -1,5 +1,11 @@
-# Introducción
+____
 
+## Creditos & Disclaimer de algunas imagenes usadas en esta sección usadas bajo permiso explicito de Google 
+
+[*Content License*](https://developer.android.com/license)
+___
+
+# Introducción
 
 # Layout usado en estas practicas
 
