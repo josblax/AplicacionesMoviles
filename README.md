@@ -179,6 +179,21 @@ ___
             └── Constraint Layout*
             └── CheckBox
             └── com.google.android.material.button.MaterialButton
+└── Practica #6 MINI Acceso a sitios en Internet 
+        └── Java
+            └── Clases
+                └── RadioGroup
+                └── RadioButton
+                └── Intent   
+            └── metodos/funciones
+                └── intent.setData()
+                └── startActivity(intent);
+        └── XML
+            └── Constraint Layout*
+            └── TextView*
+            └── Button*
+            └── RadioGroup
+                └── RadioButton
 ```
 
 
