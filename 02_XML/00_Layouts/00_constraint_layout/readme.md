@@ -1,3 +1,10 @@
+____
+
+## Creditos & Disclaimer de algunas imagenes usadas en esta sección usadas bajo permiso explicito de Google 
+
+[*Content License*](https://developer.android.com/license)
+___
+
 # Constraint Layout
 
 [Fuente](https://developer.android.com/develop/ui/views/layout/constraint-layout)
