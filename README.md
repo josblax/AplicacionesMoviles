@@ -3,6 +3,10 @@
 ![50%](https://progress-bar.xyz/50)
 ____
 
+## Creditos & Disclaimer de algunas imagenes usadas en esta sección usadas bajo permiso explicito de Google 
+
+[*Shared by Open Source Project*](http://code.google.com/policies.html)
+___
 ## Mapa de aprendizaje
 
 ```bash
