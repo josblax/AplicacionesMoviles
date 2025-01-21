@@ -1,5 +1,13 @@
 # Ambiente de Desarrollo Integrado.
 
+____
+
+## Creditos & Disclaimer de algunas imagenes usadas en esta sección usadas bajo permiso explicito de Google 
+
+[*Content License*](https://developer.android.com/license)
+
+___
+
 ## Estructura del Proyecto
 
 En Android Studio, la estructura del folder java es fundamental para organizar el código fuente de tu aplicación. Contenido:
