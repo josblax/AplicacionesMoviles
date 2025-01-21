@@ -84,8 +84,32 @@ ___
         ├── ArrayList (Lista de arreglos)
         ├── Class (clase)
         └── Interface (interfases)    
-├── Parte V Practicas 
+├── Parte V Practicas
+    ├── Practica #0 Tarjeta de Presentacion
+        └── TableLayout
+            └── TableRow
+        └── TextView
+        └── Vector Asset
+        └── ImageView
     ├── Practica #1 Calculo de Masa Corporal
+        └── Java
+            └── Clases
+                └── EditText
+                └── Button
+                └── TextView
+            └── metodos/funciones
+                └── findViewById()
+                └── getText()
+                └── setText()
+                └── setOnClickListener()
+        └── XML
+            └── Constraint Layout
+            └── EditText
+            └── Button
+            └── TextView*
+        └── res
+            └── drawable
+                 └── vector asset
     ├── Practica #2 Calculo de Pago de Estacionamiento
     └── Practica #3 Crear actividades multiples y enviar información entre actividades
 ```
