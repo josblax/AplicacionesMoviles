@@ -147,6 +147,27 @@ ___
             └── EditText*
             └── Button*
             └── TextView*
+└── Practica #4 Cajero automático con dos actividades, la actividad principal introduccion de password y consulta, retiro de saldos
+        └── Java
+            └── Clases
+                └── Intent*
+                └── Bundle*
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+                └── Intent()* // Llamado de una actividad
+                └── intent.putExtra()* // Guardar datos para exportar a otra actividad 
+                └── bundle.getString()* // Importar datos a una actividad 
+        └── XML
+            └── Constraint Layout*
+            └── EditText*
+            └── Button*
+            └── TextView*
 ```
 
 
