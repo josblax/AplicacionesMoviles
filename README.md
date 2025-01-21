@@ -110,8 +110,43 @@ ___
         └── res
             └── drawable
                  └── vector asset
-    ├── Practica #2 Calculo de Pago de Estacionamiento
+    ├── Practica #2 Calculo de Pago de Estacionamiento (EX. FINAL 2023)
+        └── Java
+            └── Clases
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+        └── XML
+            └── Constraint Layout*
+            └── EditText*
+            └── Button*
+            └── TextView*
     └── Practica #3 Crear actividades multiples y enviar información entre actividades
+        └── Java
+            └── Clases
+                └── Intent
+                └── Bundle
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+                └── Intent() // Llamado de una actividad
+                └── intent.putExtra() // Guardar datos para exportar a otra actividad 
+                └── bundle.getString() // Importar datos a una actividad 
+        └── XML
+            └── Constraint Layout*
+            └── EditText*
+            └── Button*
+            └── TextView*
 ```
 
 
