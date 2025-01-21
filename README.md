@@ -5,7 +5,7 @@ ____
 
 ## Creditos & Disclaimer de algunas imagenes usadas en esta sección usadas bajo permiso explicito de Google 
 
-[*Shared by Open Source Project*](http://code.google.com/policies.html)
+[*Shared by Open Source Project*]([http://code.google.com/policies.html](https://developer.android.com/license))
 ___
 ## Mapa de aprendizaje
 
