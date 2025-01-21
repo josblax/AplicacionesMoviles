@@ -184,16 +184,40 @@ ___
             └── Clases
                 └── RadioGroup
                 └── RadioButton
-                └── Intent   
+                └── ArrayAdapter
+                └── EditText   
             └── metodos/funciones
-                └── intent.setData()
-                └── startActivity(intent);
+                
         └── XML
             └── Constraint Layout*
             └── TextView*
             └── Button*
             └── RadioGroup
                 └── RadioButton
+
+└── Practica #7 Conversion de Unidades
+        └── Java
+            └── Clases
+                └── Spinner
+                └── ArrayAdapter
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+                └── spinner.setOnItemSelectedListener()
+                    └── onItemSelected()
+        └── XML
+            └── Constraint Layout*
+            └── Spinner
+            └── Button*
+            └── EditView*
+            └── TextView*
+        └── values
+            └── strings.xml
 ```
 
 
