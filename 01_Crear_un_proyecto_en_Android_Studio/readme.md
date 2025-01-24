@@ -15,7 +15,7 @@ Selecciona el boton crear un proyecto, donde te mostrará una serie de actividad
 
 ## Asigna un nombre a tu proyecto
 
-En la casilla "Name" asigna un nombre a tu proyecto que se relacione con la actividad o proyecto que estas haciendo. Selecciona el lenguaje, en la casilla "Language" y asigna el lenguaje "Java"
+En la casilla "Name" asigna un nombre a tu proyecto que se relacione con la actividad o proyecto que estas haciendo. Selecciona el lenguaje, en la casilla "Language" y asigna el lenguaje "Java", y oprime "Finish" para continuar.
 
 ![image](https://github.com/user-attachments/assets/b195795f-70fe-42d9-a95c-37864a1e4e81)
 
