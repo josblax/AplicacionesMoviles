@@ -7,6 +7,11 @@ ____
 [*Content License*](https://developer.android.com/license)
 
 ___
+## Proceso inicial
+
+Selecciona el boton crear un proyecto, donde te mostrará una serie de actividades, selecciona "Empty Views Activity"
+
+![image](https://github.com/user-attachments/assets/9d604a91-7fad-4ec8-bbd5-f858ca2f132d)
 
 ## Estructura del Proyecto
 
