@@ -13,6 +13,13 @@ Selecciona el boton crear un proyecto, donde te mostrará una serie de actividad
 
 ![image](https://github.com/user-attachments/assets/9d604a91-7fad-4ec8-bbd5-f858ca2f132d)
 
+## Asigna un nombre a tu proyecto
+
+En la casilla "Name" asigna un nombre a tu proyecto que se relacione con la actividad o proyecto que estas haciendo. Selecciona el lenguaje, en la casilla "Language" y asigna el lenguaje "Java"
+
+![image](https://github.com/user-attachments/assets/b195795f-70fe-42d9-a95c-37864a1e4e81)
+
+
 ## Estructura del Proyecto
 
 En Android Studio, la estructura del folder java es fundamental para organizar el código fuente de tu aplicación. Contenido:
