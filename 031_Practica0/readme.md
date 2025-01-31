@@ -14,9 +14,13 @@ El equipo de trabajo de su empresa le ha solicitado crear una vista de una tarje
 ```XML
 ├── Practica #0 Tarjeta de Presentacion
     └── Elementos XML
+        └── ConstraintLayout
         └── TableLayout
             └── TableRow
+        └── ScrollView
         └── TextView
         └── Vector Asset
         └── ImageView
+    └── colors.xml
+    └── borders.xml
 ```
