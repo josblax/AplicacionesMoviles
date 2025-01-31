@@ -44,7 +44,5 @@ El siguiente diseño de ejemplo tiene dos filas y dos celdas en cada una. La cap
     </TableRow>
 </TableLayout>
 ```
-<p align="center">
-<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/tarpres2.png"/>
-</p>
+
 
