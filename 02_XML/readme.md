@@ -65,8 +65,9 @@ Por ejemplo, este es un diseño XML que usa un LinearLayout vertical para conten
 
 * **Cómo funciona XML:** XML utiliza una estructura jerárquica, con elementos anidados unos dentro de otros. Cada elemento está definido por una etiqueta de inicio y una etiqueta de fin.
 
-## Principales propiedades usadas en XML
+## Principales atributos usados en XML
 
+___
 ### id (identificador de widgets)
 
 Se utiliza para identificar cada widget o vista dentro de un layout. Se puede referenciar a sí misma para alinear versus otros lyouts o widgets o para identificarlo en Java para manipulación de entrada y salida de datos.
@@ -78,6 +79,7 @@ Ejemplo:
 ```XML
 android:id="@+id/titulo"
 ```
+___
 
 ### layout_width (ancho de la vista o widget)
 
@@ -134,7 +136,7 @@ Ejemplo:
 android:layout_margin="16dp"
 ```
 
-* layout_marginStart y layout_marginEnd:
+#### layout_marginStart y layout_marginEnd:
 
 Define el margen al inicio y al final de la vista, respetando la direccionalidad del idioma (izquierda o derecha).
 
@@ -144,7 +146,7 @@ android:layout_marginStart="8dp"
 android:layout_marginEnd="8dp"
 ```
 
-* layout_marginLeft y layout_marginRight:
+#### layout_marginLeft y layout_marginRight:
 
 Define el margen específicamente en el lado izquierdo o derecho de la vista.
 
@@ -155,7 +157,7 @@ android:layout_marginLeft="8dp"
 android:layout_marginRight="8dp"
 ```
 
-* layout_marginTop y layout_marginBottom:
+#### layout_marginTop y layout_marginBottom:
 
 
 Define el margen en la parte superior o inferior de la vista.
