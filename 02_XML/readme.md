@@ -5,6 +5,36 @@ ____
 [*Content License*](https://developer.android.com/license)
 ___
 
+```bash
+├──PARTE I: Elementos Básicos
+    └── eXtensible Markup Language
+        ├── Función principal. Formato de transporte y guardar información.
+    └── Estructura
+        ├── Declaración de XML <?xml version="1.0" encoding="utf-8"?>
+        ├── Elementos (Tags) Widgets/Layouts
+            ├── Etiquetas de Inicio/Fin
+                ├── <TextView...atributos.../>
+                ├── <TableLayout...atributos...></TableLayout>
+            ├── Algunos elementos se pueden anidar
+        ├── Atributos
+            ├── Formato: nombre_atributo/"valor"
+        ├── Arbol XML
+            ├── Relaciones padre/hijo ("parent")
+            ├── Existe un elemento "raiz"
+        ├── Namespaces. Define un espacio del elemento para no ser confundido por otros elementos
+            ├── atributo <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            ├── xmlns:app="http://schemas.android.com/apk/res-auto". Atributos customizados
+            ├── xmlns:tools="http://schemas.android.com/tools". Relevantes solo para android studio
+├── PARTE II Sintaxis General XML
+    ├── Es sensible a mayusculas y minusculas
+    ├── Revisa que las anidaciones sean adecuadas.
+    ├── Los atributos son encapsulados en...
+        ├── " " comillas dobles
+        ├── ' ' comillas sencillas
+        └── El cierre de etiquetas
+            └── Es requerido por todos los elementos.
+```
+___
 # Escribir en XML Extensible Markup Language
 
 Con el vocabulario XML de Android, puedes diseñar rápidamente los diseños de la interfaz de usuario y los elementos de pantalla que contienen, de la misma manera que creas páginas web en HTML con una serie de elementos anidados.
