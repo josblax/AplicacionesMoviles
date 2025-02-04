@@ -16,6 +16,8 @@ app/
 │                   └── TextView // Clase TextView
 │                   └── EditText // Clase EditText
 │                   └── Button // Clase Button
+│                   └── interfase setOnClickListener()
+│                        └── método onClick()
 │                   └── findViewById // Vincular XML con Java
 │                   └── setText // Desplegar resultados en Pantalla
                     └── getText // Obtener informacion de Pantalla
