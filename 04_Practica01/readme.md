@@ -6,7 +6,7 @@
 
 # Elementos a Aprender
 
-```
+```bash
 app/
 ├── src/
 │   ├── main/
