@@ -37,5 +37,5 @@ https://github.com/josblax/AplicacionesMoviles/tree/main/02_XML#readme
 
 # Widgets a usar:
 
-
+[Liga a widgets](https://github.com/josblax/AplicacionesMoviles/tree/main/02_XML/01_Widgets)
 
