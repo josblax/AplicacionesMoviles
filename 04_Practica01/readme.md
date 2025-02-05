@@ -28,6 +28,7 @@ app/
             └── ConstraintLayout
                 └── EditText
                 └── Button
+                └── TextView
 ```
 
 # Componentes comunmente usados en XML para todos los widgets, layouts, vector assets etc :
