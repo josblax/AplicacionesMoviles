@@ -39,7 +39,7 @@ ___
 
 ___
 
-6. Permite que instale el ADB, si estás en Windows.
+6. Permite que instale el ADB (Android Device Bridge), si estás en Windows.
 
 <img width="582" alt="image" src="https://github.com/user-attachments/assets/175f6e95-2401-443a-9fb3-844e296a9d64" />
 
