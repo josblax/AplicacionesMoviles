@@ -10,6 +10,11 @@ Vector Asset Studio agrega un gráfico vectorial al proyecto como un archivo XML
 
 Android 4.4 (nivel de API 20) y versiones anteriores no admiten elementos de diseño vectoriales. Si el nivel mínimo de API se establece en uno de estos niveles de API, tiene dos opciones al utilizar Vector Asset Studio: generar archivos de gráficos de red portátiles (PNG) (el valor predeterminado) o utilizar la biblioteca de compatibilidad.
 
+> Un archivo de gráficos vectoriales escalables (SVG, por sus siglas en inglés) es un formato de imagen basado en vectores que permite escalar sin perder calidad. A diferencia de los formatos de imagen tradicionales como JPEG o PNG, que están compuestos por píxeles, los archivos SVG utilizan ecuaciones matemáticas para definir formas, líneas y colores. fuente: adobe.com
+
+
+
+
 # Agregar un vector asset
 
 Selecciona File->New->Vector Asset
