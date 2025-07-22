@@ -9,23 +9,23 @@ Ejemplo: "nombre": "Juan"
 
 ### Ejemplo:
 
-'''JSON
+```JSON
 {
   "ciudad": "México",
   "poblacion": 21000000
 }
 
-'''
+```
 
 3. Listas o arreglos []: Para múltiples valores, se usan corchetes.
 
 ### Ejemplo:
 
-'''JSON
+```JSON
 {
   "monedas": ["USD", "EUR", "JPY"]
 }
-'''
+```
 
 4. Tipos de datos permitidos
 String: "texto"
@@ -69,22 +69,22 @@ Usas clases como JSONObject, JSONArray, y métodos como getString(), getDouble()
 
 ### Ejemplo:
 
-'''Java
+```Java
 JSONObject json = new JSONObject(jsonStr);
 double tasaAUD = json.getJSONObject("rates").getDouble("AUD");
-'''
+```
 
 ## Como escribir en JSON
 
-1.- Cómo usar y escribir en JSON (máximo 10 claves)
-2.- Estructura de clave y valor: Todo se compone de pares "clave": valor.
-3.- Llaves {} para objetos: Agrupan pares clave-valor.
-4.- Corchetes [] para listas: Úsalos para arrays, como ["USD","EUR"].
-5.- Strings con comillas dobles: Siempre deben ir entre " ".
-6.- Valores pueden ser: Números, cadenas, booleanos (true/false), null, objetos o listas.
-7.- Jerarquía anidada: Puedes tener objetos dentro de objetos, como en "rates".
-8.- Separar con comas: Cada par clave-valor se separa con ,.
-9.- No se permite comentarios: JSON es limpio y sin anotaciones.
-10.- Formato legible por máquinas: Usado en APIs, config files, apps móviles, etc.
-11.- Extensión estándar: .json es el formato de archivo utilizado.
+1. Cómo usar y escribir en JSON (máximo 10 claves)
+2. Estructura de clave y valor: Todo se compone de pares "clave": valor.
+3. Llaves {} para objetos: Agrupan pares clave-valor.
+4.  Corchetes [] para listas: Úsalos para arrays, como ["USD","EUR"].
+5.  Strings con comillas dobles: Siempre deben ir entre " ".
+6.  Valores pueden ser: Números, cadenas, booleanos (true/false), null, objetos o listas.
+7. Jerarquía anidada: Puedes tener objetos dentro de objetos, como en "rates".
+8. Separar con comas: Cada par clave-valor se separa con ,.
+9. No se permite comentarios: JSON es limpio y sin anotaciones.
+10. Formato legible por máquinas: Usado en APIs, config files, apps móviles, etc.
+11. Extensión estándar: .json es el formato de archivo utilizado.
 
