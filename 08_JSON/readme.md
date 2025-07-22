@@ -43,7 +43,7 @@ Array: [...]
 
 ### Ejemplo:
 
-'''JSON
+```JSON
 
   {
   "usuario": {
@@ -51,6 +51,7 @@ Array: [...]
     "edad": 30
   }
 }
+```
 
 9. Formato amigable para máquinas y humanos: Fácil de leer tanto por humanos como por software. Ideal para APIs RESTful, configuración de frontend/backend, IoT, etc.
 
