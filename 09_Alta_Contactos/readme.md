@@ -127,3 +127,19 @@ Bitmap resized = Bitmap.createScaledBitmap(bitmap, 500, 500, true);
 resized.compress(Bitmap.CompressFormat.JPEG, 50, baos);
 return baos.toByteArray();
 ```
+### 6. Aplicación de las operaciones
+
+* Todas las operaciones de la lista cpo se ejecutan de forma atómica usando:
+
+```Java
+getContentResolver().applyBatch(ContactsContract.AUTHORITY, cpo);
+```
+
+### 7. Limpieza de pantalla
+
+* Una vez creado el contacto, los campos se limpian para que el usuario pueda crear otro.
+
+```Java
+binding.nombre.setText(""); // etc.
+imagenURI = null;
+```
