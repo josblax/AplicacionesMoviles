@@ -95,4 +95,21 @@ MIME Type: Photo.CONTENT_ITEM_TYPE
 
 Campos usados: PHOTO (byte[])
 
+> El MIME Type (Multipurpose Internet Mail Extensions) es una forma estándar de identificar el tipo de contenido que se está manejando, especialmente en comunicaciones por internet como HTTP o correo electrónico.
+
+> ¿Para qué sirve?
+
+Le dice al navegador, servidor o aplicación qué tipo de datos está recibiendo o enviando.
+
+Permite que el sistema sepa cómo procesar o mostrar ese contenido.
+
+
+En Android (como en tu tabla de guardar contacto): Cada dato que se guarda (nombre, teléfono, correo, etc.) se identifica con un MIME Type específico para que el sistema sepa cómo tratarlo. Por ejemplo:
+
+vnd.android.cursor.item/phone_v2 → número de teléfono
+
+vnd.android.cursor.item/email_v2 → correo electrónico
+
+vnd.android.cursor.item/photo → fotografía
+
 
