@@ -112,4 +112,18 @@ vnd.android.cursor.item/email_v2 → correo electrónico
 
 vnd.android.cursor.item/photo → fotografía
 
+### 5. ¿Qué es imageBytes?
+Es una variable byte[] que contiene los datos de la imagen convertida desde la URI.
 
+Se obtiene usando el método imageUriToBytes().
+
+#### Explicación de imageUriToBytes():
+
+* Convierte la imagen seleccionada (imagenURI) en un arreglo de bytes.
+* La imagen se redimensiona (500x500) y se comprime en JPEG con calidad 50%.
+
+```Java
+Bitmap resized = Bitmap.createScaledBitmap(bitmap, 500, 500, true);
+resized.compress(Bitmap.CompressFormat.JPEG, 50, baos);
+return baos.toByteArray();
+```
