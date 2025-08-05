@@ -39,11 +39,60 @@ Estas operaciones se procesan en bloque mediante applyBatch(...).
 
 ### Pasos dentro de guardarContacto():
 
+#### Contacto base (RawContact)
 
-0	Contacto base (RawContact)	RawContacts.CONTENT_URI	(no aplica)	ACCOUNT_TYPE, ACCOUNT_NAME
-1	Nombre y apellido	Data.CONTENT_URI	StructuredName.CONTENT_ITEM_TYPE	GIVEN_NAME, FAMILY_NAME
-2	Teléfono móvil	Data.CONTENT_URI	Phone.CONTENT_ITEM_TYPE	NUMBER, TYPE_MOBILE
-3	Teléfono casa	Data.CONTENT_URI	Phone.CONTENT_ITEM_TYPE	NUMBER, TYPE_HOME
-4	Correo electrónico	Data.CONTENT_URI	Email.CONTENT_ITEM_TYPE	DATA, TYPE_WORK
-5	Dirección postal	Data.CONTENT_URI	StructuredPostal.CONTENT_ITEM_TYPE	FORMATTED_ADDRESS, TYPE_HOME
-6	Fotografía (si se selecciona imagen)	Data.CONTENT_URI	Photo.CONTENT_ITEM_TYPE
+URI destino: RawContacts.CONTENT_URI
+
+MIME Type: No aplica
+
+Campos usados: ACCOUNT_TYPE, ACCOUNT_NAME
+
+#### Nombre y apellido
+
+URI destino: Data.CONTENT_URI
+
+MIME Type: StructuredName.CONTENT_ITEM_TYPE
+
+Campos usados: GIVEN_NAME, FAMILY_NAME
+
+#### Teléfono móvil
+
+URI destino: Data.CONTENT_URI
+
+MIME Type: Phone.CONTENT_ITEM_TYPE
+
+Campos usados: NUMBER, TYPE_MOBILE
+
+#### Teléfono de casa
+
+URI destino: Data.CONTENT_URI
+
+MIME Type: Phone.CONTENT_ITEM_TYPE
+
+Campos usados: NUMBER, TYPE_HOME
+
+#### Correo electrónico
+
+URI destino: Data.CONTENT_URI
+
+MIME Type: Email.CONTENT_ITEM_TYPE
+
+Campos usados: DATA, TYPE_WORK
+
+#### Dirección postal
+
+URI destino: Data.CONTENT_URI
+
+MIME Type: StructuredPostal.CONTENT_ITEM_TYPE
+
+Campos usados: FORMATTED_ADDRESS, TYPE_HOME
+
+#### Fotografía
+
+URI destino: Data.CONTENT_URI
+
+MIME Type: Photo.CONTENT_ITEM_TYPE
+
+Campos usados: PHOTO (byte[])
+
+
