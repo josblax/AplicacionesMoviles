@@ -21,3 +21,11 @@ imagePickerLauncher = registerForActivityResult(...);
 imagenURI = result.getData().getData();
 
 ```
+
+
+## 3. Evento del botón para guardar contacto
+* Cuando se presiona el botón, se valida el permiso y se ejecuta el método guardarContacto().
+
+```Java
+binding.boton.setOnClickListener(v -> guardarContacto());
+```
