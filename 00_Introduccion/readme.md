@@ -145,7 +145,13 @@ ___
 
 11. Gradle.
 
-Gradle es un poderoso sistema de compilación que se usa en el desarrollo de Android que te permite definir tu proyecto y dependencias, y distinguir entre diferentes tipos y tipos de compilación. Gradle usa un lenguaje específico de dominio (DSL) que brinda a los desarrolladores un control casi completo sobre el proceso de compilación. Cuando activas una compilación en Android Studio, Gradle es la herramienta que trabaja en segundo plano para compilar y empaquetar tu app. Examina las dependencias que declaraste en tus archivos build.gradle y crea una secuencia de comandos de compilación en consecuencia. El uso de Gradle en el desarrollo de Android requiere la edición continua de los archivos build.gradle para administrar las dependencias de la app, las variantes de compilación, las configuraciones de firma y otros aspectos esenciales relacionados con la compilación de tu app.
+Gradle es un poderoso sistema de compilación que se usa en el desarrollo de Android que te permite definir tu proyecto y dependencias, y distinguir entre diferentes tipos y tipos de compilación. 
+
+Gradle usa un lenguaje específico de dominio (DSL) que brinda a los desarrolladores un control casi completo sobre el proceso de compilación. Cuando activas una compilación en Android Studio, Gradle es la herramienta que trabaja en segundo plano para compilar y empaquetar tu app. 
+
+Examina las dependencias que declaraste en tus archivos build.gradle y crea una secuencia de comandos de compilación en consecuencia. El uso de Gradle en el desarrollo de Android requiere la edición continua de los archivos build.gradle para administrar las dependencias de la app, las variantes de compilación, las configuraciones de firma y otros aspectos esenciales relacionados con la compilación de tu app.
+
+[*fuente:*](https://roadmap.sh/android)
 
 ---
 
