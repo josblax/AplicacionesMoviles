@@ -1,0 +1,22 @@
+Para iniciar un proyecto en **Kotlin** en **Android Studio**, la plantilla más común y recomendada es la **`Empty Views Activity`** (o `Empty Activity` en versiones anteriores).
+
+---
+
+### ¿Por qué usar la plantilla `Empty Views Activity`?
+
+Esta plantilla te proporciona un punto de partida mínimo y limpio, que incluye solo los archivos esenciales para que tu aplicación se ejecute:
+
+* **`MainActivity.kt`**: Un archivo de clase en Kotlin que maneja la lógica de la pantalla.
+* **`activity_main.xml`**: Un archivo de diseño XML que define la interfaz de usuario de la pantalla.
+* **`build.gradle.kts`**: Los archivos de configuración de Gradle para gestionar las dependencias y la construcción del proyecto.
+
+Esta configuración es ideal porque te permite entender la estructura básica de una app Android sin distracciones. Puedes empezar a agregar tus propios componentes y lógica de manera incremental, lo que es perfecto para fines educativos o para proyectos simples.
+
+### Alternativas Comunes
+
+Aunque la plantilla "Empty Views Activity" es la más utilizada, Android Studio ofrece otras opciones para diferentes propósitos:
+
+* **`Basic Views Activity`**: Similar a la vacía, pero incluye un **`TextView`** y un **`Button`** de ejemplo en el layout, junto con una lógica básica para el botón.
+* **`Bottom Navigation Views Activity`**: Ideal para aplicaciones con una barra de navegación inferior, ya que preconfigura la estructura de pestañas.
+* **`Empty Compose Activity`**: Si estás explorando **Jetpack Compose**, la moderna herramienta de UI de Android, esta es la plantilla que debes usar. A diferencia de las otras, no utiliza XML para el diseño.
+
