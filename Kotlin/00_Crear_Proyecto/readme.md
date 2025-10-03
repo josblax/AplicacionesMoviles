@@ -1,5 +1,3 @@
-Aquí tienes una sola petición en Markdown que combina las dos últimas, con la segunda petición colocada al principio.
-
 ---
 
 ### Explicación del proyecto "Hello World" en Android Studio
