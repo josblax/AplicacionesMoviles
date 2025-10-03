@@ -19,5 +19,21 @@
 
 ## Numeros y matematicas
 
+Aquí tienes la tabla de precedencia de operadores, traducida al español y en formato Markdown.
 
-![Precedencia](https://github.com/josblax/FP/blob/main/imagenes/precedencia.png)
+| Prioridad | Operadores | Descripción |
+| :---: | :--- | :--- |
+| **Baja** | `x or y`, `lambda arguments: expression` | **O lógico** (y evaluado solo si x es falso), función anónima |
+| | `x and y` | **Y lógico** (y evaluado solo si x es verdadero) |
+| | `not x` | **Negación lógica** |
+| | `<`, `<=`, `>`, `>=`, `==`, `!=`, `is`, `is not`, `in`, `not in` | **Operadores de comparación**, pruebas de identidad, pertenencia a secuencia |
+| | `x \| y` | **O a nivel de bit** |
+| | `x ^ y` | **O Exclusivo (XOR) a nivel de bit** |
+| | `x & y` | **Y a nivel de bit** |
+| | `x << n`, `x >> n` | **Desplazamiento a la izquierda o derecha** de x por n bits |
+| | `x + y`, `x - y` | **Adición numérica** o concatenación de secuencias, **sustracción** |
+| | `x * y`, `x / y`, `x % y` | **Multiplicación** o repetición de secuencias, **división**, **módulo** |
+| | `-x`, `+x`, `~x` | **Negación unaria**, identidad, negación a nivel de bit |
+| | `x[i]`, `x[i:j]`, `x.y`, `x(...)` | **Indexación** y rebanado de secuencias, cualificación, **llamada de función** |
+| **Alta** | `(...)`, `[...]`, `{...}`, `...` | **Tupla**, **Lista**, **Diccionario**, conversión a cadena de texto |
+
