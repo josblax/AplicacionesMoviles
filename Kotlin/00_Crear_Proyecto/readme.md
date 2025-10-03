@@ -1,5 +1,3 @@
----
-
 ### Explicación del proyecto "Hello World" en Android Studio
 
 Genera una explicación detallada, paso a paso, del proyecto inicial "Hello World" en Kotlin de Android Studio. Incluye la función de cada archivo, el propósito de las abstracciones y el significado de las funciones y variables presentes.
