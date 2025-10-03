@@ -36,6 +36,91 @@ El bucle `for` es extremadamente útil en situaciones cotidianas de programació
   * **Repeticiones Fijas:** Cuando necesitas ejecutar una tarea un número predeterminado de veces, como mostrar una tabla de multiplicar del 1 al 10 o generar un menú con opciones numeradas.
   * **Procesamiento de Datos:** Para analizar o manipular datos almacenados en arreglos, como buscar un elemento específico, sumar todos los valores o encontrar el valor máximo.
 
+Sí, tanto en Java como en C++ existe una versión simplificada del bucle `for` que se conoce como **bucle `for-each`**. En C++, se utiliza el operador de dos puntos (`:`), mientras que en Java, la sintaxis es muy similar.
+
+-----
+
+### Bucle `for-each` en Java
+
+El bucle `for-each` de Java, introducido en la versión 5, está diseñado para iterar sobre los elementos de un array o cualquier colección que implemente la interfaz `Iterable`. Su propósito es simplificar la lectura y escritura del código al eliminar la necesidad de usar una variable de índice para acceder a los elementos.
+
+**Sintaxis:**
+
+```java
+for (Tipo elemento : coleccion) {
+    // Código que se ejecuta para cada elemento
+}
+```
+
+  * `Tipo`: Es el tipo de dato de los elementos en la colección (ej. `String`, `int`).
+  * `elemento`: Una variable temporal que almacenará cada elemento de la colección en cada iteración.
+  * `coleccion`: El array o la colección que se va a recorrer.
+
+-----
+
+### Ciclo `for-each` en C++
+
+En C++, el bucle `for-each` (`for` basado en rango) se introdujo en C++11. También simplifica la iteración sobre contenedores, como `std::vector`, `std::list`, o arreglos nativos, sin la necesidad de índices.
+
+**Sintaxis:**
+
+```cpp
+for (Tipo& elemento : coleccion) {
+    // Código que se ejecuta para cada elemento
+}
+```
+
+  * `Tipo`: Es el tipo de dato de los elementos.
+  * `& elemento`: La referencia (`&`) permite modificar los elementos de la colección dentro del bucle. Sin ella, se trabaja con una copia del elemento.
+  * `coleccion`: El contenedor que se va a recorrer.
+
+-----
+
+### Tabla Comparativa
+
+| Característica | Java (`for-each`) | C++ (`for` basado en rango) |
+| :--- | :--- | :--- |
+| **Sintaxis** | `for (Tipo elemento : coleccion)` | `for (Tipo elemento : coleccion)` |
+| **Puntualidad** | No se pueden modificar los elementos directamente (se trabaja con una copia). | Se pueden modificar los elementos usando una **referencia** (`&`). |
+| **Uso** | Ideal para lectura de elementos. | Ideal para lectura o modificación de elementos. |
+| **Limitación** | No permite acceder al índice del elemento. | Tampoco permite acceder al índice directamente. |
+
+-----
+
+### Ejemplo de Uso
+
+A continuación, un ejemplo de cómo se vería el mismo código en ambos lenguajes, mostrando la simplificación en comparación con el bucle `for` tradicional.
+
+**Java**
+
+```java
+// Ejemplo con un ArrayList de Strings
+ArrayList<String> nombres = new ArrayList<>();
+nombres.add("Ana");
+nombres.add("Juan");
+
+// Bucle for-each en Java
+for (String nombre : nombres) {
+    System.out.println(nombre);
+}
+```
+
+**C++**
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+// Ejemplo con un vector de Strings
+std::vector<std::string> nombres = {"Ana", "Juan"};
+
+// Bucle for-each en C++
+for (const std::string& nombre : nombres) {
+    std::cout << nombre << std::endl;
+}
+```
+
 -----
 
 ### Ejercicios de Dificultad Intermedia
