@@ -1,12 +1,12 @@
 ### La Instrucción `while` en Java
 
-La instrucción `while` es una estructura de control de flujo que se utiliza para ejecutar repetidamente un bloque de código **mientras una condición específica sea verdadera**. A diferencia del bucle `for`, que es ideal para un número conocido de iteraciones, el bucle `while` es perfecto cuando no sabes de antemano cuántas veces se debe repetir el bucle.
+La instrucción `while` es una estructura de control de flujo que se utiliza para ejecutar repetidamente un bloque de código **mientras una condición específica sea verdadera**. A diferencia del ciclo `for`, que es ideal para un número conocido de iteraciones, el ciclo `while` es perfecto cuando no sabes de antemano cuántas veces se debe repetir el bucle.
 
 -----
 
 ### Definición, Sintaxis y Parámetros
 
-El bucle `while` tiene una sintaxis muy simple: consta de la palabra clave `while`, seguida de una condición entre paréntesis. El bloque de código dentro de las llaves `{}` se ejecutará de manera continua mientras la condición se mantenga como `true`.
+El ciclo `while` tiene una sintaxis muy simple: consta de la palabra clave `while`, seguida de una condición entre paréntesis. El ciclo de código dentro de las llaves `{}` se ejecutará de manera continua mientras la condición se mantenga como `true`.
 
 **Sintaxis Genérica:**
 
@@ -16,18 +16,18 @@ while (condicion) {
 }
 ```
 
-  * **Condición**: Es una expresión booleana que se evalúa al inicio de cada iteración. Si la condición es `true`, el bucle continúa. Si es `false`, el bucle termina y el programa sigue con la siguiente instrucción.
+  * **Condición**: Es una expresión booleana que se evalúa al inicio de cada iteración. Si la condición es `true`, el ciclo continúa. Si es `false`, el ciclo termina y el programa sigue con la siguiente instrucción.
 
-Es crucial que dentro del cuerpo del bucle, alguna instrucción **cambie el estado de la condición** para que eventualmente se vuelva falsa. Si no lo hace, el bucle se ejecutará indefinidamente, creando un **bucle infinito**.
+Es crucial que dentro del cuerpo del ciclo, alguna instrucción **cambie el estado de la condición** para que eventualmente se vuelva falsa. Si no lo hace, el ciclo se ejecutará indefinidamente, creando un **bucle infinito**.
 
 -----
 
 ### Utilidad y Usos Reales Comunes
 
-El bucle `while` es útil en situaciones donde el número de repeticiones es indeterminado y depende de un evento externo o de un cambio de estado. Sus usos más comunes incluyen:
+El ciclo `while` es útil en situaciones donde el número de repeticiones es indeterminado y depende de un evento externo o de un cambio de estado. Sus usos más comunes incluyen:
 
   * **Lectura de Entrada de Usuario**: Se puede usar para seguir pidiendo al usuario que ingrese datos hasta que se cumpla una condición, como ingresar un número válido o una palabra clave para salir.
-  * **Procesamiento de Flujos de Datos**: Ideal para leer datos de un archivo o de una conexión de red, donde no se conoce el tamaño total de los datos. El bucle continúa mientras haya más información para leer.
+  * **Procesamiento de Flujos de Datos**: Ideal para leer datos de un archivo o de una conexión de red, donde no se conoce el tamaño total de los datos. El ciclo continúa mientras haya más información para leer.
   * **Validación de Datos**: Útil para asegurarse de que un usuario ingrese un valor dentro de un rango específico, repitiendo la pregunta hasta que la entrada sea correcta.
 
 -----
@@ -38,7 +38,7 @@ A continuación, se presentan cinco ejercicios que utilizan la instrucción `whi
 
 **Ejercicio 1: Búsqueda de un Elemento en un Arreglo**
 
-Busca un número específico en un `array` de enteros. Usa un bucle `while` que termine tan pronto como encuentre el elemento.
+Busca un número específico en un `array` de enteros. Usa un ciclo `while` que termine tan pronto como encuentre el elemento.
 
 ```java
 int[] numeros = {10, 20, 30, 40, 50};
@@ -62,7 +62,7 @@ if (encontrado) {
 
 **Ejercicio 2: Eliminar Elementos de una Lista hasta que esté Vacía**
 
-Elimina elementos de un `ArrayList` uno por uno usando un bucle `while` hasta que la lista quede completamente vacía.
+Elimina elementos de un `ArrayList` uno por uno usando un ciclo `while` hasta que la lista quede completamente vacía.
 
 ```java
 import java.util.ArrayList;
@@ -82,7 +82,7 @@ System.out.println("¡Todas las tareas han sido completadas!");
 
 **Ejercicio 3: Suma Acumulada hasta un Límite**
 
-Usa un bucle `while` para sumar los números de un `ArrayList` hasta que la suma total supere un valor específico (por ejemplo, 50).
+Usa un ciclo `while` para sumar los números de un `ArrayList` hasta que la suma total supere un valor específico (por ejemplo, 50).
 
 ```java
 import java.util.ArrayList;
