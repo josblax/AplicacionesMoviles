@@ -8,7 +8,7 @@ Esta es una guía de temas clave para aprender Java, estructurada de forma jerá
     * Sintaxis y Variables
     * Tipos de Datos
     * Flujo de Control
-    * Bucles
+    * Ciclos
     * Arrays
 
 ## 2. OOPs (Programación Orientada a Objetos)
