@@ -12,6 +12,9 @@ Android 4.4 (nivel de API 20) y versiones anteriores no admiten elementos de dis
 
 > Un archivo de gráficos vectoriales escalables (SVG, por sus siglas en inglés) es un formato de imagen basado en vectores que permite escalar sin perder calidad. A diferencia de los formatos de imagen tradicionales como JPEG o PNG, que están compuestos por píxeles, los archivos SVG utilizan ecuaciones matemáticas para definir formas, líneas y colores. fuente: adobe.com
 
+> ¿Qué es un elemento vectorial?
+Un elemento vectorial es una imagen creada a partir de puntos, líneas, curvas y polígonos. A diferencia de los gráficos de píxeles (mapas de bits), que se basan en una cuadrícula de cuadrados de color (píxeles), los vectores se definen matemáticamente. Esto significa que los gráficos vectoriales son independientes de la resolución.
+
 
 
 
