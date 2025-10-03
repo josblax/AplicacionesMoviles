@@ -39,12 +39,7 @@ La sintaxis del `if...else` es casi idéntica en los tres lenguajes, por lo que 
 
 En resumen, la lógica del `if...else` es la misma en Java, C\# y C++, pero Java y C\# son más estrictos y solo aceptan valores `booleanos` para las condiciones.
 
-<p align="center">
-<img src="https://github.com/josblax/FP/blob/main/imagenes/ifelse2.png" alt="Layout app" width="1200" height="550">
-</p>
-
 ---
-Claro, aquí tienes la información sobre las estructuras condicionales `if...else` organizada en una tabla de Markdown para una comparación más clara.
 
 | Tipo de Condicional | Pseudocódigo (Original) | Implementación en Código (Java) | Descripción |
 | :--- | :--- | :--- | :--- |
