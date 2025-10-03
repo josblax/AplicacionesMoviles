@@ -43,6 +43,15 @@ En resumen, la lógica del `if...else` es la misma en Java, C\# y C++, pero Java
 <img src="https://github.com/josblax/FP/blob/main/imagenes/ifelse2.png" alt="Layout app" width="1200" height="550">
 </p>
 
+---
+Claro, aquí tienes la información sobre las estructuras condicionales `if...else` organizada en una tabla de Markdown para una comparación más clara.
+
+| Tipo de Condicional | Pseudocódigo (Original) | Implementación en Código (Java) | Descripción |
+| :--- | :--- | :--- | :--- |
+| **Simple (`if`)** | `Si expresion_logica Entonces` <br> `acciones por verdadero` <br> `Fin Si` | `if (expresionLogica) {` <br> `   // acciones si es verdadero ` <br> `}` | Ejecuta un bloque de código **solo si la condición es verdadera**. Si es falsa, el programa simplemente continúa. |
+| **Doble (`if...else`)** | `Si expresion_logica Entonces` <br> `acciones por verdadero` <br> `SiNo` <br> `acciones por falso` <br> `Fin Si` | `if (expresionLogica) {` <br> `   // acciones si es verdadero ` <br> `} else {` <br> `   // acciones si es falso ` <br> `}` | Ofrece una bifurcación. Si la condición es **verdadera**, se ejecuta el primer bloque; de lo contrario, se ejecuta el bloque `else`. |
+| **Múltiple (`if...else if`)** | `Si expresion_logica1 Entonces` <br> `acciones_por_verdadero1` <br> `SiNo Si expresion_logica2 Entonces` <br> `acciones_por_verdadero2` <br> `SiNo` <br> `acciones por falso` <br> `Fin Si` | `if (condicion1) {` <br> `   // acciones 1 ` <br> `} else if (condicion2) {` <br> `   // acciones 2 ` <br> `} else {` <br> `   // acciones por defecto ` <br> `}` | Evalúa **múltiples condiciones en secuencia**. El primer bloque cuya condición sea verdadera se ejecuta, y el resto se ignora. El bloque `else` final es opcional. |
+| **Múltiples Casos (`switch`)** | `Segun variable Hacer` <br> `opcion_1: ...` <br> `opcion_2: ...` <br> `De otro modo: ...` <br> `Fin Segun` | `switch (variable) {` <br> `   case valor1: ` <br> `     // acciones ` <br> `     break; ` <br> `   case valor2: ` <br> `     // acciones ` <br> `     break; ` <br> `   default: ` <br> `     // acciones por defecto ` <br> `}` | Usado para **comparar una variable con múltiples valores fijos**. Es una alternativa más limpia al `if...else if` cuando se trata de una serie de valores específicos. |
 
 ___
 
