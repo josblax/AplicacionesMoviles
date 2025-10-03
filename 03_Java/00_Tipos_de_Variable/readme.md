@@ -155,22 +155,23 @@ public class ArrayListExample {
         nombres.add("Ana");
         nombres.add("Claudia");
 
-        
         // Obtener un elemento del arrayList
-        String fruit = nombres.get(1); // Obtener el elemento en el indice 1
+        String name = nombres.get(1); // Get the element at index 1
+        System.out.println("The name at index 1 is: " + name);
+        System.out.println("Original list: " + nombres);
 
         // Quitar un elemento del ArrayList
-        fruitList.remove("Banana");
-        System.out.println("Fruit List after removal: " + fruitList);
+        nombres.remove("Ana"); // Remove the element with the value "Ana"
+        // OR: nombres.remove(1); // Remove the element at index 1
+        System.out.println("List after removal: " + nombres);
 
         // Moverse a través del ArrayList
-       
-        for (String f : nombres) {
-            System.out.println(f);
+        System.out.println("\nIterating through the list:");
+        for (String nombre : nombres) {
+            System.out.println(nombre);
         }
     }
 }
-
 
 ```
 # Que es una interfase?
