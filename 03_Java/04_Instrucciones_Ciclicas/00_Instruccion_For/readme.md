@@ -30,19 +30,19 @@ for (inicialización; condición; actualización) {
 
 ### Utilidad y Usos Reales Comunes
 
-El bucle `for` es extremadamente útil en situaciones cotidianas de programación. Sus usos más comunes incluyen:
+El ciclo `for` es extremadamente útil en situaciones cotidianas de programación. Sus usos más comunes incluyen:
 
   * **Recorrer Colecciones:** Es la herramienta perfecta para iterar sobre elementos de un `Array`, `ArrayList` o cualquier otra estructura de datos que tenga un índice.
   * **Repeticiones Fijas:** Cuando necesitas ejecutar una tarea un número predeterminado de veces, como mostrar una tabla de multiplicar del 1 al 10 o generar un menú con opciones numeradas.
   * **Procesamiento de Datos:** Para analizar o manipular datos almacenados en arreglos, como buscar un elemento específico, sumar todos los valores o encontrar el valor máximo.
 
-Sí, tanto en Java como en C++ existe una versión simplificada del bucle `for` que se conoce como **bucle `for-each`**. En C++, se utiliza el operador de dos puntos (`:`), mientras que en Java, la sintaxis es muy similar.
+Sí, tanto en Java como en C++ existe una versión simplificada del bucle `for` que se conoce como **ciclo `for-each`**. En C++, se utiliza el operador de dos puntos (`:`), mientras que en Java, la sintaxis es muy similar.
 
 -----
 
-### Bucle `for-each` en Java
+### Ciclo `for-each` en Java
 
-El bucle `for-each` de Java, introducido en la versión 5, está diseñado para iterar sobre los elementos de un array o cualquier colección que implemente la interfaz `Iterable`. Su propósito es simplificar la lectura y escritura del código al eliminar la necesidad de usar una variable de índice para acceder a los elementos.
+El ciclo `for-each` de Java, introducido en la versión 5, está diseñado para iterar sobre los elementos de un array o cualquier colección que implemente la interfaz `Iterable`. Su propósito es simplificar la lectura y escritura del código al eliminar la necesidad de usar una variable de índice para acceder a los elementos.
 
 **Sintaxis:**
 
@@ -89,7 +89,7 @@ for (Tipo& elemento : coleccion) {
 
 ### Ejemplo de Uso
 
-A continuación, un ejemplo de cómo se vería el mismo código en ambos lenguajes, mostrando la simplificación en comparación con el bucle `for` tradicional.
+A continuación, un ejemplo de cómo se vería el mismo código en ambos lenguajes, mostrando la simplificación en comparación con el ciclo `for` tradicional.
 
 **Java**
 
