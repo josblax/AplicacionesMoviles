@@ -1,6 +1,4 @@
-Para estudiantes universitarios que ya conocen Java, la mejor manera de entender Kotlin es verlo como un lenguaje **moderno y pragmático** que se construye sobre la base de Java para solucionar sus "puntos débiles". Kotlin no es una ruptura radical, sino una evolución.
-
------
+# Explicacion Kotlin, Codigo Masa Corporal
 
 ### 1\. Variables y Mutabilidad
 
