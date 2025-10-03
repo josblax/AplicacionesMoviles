@@ -17,9 +17,8 @@
 * La evaluación de los operadores aritméticos básicos (+,*,-,/) tienen una propiedad asociativa de izquierda a derecha.
 *  La precedencia es la jerarquía con la que las expresiones son evaluadas, Por ejemplo 10-4*2, donde la multiplicación tiene una mayor prioridad que la suma.
 
-## Numeros y matematicas
+## Jerarquia de Operaciones
 
-Aquí tienes la tabla de precedencia de operadores, traducida al español y en formato Markdown.
 
 | Prioridad | Operadores | Descripción |
 | :---: | :--- | :--- |
