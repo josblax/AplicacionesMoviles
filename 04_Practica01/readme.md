@@ -120,6 +120,31 @@ Para que un `Button` haga algo al ser presionado, se debe implementar una interf
     }
     ```
 
+---
+### Que ventajas tiene usar la interfaz en Java versus usar el método onClik en XML?
+
+Usar la interfaz **`setOnClickListener`** en Java o Kotlin para manejar eventos de clic ofrece ventajas significativas sobre el método **`android:onClick`** en el XML. La principal ventaja es una **mejor separación de la lógica del código y el diseño de la interfaz de usuario (UI)**.
+
+---
+
+### **Separación de responsabilidades**
+
+Cuando utilizas `setOnClickListener`, la **lógica de negocio** (qué sucede cuando se hace clic en el botón) se mantiene en tus archivos de código (Java/Kotlin), mientras que el archivo XML se centra exclusivamente en el **diseño y la estructura visual** de la interfaz.  Esto hace que el código sea más limpio, fácil de leer y mantener. Los diseñadores pueden trabajar en el XML y los desarrolladores en el código sin interferir en las responsabilidades del otro.
+
+---
+
+### **Flexibilidad y reusabilidad**
+
+La interfaz `setOnClickListener` es mucho más flexible. Puedes asignar el mismo `listener` a **múltiples vistas** de forma programática. Por ejemplo, si tienes varios botones que realizan una acción similar, puedes compartir el mismo objeto `OnClickListener`. Esto no es fácil de lograr con `android:onClick` en el XML. Además, el enfoque de código te permite **asignar y cambiar dinámicamente** los listeners en tiempo de ejecución, lo cual es útil para interfaces de usuario dinámicas.
+
+---
+
+### **Seguridad y depuración**
+
+El método `android:onClick` en el XML no es revisado por el compilador. Si cometes un error tipográfico en el nombre del método en el XML, el problema no se detectará hasta que ejecutes la aplicación, lo que podría provocar un **fallo en tiempo de ejecución**. Con `setOnClickListener`, cualquier error de referencia al código se detecta en **tiempo de compilación**, lo que te permite corregirlo antes de ejecutar la aplicación. La depuración también es más sencilla ya que puedes establecer puntos de interrupción directamente en el método `onClick()` dentro de tu código.
+
+En resumen, aunque `android:onClick` puede parecer más sencillo para un uso rápido, la interfaz `setOnClickListener` es la **práctica estándar y recomendada** para un desarrollo robusto, escalable y mantenible.
+
 #### **`findViewById()`: Vinculando XML con Java**
 
 Para manipular los componentes definidos en el archivo XML (`activity_main.xml`) desde el código Java (`MainActivity.java`), usamos el método **`findViewById()`**. Este método "busca" un componente en la interfaz por su `id` (identificador único) y devuelve una referencia a él.
