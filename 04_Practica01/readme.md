@@ -31,7 +31,7 @@ app/
                 └── TextView
 ```
 
-La estructura de archivos que has proporcionado corresponde a un proyecto básico de Android Studio en lenguaje **Java**. Vamos a explorar cada uno de los componentes y su función con ejemplos concretos.
+La estructura de archivos  corresponde a un proyecto básico de Android Studio en lenguaje **Java**. Vamos a explorar cada uno de los componentes y su función con ejemplos concretos.
 
 ### **Estructura del Proyecto de Android**
 
