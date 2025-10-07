@@ -145,6 +145,8 @@ El método `android:onClick` en el XML no es revisado por el compilador. Si come
 
 En resumen, aunque `android:onClick` puede parecer más sencillo para un uso rápido, la interfaz `setOnClickListener` es la **práctica estándar y recomendada** para un desarrollo robusto, escalable y mantenible.
 
+---
+
 #### **`findViewById()`: Vinculando XML con Java**
 
 Para manipular los componentes definidos en el archivo XML (`activity_main.xml`) desde el código Java (`MainActivity.java`), usamos el método **`findViewById()`**. Este método "busca" un componente en la interfaz por su `id` (identificador único) y devuelve una referencia a él.
