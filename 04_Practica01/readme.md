@@ -53,7 +53,7 @@ Un **`TextView`** es un elemento de interfaz de usuario (UI) que se usa para mos
   * **Ejemplo de uso**: Imagina una aplicación de calculadora. El **`TextView`** se usaría para mostrar el resultado de la operación. En el archivo `activity_main.xml` se vería así:
     ```xml
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0"
@@ -67,7 +67,7 @@ El **`EditText`** es un componente de UI que permite al usuario **ingresar y edi
   * **Ejemplo de uso**: En la misma calculadora, los `EditText` serían los campos donde el usuario ingresa los números a operar.
     ```xml
     <EditText
-        android:id="@+id/number1EditText"
+        android:id="@+id/peso"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ingresa el primer número"
@@ -81,10 +81,10 @@ El **`Button`** es un componente interactivo que representa un **botón en la in
   * **Ejemplo de uso**: El botón de "Sumar" en nuestra calculadora.
     ```xml
     <Button
-        android:id="@+id/addButton"
+        android:id="@+id/boton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sumar" />
+        android:text="Calcular" />
     ```
 
 -----
@@ -124,7 +124,7 @@ Para que un `Button` haga algo al ser presionado, se debe implementar una interf
 
 Para manipular los componentes definidos en el archivo XML (`activity_main.xml`) desde el código Java (`MainActivity.java`), usamos el método **`findViewById()`**. Este método "busca" un componente en la interfaz por su `id` (identificador único) y devuelve una referencia a él.
 
-  * **Ejemplo**: La línea `Button addButton = findViewById(R.id.addButton);` es un claro ejemplo de cómo se establece esta conexión. `R.id.addButton` hace referencia al `id` que definimos en el XML.
+  * **Ejemplo**: La línea `Button boton = findViewById(R.id.boton);` es un claro ejemplo de cómo se establece esta conexión. `R.id.addButton` hace referencia al `id` que definimos en el XML.
 
 -----
 
