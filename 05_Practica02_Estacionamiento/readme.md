@@ -21,7 +21,7 @@ Racional:
 
 Considerar que la estancia puede ser cualquier numero de horas, 4,5,6 etc... para esto considerar un ciclo que pueda acumular horas completas.
 
-Interface Gráfica del Usuario
+## Interface Gráfica del Usuario
 
 <p align="center">
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/estacionamiento.png" alt="Layout app" width="200" height="400">
@@ -29,6 +29,14 @@ Interface Gráfica del Usuario
 
 ---
 
+## Evidencia de la practica
+
+
+<p align="center">
+<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/Estacionamiento2.jpg" alt="Layout app" width="200" height="400">
+</p>
+
+---
 | Componente/Atributo              | Concepto                                                                 | Uso en el Diseño                                                                                          |
 |----------------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | `LinearLayout`                   | Es el contenedor principal que apila vistas de forma secuencial.        | Se usa como la vista raíz para apilar el título, los bloques de entrada, el botón y el resultado, uno debajo del otro. |
