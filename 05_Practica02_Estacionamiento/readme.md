@@ -38,5 +38,14 @@ Interface Gráfica del Usuario
 | `android:gravity="center_horizontal"` | Define dónde se debe colocar el contenido dentro de este contenedor.   | Utilizado en el contenedor principal para centrar horizontalmente todos los elementos de la aplicación.   |
 | `android:layout_gravity="start"` | Define cómo la vista debe ser colocada dentro de su contenedor padre.   | Se usa en el TextView de "Hora de Entrada" para alinearlo al borde izquierdo, sobrescribiendo el center_horizontal del padre. |
 
+# I. Widgets (Elementos Interactivos y de Visualización)
+
+Los widgets son los elementos visibles con los que el usuario interactúa o que sirven para mostrar datos.
+
+| Widget    | Concepto                                                                 | Uso en el Diseño                                                                                                      |
+|-----------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `TextView` | Componente para mostrar texto estático o dinámico. No es editable por el usuario. | Usado para el Título, las etiquetas de las secciones de entrada/salida y el texto "Costo Total", y para mostrar el resultado final (`tv_resultado`). |
+| `EditText` | Es un campo de texto editable que permite al usuario ingresar datos.    | Utilizado para capturar las cuatro entradas de tiempo: Hora/Minuto de entrada y Hora/Minuto de salida.              |
+| `Button`   | Un control interactivo diseñado para detectar clics y disparar acciones. | Es el disparador (`btn_calcular`) que activa el método de cálculo de la tarifa al ser presionado.                   |
 
 
