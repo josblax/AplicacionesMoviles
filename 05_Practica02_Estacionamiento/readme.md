@@ -48,4 +48,17 @@ Los widgets son los elementos visibles con los que el usuario interactúa o que 
 | `EditText` | Es un campo de texto editable que permite al usuario ingresar datos.    | Utilizado para capturar las cuatro entradas de tiempo: Hora/Minuto de entrada y Hora/Minuto de salida.              |
 | `Button`   | Un control interactivo diseñado para detectar clics y disparar acciones. | Es el disparador (`btn_calcular`) que activa el método de cálculo de la tarifa al ser presionado.                   |
 
+# II. Atributos Funcionales y de Estilo
+
+Estos atributos definen el comportamiento, la referencia en el código y la apariencia visual de los widgets.
+
+| Atributo                        | Concepto                                                                 | Uso en el Código                                                                                                      |
+|---------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| `android:id="@+id/nombre"`      | Identificador único necesario para enlazar la vista desde el código Java (usando `findViewById`). | Crucial en todos los `EditText`, el `Button` y el `TextView` de resultado para la funcionalidad.                     |
+| `android:inputType="number"`    | Restringe la entrada del usuario y sugiere el teclado numérico en el dispositivo virtual. | Aplicado a los `EditText` de Hora y Minuto para asegurar que solo se ingresen números.                               |
+| `android:maxLength="2"`         | Limita el número de caracteres que se pueden introducir en un campo de texto. | Usado en los campos de Hora y Minuto para prevenir entradas inválidas de más de dos dígitos.                         |
+| `android:hint="Texto"`          | Muestra una etiqueta de texto ligera que desaparece cuando el usuario comienza a escribir. | Proporciona una guía rápida al usuario sobre el rango de entrada esperado (ej. `"Hora (0-23)"`).                     |
+| `android:padding="12dp"`        | Agrega espacio interno entre el contenido del widget (texto) y sus bordes. | Se utiliza en los `EditText` para mejorar la legibilidad y el área de toque del componente.                          |
+| `android:layout_marginEnd="8dp"`| Agrega margen externo (espacio vacío) al lado derecho de la vista.       | Usado para separar el campo de Hora del campo de Minuto dentro de los `LinearLayout` horizontales.                   |
+| `tools:context=".MainActivity"` | Atributo usado solo en tiempo de diseño que indica a Android Studio a qué actividad está asociado el layout. | Permite a Android Studio previsualizar temas, estilos y fragmentos correctamente.                                    |
 
