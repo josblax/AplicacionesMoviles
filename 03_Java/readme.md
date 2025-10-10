@@ -1,5 +1,7 @@
 # Java es un lenguaje orientado a objetos.
 
+Mapa basado en post de @pushpendratips de X 
+
 # Java Roadmap: Guía de Aprendizaje
 
 Esta es una guía de temas clave para aprender Java, estructurada de forma jerárquica para facilitar el seguimiento.
