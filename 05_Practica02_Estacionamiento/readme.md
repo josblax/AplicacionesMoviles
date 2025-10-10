@@ -27,14 +27,15 @@ Interface Gráfica del Usuario
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/estacionamiento.jpg" alt="Layout app" width="200" height="400">
 </p>
 
-Su aplicación debe contar con los siguientes elementos gráficos:
+I. Hoja de Ruta del Proyecto (Roadmap)
+Este Roadmap te guía a través de las fases de desarrollo en Android Studio usando Java, cubriendo los conceptos fundamentales requeridos para completar el ejercicio.
 
-1. TextViews para representar las etiquetas de Entrada y Salida, así como la estancia en minutos representado por los 999999 y el monto a pagar representado por $$$$$,así como los dos puntos ":", que esta entre las horas y los minutos de la entrada y salida.
-2. EditText para representar las horas y los minutos de entrada y salida.
-
-3. Entendido. Basándome en la rúbrica que proporcionaste, he generado una rúbrica específica y detallada para el ejercicio de cálculo de estancia del estacionamiento.
-
-El puntaje total máximo se mantiene en **10.0 Puntos**.
+Fase	Concepto Clave	Descripción Breve	Uso en el Ejercicio
+1. Interfaz (XML)	Sintaxis y Estructura XML	Define la estructura visual de la UI usando etiquetas y atributos de Android (ej. android:id, android:layout_width).	Se usa para crear los campos de entrada (EditTexts) para HH:MM de entrada/salida, el botón (Button) y el resultado (TextView).
+2. Inicialización	Sintaxis y Variables	Reglas fundamentales de Java. Las variables son contenedores de datos que se declaran para la UI y la lógica.	Se usan para declarar las referencias de UI (ej. private EditText etHoraEntrada;) y en el método onCreate() para inicializarlas con findViewById().
+3. Lógica de Control	Tipos de Datos	Define la naturaleza de los datos. int para minutos/horas y double para el costo y las tarifas.	int: para obtener las horas de los EditText. double: para realizar cálculos de tarifas y mostrar el resultado con decimales.
+4. Flujo y Ciclos	if...else if (Flujo de Control)	Instrucciones que permiten al programa tomar decisiones evaluando condiciones de forma secuencial.	Crucial para la Etapa 1 del cálculo: Determinar el costo fijo de las primeras 3 horas según los rangos (0-30 min, 31-60 min, 61-120 min, 121-180 min).
+5. Acumulación	Ciclos (while)	Estructuras de repetición que ejecutan código mientras una condición sea verdadera. Ideal cuando no sabes cuántas veces repetir.	Crucial para la Etapa 2: Manejar la tarifa acumulativa a partir de la cuarta hora, repitiendo el cobro de $14.00 por cada 60 minutos adicionales.
 
 ---
 
