@@ -24,7 +24,7 @@ Considerar que la estancia puede ser cualquier numero de horas, 4,5,6 etc... par
 Interface Gráfica del Usuario
 
 <p align="center">
-<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/estacionamiento.jpg" alt="Layout app" width="200" height="400">
+<img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/estacionamiento.png" alt="Layout app" width="200" height="400">
 </p>
 
 ---
