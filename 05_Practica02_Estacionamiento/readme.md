@@ -29,7 +29,16 @@ Interface Gráfica del Usuario
 
 ---
 
+I. Contenedores de Layout (Estructura y Organización)
+Los contenedores definen cómo se organizan y alinean los elementos visibles en la pantalla.
 
+Componente/Atributo	Concepto	Uso en el Diseño
+LinearLayout	Es el contenedor principal que apila vistas de forma secuencial.	Se usa como la vista raíz para apilar el título, los bloques de entrada, el botón y el resultado, uno debajo del otro.
+android:orientation="vertical"	Define que los elementos hijos se apilen en una columna.	Aplica al contenedor principal para asegurar que las secciones fluyan de arriba hacia abajo.
+android:layout_width="match_parent"	Indica que la vista debe ocupar todo el ancho disponible de su contenedor padre.	Usado en contenedores y TextView para que se extiendan a lo largo de la pantalla.
+android:layout_weight="1"	Asigna el espacio restante a los elementos dentro de un LinearLayout de orientación horizontal.	Se usa en los EditText de Hora y Minuto para que cada uno ocupe exactamente el 50% del ancho disponible.
+android:gravity="center_horizontal"	Define dónde se debe colocar el contenido dentro de este contenedor.	Utilizado en el contenedor principal para centrar horizontalmente todos los elementos de la aplicación.
+android:layout_gravity="start"	Define cómo la vista debe ser colocada dentro de su contenedor padre.	Se usa en el TextView de "Hora de Entrada" para alinearlo al borde izquierdo, sobrescribiendo el center_horizontal del padre.
 
 ---
 
