@@ -27,15 +27,9 @@ Interface Gráfica del Usuario
 <img src="https://github.com/josblax/AplicacionesMoviles/blob/main/Images/estacionamiento.jpg" alt="Layout app" width="200" height="400">
 </p>
 
-I. Hoja de Ruta del Proyecto (Roadmap)
-Este Roadmap te guía a través de las fases de desarrollo en Android Studio usando Java, cubriendo los conceptos fundamentales requeridos para completar el ejercicio.
+---
 
-Fase	Concepto Clave	Descripción Breve	Uso en el Ejercicio
-1. Interfaz (XML)	Sintaxis y Estructura XML	Define la estructura visual de la UI usando etiquetas y atributos de Android (ej. android:id, android:layout_width).	Se usa para crear los campos de entrada (EditTexts) para HH:MM de entrada/salida, el botón (Button) y el resultado (TextView).
-2. Inicialización	Sintaxis y Variables	Reglas fundamentales de Java. Las variables son contenedores de datos que se declaran para la UI y la lógica.	Se usan para declarar las referencias de UI (ej. private EditText etHoraEntrada;) y en el método onCreate() para inicializarlas con findViewById().
-3. Lógica de Control	Tipos de Datos	Define la naturaleza de los datos. int para minutos/horas y double para el costo y las tarifas.	int: para obtener las horas de los EditText. double: para realizar cálculos de tarifas y mostrar el resultado con decimales.
-4. Flujo y Ciclos	if...else if (Flujo de Control)	Instrucciones que permiten al programa tomar decisiones evaluando condiciones de forma secuencial.	Crucial para la Etapa 1 del cálculo: Determinar el costo fijo de las primeras 3 horas según los rangos (0-30 min, 31-60 min, 61-120 min, 121-180 min).
-5. Acumulación	Ciclos (while)	Estructuras de repetición que ejecutan código mientras una condición sea verdadera. Ideal cuando no sabes cuántas veces repetir.	Crucial para la Etapa 2: Manejar la tarifa acumulativa a partir de la cuarta hora, repitiendo el cobro de $14.00 por cada 60 minutos adicionales.
+
 
 ---
 
