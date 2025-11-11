@@ -11,213 +11,243 @@ ___
 
 ```bash
 ├──PARTE I: Introducción
-    └── Instalación de Android Studio
-        ├── Instalación de Android Studio.
-        ├── Instalación del Emulador para Android Estudio.
-        ├── Fundamentos de una app
-        ├── Componentes generales de una aplicación
-        ├── Que es una actividad?
-        ├── Que es una API?
-        ├── Java y Kotlin son lenguajes orientados a objetos
-        └── Como trabajan Java y Android juntos
+    └── Instalación de Android Studio
+        ├── Instalación de Android Studio.
+        ├── Instalación del Emulador para Android Estudio.
+        ├── Fundamentos de una app
+        ├── Componentes generales de una aplicación
+        ├── Que es una actividad?
+        ├── Que es una API?
+        ├── Java y Kotlin son lenguajes orientados a objetos
+        └── Como trabajan Java y Android juntos
 ├── PARTE II Crear un proyecto en Android Studio
-    ├── Preeliminar para crear un proyecto con Android Studio
-        ├── Conocer el ambiente de desarrollo integrado
-        ├── Conocer la interfase de usuario de Android Studio
-        ├── Conocer los diferentes componentes que se integran al desarrollo de una app
-        ├── Uso de dispositivos virtuales y fisicos para crear una app.
-        └── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
-    ├── Creacion de un proyecto basado en XML y Java.
-        ├── Tipo de Actividad (Empty Views Activity)
-        ├── Seleccion de Nombre del Proyecto, Lenguaje y SDK.
-        └── Interfase de Usuario
-            └── Arbol del Proyecto.
-                └── Folder manifests
-                    └── Android Manifests
-                └── Folder Java
-                    └── main Java folder
-                        └── MainActiivity.java!
-                    ├── androidTest folder
-                    └── test folder
-                ├── res folder
-                    ├── drawable folder
-                    └── layout folder
-                        └── activity_main.xml!
-                    ├── mipmap folder
-                    ├── values folder
-                    └── xml folder
-            ├── Gradle Scripts
-                ├── build.gradle.kts (Project)
-                └── build.gradle.kts (Module:app)
+    ├── Preeliminar para crear un proyecto con Android Studio
+        ├── Conocer el ambiente de desarrollo integrado
+        ├── Conocer la interfase de usuario de Android Studio
+        ├── Conocer los diferentes componentes que se integran al desarrollo de una app
+        ├── Uso de dispositivos virtuales y fisicos para crear una app.
+        └── Uso del gradle y las dependencias que se pueden integrar para el desarrollo de una app
+    ├── Creacion de un proyecto basado en XML y Java.
+        ├── Tipo de Actividad (Empty Views Activity)
+        ├── Seleccion de Nombre del Proyecto, Lenguaje y SDK.
+        └── Interfase de Usuario
+            └── Arbol del Proyecto.
+                └── Folder manifests
+                    └── Android Manifests
+                └── Folder Java
+                    └── main Java folder
+                        └── MainActiivity.java!
+                    ├── androidTest folder
+                    └── test folder
+                ├── res folder
+                    ├── drawable folder
+                    └── layout folder
+                        └── activity_main.xml!
+                    ├── mipmap folder
+                    ├── values folder
+                    └── xml folder
+            ├── Gradle Scripts
+                ├── build.gradle.kts (Project)
+                └── build.gradle.kts (Module:app)
 ├── PARTE III XML
-    ├── activity_main.xml
-        ├── layouts
-                ├── constraint layout!
-                ├── linear layout
-                ├── relative layout
-                ├── table layout
-                ├── FrameLayout
-                ├── grid layout
-        ├── Text widgets
-            ├── TextView!
-            └── EditText
-        ├── Button widgets
-            ├── Button
-            └── ImageButton
-        ├── Image Widgets
-            └── ImageView!
-        ├── Input Widgets
-            ├── CheckBox
-            ├── RadioButton
-            └── Switch
-        ├── Progress Widgets
-            └── ProgressBar
+    ├── activity_main.xml
+        ├── layouts
+                ├── constraint layout!
+                ├── linear layout
+                ├── relative layout
+                ├── table layout
+                ├── FrameLayout
+                ├── grid layout
+        ├── Text widgets
+            ├── TextView!
+            └── EditText
+          ├── Button widgets
+            ├── Button
+            └── ImageButton
+        ├── Image Widgets
+            └── ImageView!
+        ├── Input Widgets
+            ├── CheckBox
+            ├── RadioButton
+            └── Switch
+        ├── Progress Widgets
+            └── ProgressBar
 ├── Parte IV Java (Instrucciones Comunes)
-    ├── Tipos basicos de variables
-        ├── Enteros: byte, short, int, long
-        ├── Fraccionarios: float, double
-        ├── Texto: char, String
-        └── Boleanos: boolean
-    ├── Tipos no basicos de estructuras
-        ├── String
-        ├── Arrays (arreglos)
-        ├── ArrayList (Lista de arreglos)
-        ├── Class (clase)
-        └── Interface (interfases)    
+    ├── Tipos basicos de variables
+        ├── Enteros: byte, short, int, long
+        ├── Fraccionarios: float, double
+        ├── Texto: char, String
+        └── Boleanos: boolean
+    ├── Tipos no basicos de estructuras
+        ├── String
+        ├── Arrays (arreglos)
+        ├── ArrayList (Lista de arreglos)
+        ├── Class (clase)
+        └── Interface (interfases)    
 ├── Parte V Practicas
-    ├── Practica #0 Tarjeta de Presentacion
-        └── TableLayout
-            └── TableRow
-        └── TextView
-        └── Vector Asset
-        └── ImageView
-    ├── Practica #1 Calculo de Masa Corporal
-        └── Java
-            └── Clases
-                └── EditText
-                └── Button
-                └── TextView
-            └── metodos/funciones
-                └── findViewById()
-                └── getText()
-                └── setText()
-                └── setOnClickListener()
-        └── XML
-            └── Constraint Layout
-            └── EditText
-            └── Button
-            └── TextView*
-        └── res
-            └── drawable
-                 └── vector asset
-    ├── Practica #2 Calculo de Pago de Estacionamiento (EX. FINAL 2023)
-        └── Java
-            └── Clases
-                └── EditText*
-                └── Button*
-                └── TextView*
-            └── metodos/funciones
-                └── findViewById()*
-                └── getText()*
-                └── setText()*
-                └── setOnClickListener()*
-        └── XML
-            └── Constraint Layout*
-            └── EditText*
-            └── Button*
-            └── TextView*
-    └── Practica #3 Crear actividades multiples y enviar información entre actividades
-        └── Java
-            └── Clases
-                └── Intent
-                └── Bundle
-                └── EditText*
-                └── Button*
-                └── TextView*
-            └── metodos/funciones
-                └── findViewById()*
-                └── getText()*
-                └── setText()*
-                └── setOnClickListener()*
-                └── Intent() // Llamado de una actividad
-                └── intent.putExtra() // Guardar datos para exportar a otra actividad 
-                └── bundle.getString() // Importar datos a una actividad 
-        └── XML
-            └── Constraint Layout*
-            └── EditText*
-            └── Button*
-            └── TextView*
+    ├── Practica #0 Tarjeta de Presentacion
+        └── TableLayout
+            └── TableRow
+        └── TextView
+        └── Vector Asset
+        └── ImageView
+    ├── Practica #1 Calculo de Masa Corporal
+        └── Java
+            └── Clases
+                └── EditText
+                └── Button
+                └── TextView
+            └── metodos/funciones
+                └── findViewById()
+                └── getText()
+                └── setText()
+                └── setOnClickListener()
+        └── XML
+            └── Constraint Layout
+            └── EditText
+            └── Button
+            └── TextView*
+        └── res
+            └── drawable
+                 └── vector asset
+    ├── Practica #2 Calculo de Pago de Estacionamiento (EX. FINAL 2023)
+        └── Java
+            └── Clases
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+content:                 └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+        └── XML
+            └── Constraint Layout*
+            └── EditText*
+            └── Button*
+            └── TextView*
+    └── Practica #3 Crear actividades multiples y enviar información entre actividades
+        └── Java
+            └── Clases
+                └── Intent
+                └── Bundle
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+s              └── setOnClickListener()*
+                └── Intent() // Llamado de una actividad
+                └── intent.putExtra() // Guardar datos para exportar a otra actividad 
+                └── bundle.getString() // Importar datos a una actividad 
+        └── XML
+      T      └── Constraint Layout*
+style:             └── EditText*
+            └── Button*
+            └── TextView*
 └── Practica #4 Cajero automático con dos actividades, la actividad principal introduccion de password y consulta, retiro de saldos
-        └── Java
-            └── Clases
-                └── Intent*
-                └── Bundle*
-                └── EditText*
-                └── Button*
-                └── TextView*
-            └── metodos/funciones
-                └── findViewById()*
-                └── getText()*
-                └── setText()*
-                └── setOnClickListener()*
-                └── Intent()* // Llamado de una actividad
-                └── intent.putExtra()* // Guardar datos para exportar a otra actividad 
-                └── bundle.getString()* // Importar datos a una actividad 
-        └── XML
-            └── Constraint Layout*
-            └── EditText*
-            └── Button*
-            └── TextView*
-└── Practica #5 MINI Encuesta 
-        └── Java
-            └── Clases
-                └── CheckBox
-            └── metodos/funciones
-                └── setOnCheckedChangeListener()
-                └── Toast.makeText(MainActivity.this, "Seleccion 2", Toast.LENGTH_SHORT).show())
-        └── XML
-            └── Constraint Layout*
-            └── CheckBox
-            └── com.google.android.material.button.MaterialButton
-└── Practica #6 MINI Acceso a sitios en Internet 
-        └── Java
-            └── Clases
-                └── RadioGroup
-                └── RadioButton
-                └── ArrayAdapter
-                └── EditText   
-            └── metodos/funciones
-                
-        └── XML
-            └── Constraint Layout*
-            └── TextView*
-            └── Button*
-            └── RadioGroup
-                └── RadioButton
-
+        └── Java
+            └── Clases
+                └── Intent*
+                └── Bundle*
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+                └── Intent()* // Llamado de una actividad
+                └── intent.putExtra()* // Guardar datos para exportar a otra actividad 
+                └── bundle.getString()* // Importar datos a una actividad 
+        └── XML
+            └── Constraint Layout*
+            └── EditText*
+            └── Button*
+            └── TextView*
+└── Practica #5 MINI Encuesta 
+        └── Java
+            └── Clases
+                └── CheckBox
+section_type:             └── metodos/funciones
+                └── setOnCheckedChangeListener()
+                └── Toast.makeText(MainActivity.this, "Seleccion 2", Toast.LENGTH_SHORT).show())
+        └── XML
+            └── Constraint Layout*
+            └── CheckBox
+  S         └── com.google.android.material.button.MaterialButton
+└── Practica #6 MINI Acceso a sitios en Internet 
+        └── Java
+            └── Clases
+                └── RadioGroup
+                └── RadioButton
+                └── ArrayAdapter
+                └── EditText   
+            └── metodos/funciones
+Type:                 
+        └── XML
+            └── Constraint Layout*
+            └── TextView*
+            └── Button*
+            └── RadioGroup
+                └── RadioButton
 └── Practica #7 Conversion de Unidades
-        └── Java
-            └── Clases
-                └── Spinner
-                └── ArrayAdapter
-                └── EditText*
-                └── Button*
-                └── TextView*
-            └── metodos/funciones
-                └── findViewById()*
-                └── getText()*
-                └── setText()*
-                └── setOnClickListener()*
-                └── spinner.setOnItemSelectedListener()
-                    └── onItemSelected()
-        └── XML
-            └── Constraint Layout*
-            └── Spinner
-            └── Button*
-            └── EditView*
-            └── TextView*
-        └── values
-            └── strings.xml
+        └── Java
+            └── Clases
+                └── Spinner
+                └── ArrayAdapter
+                └── EditText*
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── findViewById()*
+                └── getText()*
+                └── setText()*
+                └── setOnClickListener()*
+                └── spinner.setOnItemSelectedListener()
+                    └── onItemSelected()
+        └── XML
+            └── Constraint Layout*
+            └── Spinner
+            └── Button*
+            └── EditView*
+            └── TextView*
+        └── values
+            └── strings.xml
+└── Practica #8 Panel de Sensores (Ubicación y Permisos)
+        └── AndroidManifest.xml
+            └── <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        └── build.gradle (Module:app)
+            └── dependencies
+                └── implementation("com.google.android.gms:play-services-location:...")
+        └── Java
+            └── Clases
+                └── FusedLocationProviderClient
+                └── LocationServices
+                └── Location
+                └── Priority (o LocationRequest)
+                     └── Task (de com.google.android.gms.tasks)
+                └── CancellationTokenSource
+                └── Button*
+                └── TextView*
+            └── metodos/funciones
+                └── ContextCompat.checkSelfPermission()
+                └── ActivityCompat.requestPermissions()
+                └── onRequestPermissionsResult() // Callback de permisos
+                └── fusedLocationClient.getCurrentLocation()
+                     └── addOnSuccessListener() // Manejador del Task
+                     └── addOnFailureListener() // Manejador del Task
+                └── location.hasAltitude() // Validación de datos
+                └── location.hasSpeed() // Validación de datos
+                └── findViewById()*
+                └── setOnClickListener()*
+            └── XML
+                └── LinearLayout (o ConstraintLayout*)
+                └── TextView* (para Latitud, Longitud, Altitud, Velocidad)
+                └── Button* (para "Obtener Ubicación")
 ```
 
 
