@@ -144,6 +144,121 @@ binding.nombre.setText(""); // etc.
 imagenURI = null;
 ```
 
-
+```
+├── 1. CONFIGURACIÓN DEL ENTORNO (Gradle & Manifest)
+│   ├── build.gradle (Module: App)
+│   │   └── Habilitar ViewBinding
+│   │       └── Instrucción: `buildFeatures { viewBinding = true }`
+│   │
+│   └── AndroidManifest.xml
+│       ├── Permiso de Lectura (Para Galería)
+│       │   └── XML: `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`
+│       └── Permiso de Escritura (Para Contactos)
+│           └── XML: `<uses-permission android:name="android.permission.WRITE_CONTACTS"/>`
+│
+├── 2. INTERFAZ DE USUARIO (activity_main.xml)
+│   ├── Contenedor Raíz
+│   │   └── Tipo: `LinearLayout` (orientation="vertical", padding="16dp")
+│   │
+│   ├── Elemento: Imagen de Perfil
+│   │   ├── ID: `@+id/imagen`
+│   │   ├── Tamaño: width="120dp", height="120dp"
+│   │   └── Acción UX: `android:layout_gravity="center"`
+│   │
+│   ├── Formulario de Entrada (EditTexts)
+│   │   ├── Campo: Nombre
+│   │   │   ├── ID: `@+id/nombre`
+│   │   │   └── InputType: `textPersonName`
+│   │   ├── Campo: Apellido Paterno
+│   │   │   └── InputType: `textPersonName`
+│   │   ├── Campo: Celular
+│   │   │   └── InputType: `phone`
+│   │   ├── Campo: Teléfono Casa
+│   │   │   └── InputType: `phone`
+│   │   ├── Campo: Email
+│   │   │   └── InputType: `textEmailAddress`
+│   │   └── Campo: Dirección
+│   │       └── InputType: `textPostalAddress`
+│   │
+│   └── Elemento: Botón Guardar
+│       ├── Tipo: `FloatingActionButton`
+│       ├── ID: `@+id/boton`
+│       └── Ubicación: `android:layout_gravity="end"`
+│
+├── 3. LÓGICA JAVA: Variables y OnCreate (MainActivity.java)
+│   ├── Declaración de Variables Globales
+│   │   ├── Binding: `ActivityMainBinding binding;`
+│   │   ├── Permisos: `private String[] contactPermissions;`
+│   │   ├── URI Imagen: `private Uri imagenURI;`
+│   │   └── Launcher Galería: `private ActivityResultLauncher<Intent> imagePickerLauncher;`
+│   │
+│   └── Método: onCreate()
+│       ├── Paso 1: Inicializar Binding
+│       │   ├── `binding = ActivityMainBinding.inflate(getLayoutInflater());`
+│       │   └── `setContentView(binding.getRoot());`
+│       │
+│       ├── Paso 2: Configurar Launcher de Galería (Moderno)
+│       │   └── `registerForActivityResult(new StartActivityForResult(), result -> { ... })`
+│       │       └── Condición: `if (result.getResultCode() == RESULT_OK)`
+│       │           └── Acción: `binding.imagen.setImageURI(result.getData().getData());`
+│       │
+│       ├── Paso 3: Listener de Imagen (Click)
+│       │   └── `binding.imagen.setOnClickListener(v -> abrirGaleria());`
+│       │
+│       └── Paso 4: Listener de Botón Guardar (Click)
+│           └── Verificar Permisos: `ContextCompat.checkSelfPermission(...)`
+│               ├── SI NO tiene permiso: `requestPermissions(...)`
+│               └── SI TIENE permiso: `guardarContacto();`
+│
+├── 4. LÓGICA JAVA: Métodos Auxiliares
+│   ├── Método: abrirGaleria()
+│   │   ├── Crear Intent: `new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);`
+│   │   └── Lanzar: `imagePickerLauncher.launch(intent);`
+│   │
+│   └── Método: imageUriToBytes()
+│       ├── Objetivo: Convertir la imagen visible a `byte[]` para la base de datos.
+│       ├── Bitmap: `MediaStore.Images.Media.getBitmap(...)`
+│       ├── Redimensionar: `Bitmap.createScaledBitmap(bitmap, 500, 500, true);`
+│       ├── Comprimir: `resized.compress(Bitmap.CompressFormat.JPEG, 50, baos);`
+│       └── Retorno: `return baos.toByteArray();`
+│
+└── 5. LÓGICA JAVA: Content Provider (guardarContacto)
+    ├── Paso 1: Obtener textos de la UI
+    │   └── Ejemplo: `String nombre = binding.nombre.getText().toString().trim();`
+    │
+    ├── Paso 2: Crear Lista de Operaciones
+    │   └── `ArrayList<ContentProviderOperation> cpo = new ArrayList<>();`
+    │
+    ├── Paso 3: Operación MAESTRA (RawContact)
+    │   └── `cpo.add(ContentProviderOperation.newInsert(ContactsContract.RawContacts.CONTENT_URI)`
+    │       └── `.withValue(ACCOUNT_TYPE, null)`
+    │       └── `.withValue(ACCOUNT_NAME, null)`
+    │
+    ├── Paso 4: Operaciones VINCULADAS (Usando BackReference)
+    │   ├── Insertar Nombre (StructuredName)
+    │   │   ├── `withValueBackReference(RAW_CONTACT_ID, 0)` (Enlazar a Op Maestra)
+    │   │   ├── `withValue(MIMETYPE, StructuredName.CONTENT_ITEM_TYPE)`
+    │   │   └── `withValue(GIVEN_NAME, nombre)`
+    │   │
+    │   ├── Insertar Celular (Phone)
+    │   │   ├── `withValueBackReference(RAW_CONTACT_ID, 0)`
+    │   │   ├── `withValue(MIMETYPE, Phone.CONTENT_ITEM_TYPE)`
+    │   │   ├── `withValue(NUMBER, celular)`
+    │   │   └── `withValue(TYPE, Phone.TYPE_MOBILE)`
+    │   │
+    │   ├── Insertar Email (Email)
+    │   │   ├── `withValue(MIMETYPE, Email.CONTENT_ITEM_TYPE)`
+    │   │   └── `withValue(DATA, email)`
+    │   │
+    │   └── Insertar Foto (Photo) - *Solo si existe*
+    │       ├── Condición: `if (imageBytes != null)`
+    │       ├── `withValue(MIMETYPE, Photo.CONTENT_ITEM_TYPE)`
+    │       └── `withValue(PHOTO, imageBytes)`
+    │
+    └── Paso 5: Ejecución Final (Commit)
+        └── Try/Catch Block
+            ├── Ejecutar: `getContentResolver().applyBatch(ContactsContract.AUTHORITY, cpo);`
+            └── Notificar: `Toast.makeText(...)`
+```
 
 
