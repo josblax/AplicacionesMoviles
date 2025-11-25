@@ -143,3 +143,99 @@ getContentResolver().applyBatch(ContactsContract.AUTHORITY, cpo);
 binding.nombre.setText(""); // etc.
 imagenURI = null;
 ```
+
+
+# Proyecto: AgregaContacto (Android Java)
+
+## 1. Configuración del Proyecto (Gradle & Manifest)
+### 1.1. AndroidManifest.xml [Esencial]
+* **Permisos de Escritura:** `<uses-permission android:name="android.permission.WRITE_CONTACTS"/>`
+    * [cite_start]*Nota:* Necesario para guardar en la base de datos del teléfono[cite: 6].
+* **Permisos de Lectura:** `<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>`
+    * [cite_start]*Nota:* Para seleccionar la foto de la galería[cite: 5].
+
+### 1.2. build.gradle (Module: App)
+* **ViewBinding:** Habilitar para evitar el uso excesivo de `findViewById`.
+    * [cite_start]Código: `buildFeatures { viewBinding = true }`.
+
+## 2. Diseño de Interfaz (XML Layout)
+### 2.1. Recursos (res/drawable)
+* **Iconos:** Importar Vector Assets para la imagen por defecto y el botón de guardar.
+    * [cite_start]*ic_person_placeholder* (para el ImageView)[cite: 15].
+    * [cite_start]*ic_save* (para el FAB)[cite: 109].
+
+### 2.2. activity_main.xml (Estructura)
+* **Contenedor Principal:** `ScrollView` (Recomendado para asegurar que el formulario se vea en pantallas pequeñas).
+    * **Layout Hijo:** `LinearLayout` (Vertical).
+* **Componentes de Entrada (Inputs)**
+    * **Imagen de Perfil:** `ImageView`
+        * ID: `@+id/imagen`
+        * [cite_start]Acción: Al hacer clic, abre la galería[cite: 149].
+    * [cite_start]**Nombre:** `EditText` (InputType: `textPersonName`)[cite: 28].
+    * [cite_start]**Apellido:** `EditText` (InputType: `textPersonName`)[cite: 41].
+    * [cite_start]**Teléfono Celular:** `EditText` (InputType: `phone`)[cite: 54].
+    * [cite_start]**Teléfono Casa:** `EditText` (InputType: `phone`)[cite: 67].
+    * [cite_start]**Email:** `EditText` (InputType: `textEmailAddress`)[cite: 80].
+    * [cite_start]**Dirección:** `EditText` (InputType: `textPostalAddress`)[cite: 93].
+* **Botón de Acción:** `FloatingActionButton`
+    * ID: `@+id/salvar`
+    * [cite_start]Ubicación: Esquina inferior derecha (gravity: bottom|end)[cite: 100].
+
+## 3. Lógica Principal (MainActivity.java)
+### 3.1. Inicialización
+* **Declaración de Variables Globales**
+    * [cite_start]Constantes para códigos de permisos (ej. `WRITE_CONTACT_PERMISSION_CODE = 100`)[cite: 124].
+    * [cite_start]URI de la imagen seleccionada (`image_uri`)[cite: 137].
+    * [cite_start]Binding (`ActivityMainBinding`)[cite: 115].
+* **Método onCreate()**
+    * [cite_start]Inflar la vista con Binding[cite: 144].
+    * Configurar Listeners (`setOnClickListener`):
+        * [cite_start]Botón Imagen -> Ejecutar `abrirGaleria()`[cite: 151].
+        * [cite_start]Botón Salvar -> Ejecutar `salvarContacto()`[cite: 154].
+
+### 3.2. Gestión de Permisos (Runtime Permissions)
+* [cite_start]**Verificar Permiso:** `checkSelfPermission` antes de intentar guardar[cite: 328].
+* [cite_start]**Solicitar Permiso:** `requestPermissions` si no está otorgado[cite: 341].
+* **Manejar Respuesta:** `onRequestPermissionsResult`
+    * [cite_start]Si el usuario acepta -> Llamar a `salvarContacto()`[cite: 359].
+    * [cite_start]Si el usuario niega -> Mostrar `Toast` explicativo[cite: 361].
+
+### 3.3. Gestión de Imagen (Galería)
+* [cite_start]**Intent de Galería:** `Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)`[cite: 162].
+* **Procesar Resultado (onActivityResult)**
+    * [cite_start]Verificar `RESULT_OK` y código de solicitud[cite: 166].
+    * [cite_start]Obtener URI: `data.getData()`[cite: 173].
+    * [cite_start]Mostrar en ImageView: `setImageURI()`[cite: 174].
+* **Conversión (Helper Method):** `imageUriToBytes()`
+    * [cite_start]Objetivo: Convertir el Bitmap a `byte[]` para poder guardarlo en la base de datos de contactos[cite: 258].
+    * [cite_start]Uso de `ByteArrayOutputStream` y compresión JPEG[cite: 312].
+
+### 3.4. Lógica de Guardado (ContentProvider)
+* *Concepto Clave:* Los contactos en Android se guardan mediante `ContentProviderOperation` en lote (Batch).
+* **Paso 1: Obtener Datos de la UI**
+    * [cite_start]Extraer texto de los EditTexts y convertir a String (usando `.trim()`)[cite: 185].
+* **Paso 2: Crear el ArrayList de Operaciones**
+    * [cite_start]`ArrayList<ContentProviderOperation> cpo = new ArrayList<>()`[cite: 201].
+* **Paso 3: Definir el RawContact (Identificador)**
+    * [cite_start]Insertar un registro vacío en `RawContacts.CONTENT_URI` para obtener un nuevo ID[cite: 214].
+* **Paso 4: Insertar Datos (Vinculados al RawContact ID)**
+    * **Nombre Estructurado (StructuredName):**
+        * MimeType: `StructuredName.CONTENT_ITEM_TYPE`.
+        * [cite_start]Datos: `GIVEN_NAME` (Nombre) y `FAMILY_NAME` (Apellido)[cite: 218].
+    * **Teléfonos (Phone):**
+        * MimeType: `Phone.CONTENT_ITEM_TYPE`.
+        * [cite_start]Móvil: `Phone.TYPE_MOBILE`[cite: 230].
+        * [cite_start]Casa: `Phone.TYPE_HOME`[cite: 239].
+    * **Correo (Email):**
+        * [cite_start]MimeType: `Email.CONTENT_ITEM_TYPE`[cite: 244].
+    * **Dirección (SipAddress/StructuredPostal):**
+        * [cite_start]MimeType: `SipAddress.CONTENT_ITEM_TYPE` (o Postal)[cite: 252].
+    * **Foto (Photo):**
+        * Validar si `imageBytes` no es null.
+        * MimeType: `Photo.CONTENT_ITEM_TYPE`.
+        * [cite_start]Dato: `Photo.PHOTO` (array de bytes)[cite: 273].
+* **Paso 5: Ejecutar el Batch**
+    * Envolver en bloque `try-catch`.
+    * [cite_start]Ejecutar: `getContentResolver().applyBatch(ContactsContract.AUTHORITY, cpo)`[cite: 281].
+    * [cite_start]Feedback: Mostrar Toast "Guardado con éxito"[cite: 284].
+
