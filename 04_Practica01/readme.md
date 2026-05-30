@@ -153,6 +153,57 @@ Para manipular los componentes definidos en el archivo XML (`activity_main.xml`)
 
   * **Ejemplo**: La línea `Button boton = findViewById(R.id.boton);` es un claro ejemplo de cómo se establece esta conexión. `R.id.addButton` hace referencia al `id` que definimos en el XML.
 
+La asociación entre el elemento visual que ves en tu layout (XML) y la variable que manejas en tu MainActivity.java se realiza mediante el método findViewById().
+
+Para que esto funcione, deben ocurrir tres pasos clave en tu código Java. Aquí te muestro la estructura exacta:
+
+1. Declarar la variable (El "contenedor")
+Primero, debes crear una variable en la clase MainActivity que represente al botón. Es una referencia vacía al principio.
+
+Ejemplo:
+
+```Java
+public class MainActivity extends AppCompatActivity {
+    // Declaramos la variable del botón (fuera de los métodos)
+    Button miBoton; 
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        
+        // AQUÍ OCURRE LA ASOCIACIÓN (EL VÍNCULO)
+        miBoton = findViewById(R.id.id_de_tu_boton_en_xml);
+        
+        // Ahora miBoton ya apunta al objeto real que creó el sistema
+        miBoton.setOnClickListener(v -> {
+            // Lógica al presionar
+        });
+    }
+}
+```
+
+2. El puente entre XML y Java: R.id
+La clave de la asociación está en el atributo android:id de tu archivo XML:
+
+En XML: <Button android:id="@+id/btn_calcular" ... />
+
+En Java: El sistema automáticamente crea una clase llamada R que contiene todos los IDs. Al escribir R.id.btn_calcular, le estás diciendo a Android Studio: "Busca en el archivo XML que cargué en setContentView el elemento que tiene este ID exacto".
+
+3. ¿Cómo verificarlo en el Layout Inspector?
+
+Si quieres ver esta asociación mientras la app corre:
+
+* Abre el Main Menu>>Tools>>Layout Inspector.
+
+*  Haz clic sobre el botón en la vista previa del emulador.
+
+* En el panel de Attributes (a la derecha), verás el ID (ej. btn_calcular).
+
+Si te fijas en la jerarquía, el sistema ya tiene ese objeto en memoria con ese ID. findViewById es simplemente el comando que le dice a Java: "Toma ese objeto que ya está en memoria y dame acceso a él a través de esta variable llamada miBoton".
+
+Nota técnica: Si olvidas llamar a findViewById, la variable miBoton valdrá null y, al intentar hacer miBoton.setOnClickListener(...), la aplicación se cerrará inesperadamente (NullPointerException), que es el error más común en principiantes al olvidar este paso.
+
 -----
 
 ### **Manipulación de Datos**
