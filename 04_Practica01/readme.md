@@ -244,6 +244,29 @@ Estos son métodos esenciales para interactuar con los datos de los componentes 
     });
     ```
 
+Para trabajar con **TextView** (etiquetas de texto) y **EditText** (campos de entrada) en Android Studio, debes entender que ambos heredan de la clase **View**. Mientras que el **TextView** es mayormente para mostrar información, el **EditText** es interactivo.
+
+Aquí tienes los métodos más utilizados divididos por su funcionalidad:
+
+1. Métodos principales de EditText
+Estos son los que te permiten capturar la información que el usuario escribe, esencial para tus aplicaciones de cálculo.
+
+* **getText()**: Es el método fundamental. Devuelve un objeto de tipo Editable. Para obtener el texto como una cadena de caracteres normal, siempre debes añadir .toString() al final.
+
+Uso: String texto = miEditText.getText().toString();
+
+* **setText(CharSequence text)**: Permite escribir texto en el campo desde el código Java.
+
+Uso: miEditText.setText("Hola mundo");
+
+**setInputType(int type)**: Define qué tipo de teclado debe mostrarse (numérico, texto, correo, etc.).
+
+Uso: miEditText.setInputType(InputType.TYPE_CLASS_NUMBER);
+
+* **setHint(CharSequence hint)**: Define el texto gris que aparece cuando el campo está vacío (ej. "Ingrese su peso").
+
+* **requestFocus()**: Obliga al cursor a posicionarse dentro de este campo automáticamente.
+
 ### **`res/layout/activity_main.xml`**
 
 Este archivo es el **diseño de la interfaz de usuario**. Aquí se define visualmente cómo se verá la pantalla. Se usan "layouts" para organizar los componentes.
