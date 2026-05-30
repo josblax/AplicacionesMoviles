@@ -184,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 
 2. El puente entre XML y Java: R.id
+
 La clave de la asociación está en el atributo android:id de tu archivo XML:
 
 En XML: <Button android:id="@+id/btn_calcular" ... />
@@ -192,13 +193,13 @@ En Java: El sistema automáticamente crea una clase llamada R que contiene todos
 
 3. ¿Cómo verificarlo en el Layout Inspector?
 
-Si quieres ver esta asociación mientras la app corre:
+  Si quieres ver esta asociación mientras la app corre:
 
-* Abre el Main Menu>>Tools>>Layout Inspector.
+    * Abre el Main Menu>>Tools>>Layout Inspector.
 
-*  Haz clic sobre el botón en la vista previa del emulador.
+    *  Haz clic sobre el botón en la vista previa del emulador.
 
-* En el panel de Attributes (a la derecha), verás el ID (ej. btn_calcular).
+    * En el panel de Attributes (a la derecha), verás el ID (ej. btn_calcular).
 
 Si te fijas en la jerarquía, el sistema ya tiene ese objeto en memoria con ese ID. findViewById es simplemente el comando que le dice a Java: "Toma ese objeto que ya está en memoria y dame acceso a él a través de esta variable llamada miBoton".
 
