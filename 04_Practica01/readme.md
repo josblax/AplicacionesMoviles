@@ -185,9 +185,9 @@ public class MainActivity extends AppCompatActivity {
 
 2. El puente entre XML y Java: R.id
 
-La clave de la asociación está en el atributo android:id de tu archivo XML:
+  La clave de la asociación está en el atributo android:id de tu archivo XML:
 
-En XML: <Button android:id="@+id/btn_calcular" ... />
+  En XML: <Button android:id="@+id/btn_calcular" ... />
 
 En Java: El sistema automáticamente crea una clase llamada R que contiene todos los IDs. Al escribir R.id.btn_calcular, le estás diciendo a Android Studio: "Busca en el archivo XML que cargué en setContentView el elemento que tiene este ID exacto".
 
