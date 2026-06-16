@@ -69,6 +69,59 @@ ___Si declaras permisos considerados [peligrosos](https://developer.android.com/
 
 ___Si no declaras ningún permiso peligroso o si tu app está instalada en un dispositivo con Android 5.1 (nivel de API 22) o versiones anteriores, los permisos se otorgan automáticamente y no es necesario que completes ninguno de los pasos restantes de esta página.___
 
+____
+
+# Categorización de Permisos en Android 
+
+Android maneja la seguridad dividiendo los permisos por su **nivel de protección** (qué tanto riesgo representan para la privacidad del usuario o el funcionamiento del dispositivo).
+
+## Resumen Rápido
+
+| Nivel | Tipo de Permiso | ¿Cómo se aprueba? | Ejemplos Comunes |
+| :--- | :--- | :--- | :--- |
+| **Básico** | Normales (Install-time) | Automático al instalar la app | Internet, Vibración, Bluetooth básico |
+| **Intermedio** | Peligrosos (Runtime) | Diálogo emergente en la app | Cámara, Micrófono, Contactos |
+| **Avanzado** | Granulares (Por archivos) | Diálogos específicos o Selectores | Fotos, Videos, Audio |
+| **Crítico** | Ubicación (Multinivel) | Diálogos con mapa o en pasos | GPS Preciso, Ubicación de fondo |
+| **Máximo** | Especiales del Sistema | Redirección a Ajustes de Android | Optimización de batería, Alarmas |
+
+---
+
+## 1. Nivel Básico: Permisos Normales
+Son los más simples y no representan un riesgo para la privacidad del usuario. El sistema los concede automáticamente al instalar la aplicación.
+* **Requisito:** Solo declararlos en el `AndroidManifest.xml`.
+* **Ejemplos:**
+  * **Internet:** Acceso a la red Wi-Fi o datos móviles.
+  * **Vibración:** Permitir que el teléfono vibre.
+  * **Bluetooth (Android 11 o inferior):** Conectarse a dispositivos emparejados.
+
+## 2. Nivel Intermedio: Hardware Sensible
+Conocidos como **Permisos Peligrosos (Dangerous Permissions)**. Acceden a datos privados, por lo que el sistema exige el consentimiento explícito del usuario.
+* **Requisito:** Declararlos en el Manifest y pedirlos por código (muestra un cuadro de diálogo flotante).
+* **Ejemplos:**
+  * **Cámara / Micrófono:** Para capturar fotos o grabar audio.
+  * **Contactos / Calendario:** Para leer o modificar datos personales.
+
+## 3. Nivel Avanzado: Almacenamiento y Fotos
+Las políticas han evolucionado para evitar que las apps lean toda la memoria del dispositivo.
+* **Básico (Android 10 y anterior):** Permiso general (`READ_EXTERNAL_STORAGE`).
+* **Granular (Android 13+):** Se pide permiso por tipo de archivo (`READ_MEDIA_IMAGES`, `READ_MEDIA_VIDEO`).
+* **La mejor práctica (Photo Picker):** Usar el selector visual del sistema. **No requiere permisos**, el usuario elige una foto y la app solo recibe acceso a esa imagen específica.
+
+## 4. Nivel Crítico: Ubicación
+La ubicación está estrictamente regulada y requiere una programación por pasos.
+* **Precisa vs. Aproximada (Android 12+):** Si pides la ubicación precisa (GPS), estás obligado a pedir la aproximada al mismo tiempo. El usuario decide en un minimapa cuál otorgar.
+* **Primer Plano:** Mientras la app se usa activamente.
+* **Segundo Plano (Android 11+):** Debes pedir primero la de primer plano. Luego, mostrar un mensaje explicando por qué necesitas rastrearlo en el fondo, y redirigir al usuario a los ajustes para que seleccione *"Permitir todo el tiempo"*.
+
+## 5. Nivel Máximo: Permisos Especiales
+Son los más complejos porque **no se pueden solicitar con un cuadro emergente**. Tienes que programar un "Intent" que saque al usuario de tu app y lo lleve a una pantalla profunda de la Configuración de Android.
+* **Optimización de Batería:** Pedir al sistema que no "duerma" tu app (vital para alarmas o monitores médicos continuos).
+* **Mostrar sobre otras apps:** Usado para "burbujas" de chat (estilo Messenger) o grabadores de pantalla.
+* **Administrar todo el almacenamiento:** Permiso exclusivo y muy vigilado por Google Play, usado solo por exploradores de archivos y antivirus (`MANAGE_EXTERNAL_STORAGE`).
+
+
+
 # Principios básicos para solicitar permisos
 
 Los principios básicos para solicitar permisos en tiempo de ejecución son los siguientes:
