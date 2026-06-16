@@ -120,6 +120,64 @@ Son los más complejos porque **no se pueden solicitar con un cuadro emergente**
 * **Mostrar sobre otras apps:** Usado para "burbujas" de chat (estilo Messenger) o grabadores de pantalla.
 * **Administrar todo el almacenamiento:** Permiso exclusivo y muy vigilado por Google Play, usado solo por exploradores de archivos y antivirus (`MANAGE_EXTERNAL_STORAGE`).
 
+___
+
+# Categorización de Permisos de Datos Personales en Android
+
+En el ecosistema de Android, los permisos que acceden a información personal del usuario (como Contactos, Calendario, Cámara o SMS) se categorizan oficialmente como **Permisos Peligrosos (Dangerous Permissions)** o **Permisos de Tiempo de Ejecución (Runtime Permissions)**.
+
+A diferencia de la ubicación (que tiene reglas por niveles), la categorización de estos datos personales funciona bajo el concepto de **Grupos de Permisos**.
+
+## 1. El Sistema de "Grupos de Permisos"
+
+Para no abrumar al usuario con decenas de cuadros de diálogo, Android agrupa los permisos fuertemente relacionados. Si el usuario te concede un permiso dentro de un grupo, el sistema asume que te ha dado permiso para todo ese grupo de forma implícita.
+
+**Ejemplo con el grupo `CONTACTS`:**
+Este grupo contiene tres permisos individuales:
+* `READ_CONTACTS` (Leer la agenda)
+* `WRITE_CONTACTS` (Crear o modificar contactos)
+* `GET_ACCOUNTS` (Ver las cuentas de correo/Google vinculadas al teléfono)
+
+> **Regla de Oro:** Si tu código solicita `READ_CONTACTS`, el usuario verá un diálogo. Si acepta, y más tarde en tu código pides `WRITE_CONTACTS`, **el sistema ya no mostrará el cuadro de diálogo**, simplemente te lo concederá automáticamente por pertenecer al mismo grupo que ya fue aprobado.
+
+
+
+## 2. Otros Grupos de Datos Personales (Misma Categoría)
+
+Al igual que los contactos, Google categoriza otros accesos en grupos similares de nivel "Peligroso":
+
+* **Grupo `CALENDAR`:** Leer o escribir eventos en la agenda.
+* **Grupo `CAMERA`:** Tomar fotos o video de forma directa (sin usar la app de cámara del sistema).
+* **Grupo `MICROPHONE`:** Grabar audio.
+* **Grupo `PHONE`:** Hacer llamadas, ver el estado de red del teléfono, leer el registro de llamadas (Call Log).
+* **Grupo `SMS`:** Leer, enviar o recibir mensajes de texto.
+
+---
+
+## 3. La Categorización Estricta de Google Play Store
+
+Aunque a nivel de programación (Android Studio) todos los mencionados arriba son "Permisos Peligrosos" que se piden con el mismo tipo de cuadro de diálogo, **al momento de subir tu app a Google Play Store** se dividen en dos subcategorías de escrutinio:
+
+### A) Datos Sensibles pero Permitidos
+*(Ej. Contactos, Calendario, Cámara, Micrófono)*
+* **Requisito:** Google Play te dejará publicar tu aplicación siempre y cuando incluyas un enlace a tu **Política de Privacidad**. Este documento debe explicar claramente al usuario qué haces con sus datos (ej. *"Los contactos se usan únicamente para encontrar amigos dentro de la app y no se comparten con terceros"*).
+
+### B) Datos Altamente Restringidos
+*(Ej. SMS y Registro de Llamadas - Call Log)*
+* **Requisito:** Google Play es **extremadamente estricto** con estos dos grupos. Si subes un archivo (APK/AAB) que pide leer SMS o llamadas, Google rechazará tu aplicación automáticamente.
+* **Excepción:** Solo te lo permitirán si tu app está diseñada para ser la aplicación *Predeterminada (Default)* del teléfono (como la app oficial de Teléfono o Mensajes del usuario).
+* **Alternativa:** Si solo querías leer un SMS para autocompletar un código de seguridad (OTP), Google te prohíbe pedir el permiso `READ_SMS` y te obliga a implementar APIs silenciosas y especializadas (como la *SMS Retriever API*).
+
+---
+
+## ¿Cómo se solicitan en el código?
+
+Se manejan de la misma forma moderna que la ubicación en primer plano:
+1. Se declaran en el archivo `AndroidManifest.xml`.
+2. Se solicita usando la API `ActivityResultLauncher` (en Java o Kotlin).
+3. La petición debe lanzarse **justo en el momento** en que el usuario intenta usar la función (ej. al presionar un botón de "Importar amigos"), no al abrir la aplicación por primera vez.
+
+___
 
 
 # Principios básicos para solicitar permisos
