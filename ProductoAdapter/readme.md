@@ -107,6 +107,23 @@ Aunque tú rellenas el ArrayList previamente, el ListView no sabe que esos datos
 
 * **Renderizado inicial**: El ListView le pide al adaptador que le entregue las vistas (llamando al método getView()) para todas las filas que caben en el espacio físico de la pantalla.
 
+## El flujo completo en MainActivity.java
+
+### Para que esto funcione correctamente en tu onCreate, el flujo debe ser este:
+
+```Java
+// 1. Preparas los datos (los objetos Producto)
+productos = new ArrayList<>();
+productos.add(new Producto("Detergente", 130.00));
+// ... otros productos
+
+// 2. Creas el adaptador, pasándole la lista llena
+ProductoAdapter adapter = new ProductoAdapter(this, productos);
+
+// 3. LA INSTRUCCIÓN QUE POBLA LA PANTALLA
+listView.setAdapter(adapter);
+```
+
 ### NOTAS
 
 **Cómo lograr que aparezca el menú correcto de getItem (Overrides)**:
