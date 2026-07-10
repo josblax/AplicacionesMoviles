@@ -19,12 +19,88 @@ public class ProductoAdapter extends ArrayAdapter<Producto> {
 
 ### 2. El método getView (El motor de la lista)
 
-#### Este método se ejecuta por cada fila que aparece en la pantalla.
+* **Este método se ejecuta por cada fila que aparece en la pantalla.**
 
-A. Inflado de la vista (Reciclaje)
+#### A. Inflado de la vista (Reciclaje)
 
 ```Java
 if (convertView == null) {
     convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_producto, parent, false);
 }
 ```
+
+* Android es inteligente: no crea mil vistas si solo caben 5 en pantalla. Reutiliza (convertView) las filas que ya no son visibles. 
+
+* Si convertView es nulo, significa que la fila se está creando por primera vez; si no, la reciclamos para ahorrar memoria.
+
+#### B. Obtención de datos y Vistas
+
+```Java
+Producto producto = getItem(position);
+TextView textNombre = convertView.findViewById(R.id.textNombre);
+// ... findViewById para los demás elementos
+```
+
+**En este paso, realizamos dos acciones fundamentales:**
+
+* **Recuperar el objeto**: Con getItem(position), obtenemos la información del Producto específico que corresponde a la fila que el sistema está dibujando en este momento.
+
+* **Vincular la vista**: Con findViewById, accedemos a los componentes visuales (como TextView o EditText) que definimos en nuestro archivo XML. Esto nos permite conectar los datos del objeto con los elementos que el usuario verá y podrá editar en la pantalla.
+
+#### C. Asignación de valores
+
+```Java
+textNombre.setText(producto.getNombre());
+textPrecio.setText(String.format("$%.2f", producto.getPrecio()));
+```
+
+Simplemente tomamos los datos del objeto Producto y los colocamos en los componentes visuales. El String.format es una excelente práctica para asegurar que el precio siempre tenga dos decimales.
+
+### 3. Interactividad con TextWatcher
+
+Esta es la parte más interesante. Queremos que, en el momento en que el usuario escriba una cantidad en el EditText, ese dato se guarde automáticamente en el objeto Producto.
+
+```Java
+editCantidad.addTextChangedListener(new TextWatcher() {
+    @Override
+    public void onTextChanged(CharSequence s, int start, int before, int count) {
+        try {
+            int cantidad = Integer.parseInt(s.toString());
+            producto.setCantidad(cantidad); // Guardado en tiempo real
+        } catch (NumberFormatException e) {
+            producto.setCantidad(0); // Manejo de error si borran todo
+        }
+    }
+    // beforeTextChanged y afterTextChanged se dejan vacíos por obligación del contrato
+});
+```
+
+* **¿Por qué un Listener?** Si esperáramos a que el usuario presione un botón "Calcular" al final, sería más sencillo. Pero al usar TextWatcher, estamos haciendo una interfaz responsiva.
+
+* **Try-Catch**: Este es el punto crítico de lógica que mencionamos en las rúbricas de evaluación. Si el usuario borra el texto, Integer.parseInt intentaría convertir un string vacío, lo que provocaría un Force Close. El try-catch evita que la aplicación colapse.
+
+### En resumen
+
+* **Patrón de Adaptador**: Es el intermediario que "adapta" un objeto Java a un elemento de interfaz Android.
+
+* **Optimización**: El uso de convertView != null es lo que permite que una lista de 1,000 productos no bloquee el teléfono.
+
+* **Seguridad de tipos**: El uso de TextWatcher con un try-catch es la diferencia entre una app "juguete" y una app profesional que no se cierra ante el error humano.
+
+### NOTAS
+
+**Cómo lograr que aparezca el menú correcto de getItem (Overrides)**:
+
+Haz clic dentro del archivo: Abre tu clase ProductoAdapter.java y haz clic con el mouse justo dentro de las llaves de la clase, por ejemplo, después de la línea del constructor.
+
+Verifica la combinación:
+
+* Para el menú de Override Methods, intenta usar: Control + O (incluso en Mac, a veces Android Studio prioriza Cmd+O para navegación).
+
+* Alternativa infalible: Ve al menú superior de Android Studio:
+
+    * Haz clic en Code.
+
+    * Selecciona Generate...
+
+Elige Override Methods...
