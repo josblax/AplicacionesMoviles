@@ -15,3 +15,16 @@ public class ProductoAdapter extends ArrayAdapter<Producto> {
 * **Extensión**: Heredamos de ArrayAdapter<Producto>. Esto le da a nuestra clase todas las herramientas para manejar listas de objetos de tipo Producto.
 
 * **Constructor**: Pasamos el contexto (la actividad que lo llama) y la lista de datos. El 0 en super indica que no usaremos un layout predeterminado de Android, sino que inflaremos nuestro propio diseño (R.layout.list_item_producto).
+
+
+### 2. El método getView (El motor de la lista)
+
+#### Este método se ejecuta por cada fila que aparece en la pantalla.
+
+A. Inflado de la vista (Reciclaje)
+
+```Java
+if (convertView == null) {
+    convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_producto, parent, false);
+}
+```
