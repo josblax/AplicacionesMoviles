@@ -87,6 +87,26 @@ editCantidad.addTextChangedListener(new TextWatcher() {
 
 * **Seguridad de tipos**: El uso de TextWatcher con un try-catch es la diferencia entre una app "juguete" y una app profesional que no se cierra ante el error humano.
 
+## Como se llenan las filas con informacion?
+
+Para "poblar" la pantalla, es decir, para que los datos del ArrayList aparezcan en el ListView antes de que el usuario interactúe, la instrucción clave no es una sola línea, sino la combinación de crear el adaptador y asignarlo al ListView.
+
+La instrucción definitiva es:
+
+```Java
+listView.setAdapter(adapter);
+```
+
+**¿Por qué esta es la instrucción funciona?**
+
+Aunque tú rellenas el ArrayList previamente, el ListView no sabe que esos datos existen hasta que ejecutas esta línea. Aquí te explico qué sucede internamente en ese momento:
+
+* **Conexión**: Al hacer listView.setAdapter(adapter), le estás diciendo al componente visual: "Este adapter tiene la lista de tus datos y sabe cómo dibujarlos".
+
+* **Solicitud de datos**: El ListView inmediatamente le pregunta al adaptador: "¿Cuántos elementos tengo?" (getCount()).
+
+* **Renderizado inicial**: El ListView le pide al adaptador que le entregue las vistas (llamando al método getView()) para todas las filas que caben en el espacio físico de la pantalla.
+
 ### NOTAS
 
 **Cómo lograr que aparezca el menú correcto de getItem (Overrides)**:
