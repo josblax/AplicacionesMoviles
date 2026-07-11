@@ -126,6 +126,12 @@ listView.setAdapter(adapter);
 
 ### NOTAS
 
+#### El adaptador como intermediario: Es fundamental que entiendan que el ListView es un contenedor "tonto" (solo sabe mostrar lo que le dan) y el ArrayList es solo el almacenamiento. El adapter es el "traductor" necesario entre ambos.
+
+#### ¿Qué pasa si olvido esa línea? La aplicación compilará perfectamente, pero el usuario verá una pantalla en blanco, porque el ListView nunca recibió la orden de mostrar los elementos.
+
+#### Actualización dinámica: Si más adelante añaden un producto nuevo al ArrayList usando productos.add(...), la pantalla no se actualizará sola. Tendrán que llamar a adapter.notifyDataSetChanged() para avisarle al adapter que los datos cambiaron y debe volver a dibujar la lista.
+
 **Cómo lograr que aparezca el menú correcto de getItem (Overrides)**:
 
 Haz clic dentro del archivo: Abre tu clase ProductoAdapter.java y haz clic con el mouse justo dentro de las llaves de la clase, por ejemplo, después de la línea del constructor.
