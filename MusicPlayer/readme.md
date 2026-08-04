@@ -45,6 +45,54 @@ Para que la aplicación sea dinámica:
 ---
 
 
+# Secuencia de Creación de la aplicación "Cimientos → Estructura → Datos → Lógica → Estética".
+
+
+## Paso 1: Definir los Cimientos (Modelos y Utilidades)
+### Antes de ver nada en pantalla, hay que preparar dónde guardaremos la música.
+
+1. **AudioModel.java**: Crear la clase para los datos de la canción (Ruta, Título, Duración, ID).
+2. **MyMediaPlayer.java**: Crear el Singleton para el reproductor (esto garantiza que desde el inicio piensen en un reproductor único).
+
+## Paso 2: Diseño de Interfaces (Layouts XML)
+
+1. **Diseñar primero lo visual** para saber qué IDs necesitas en el código Java.
+2. **activity_main.xml**: El contenedor principal con el RecyclerView.
+3. **music_item.xml**: Cómo se verá cada fila de la lista (Título e Icono).
+4. **activity_music_player.xml**: La pantalla con los controles, el SeekBar y la imagen del álbum.
+
+## Paso 3: Conexión de la Lista (Adaptador)
+
+Hacer que los datos se muestren en la pantalla.
+
+1. **MusicAdapter.java**: Crear la clase, el ViewHolder y los métodos obligatorios del adaptador.
+2. **onBindViewHolder**: Implementar el clic que abrirá la siguiente pantalla (usando Intent).
+
+## Paso 4: Carga de Datos y Permisos (MainActivity)
+
+### Hacer que la app realmente "encuentre" la música en el teléfono.
+
+1. **Configurar Permisos**: Explicar la diferencia entre versiones de Android (12 vs 13).
+2. **Método de Escaneo (getMusicList)**: Escribir la consulta a MediaStore para llenar la lista de canciones.
+3. **Vincular el Adaptador**: Pasar la lista real al RecyclerView.
+
+## Paso 5: Lógica de Reproducción (MusicPlayerActivity)
+
+## La parte más compleja.
+1. **Vincular Vistas**: Hacer los findViewById.
+2. **Método playMusic()**: Implementar la carga del archivo MP3 en el MediaPlayer.
+3. **Método pausePlay()**: Programar el botón central.
+4. **Actualización del SeekBar**: Implementar el Handler para que la barra se mueva sola.
+
+## Paso 6: Detalles Finales y Estética
+
+### Pulir la experiencia del usuario.
+
+1. **Portadas de Álbum**: Implementar la lógica de ContentUris para traer las fotos.
+2. **Navegación**: Programar los botones de "Siguiente" y "Anterior".
+3. **Estética**: Aplicar colores (Tints) y fondos oscuros para que la app se vea profesional.
+
+___
 # Arquitectura del Proyecto: MusicPlayer
 
 ## 1. AudioModel.java (Modelo de Datos)
