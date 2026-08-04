@@ -89,3 +89,17 @@ Para que la aplicación sea dinámica:
 * Patrón Singleton: Garantiza que solo exista una instancia de MediaPlayer en toda la app para evitar que se mezclen audios.
 * Persistencia: Permite que la música siga sonando aunque el usuario cambie de pantalla o minimice la aplicación.
 * Acceso Global: Proporciona un método estático (getInstance()) para que tanto la lista como el reproductor puedan controlar el mismo sonido.
+
+### Donde se llama esta aplicación?
+
+#### 1. En MusicAdapter.java (El disparador)
+
+* Se llama justo cuando el usuario toca una canción en la lista.
+* La llamada: MyMediaPlayer.getInstance().reset();
+* **Para qué?**: Para detener cualquier canción que esté sonando en ese momento y "limpiar" el reproductor antes de cargar la nueva canción seleccionada.
+* También se usa: MyMediaPlayer.currentIndex = currentPosition; para guardar globalmente qué número de canción se acaba de elegir.
+
+#### 2. En MusicPlayerActivity.java (El controlador)
+* Se llama al inicio de la clase para vincular la pantalla con el sonido.
+* La llamada: MediaPlayer mediaPlayer = MyMediaPlayer.getInstance();
+* **Para qué**: Para que esta actividad tenga el control sobre el objeto que está reproduciendo la música. Gracias a esto, cuando presionas el botón de "Pausa" o mueves el "SeekBar" en esta pantalla, le estás enviando la orden directamente al objeto global MyMediaPlayer.
