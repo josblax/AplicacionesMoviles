@@ -117,6 +117,164 @@ ___
 * Refresco Dinámico: Mediante onResume y MediaScannerConnection, asegura que si el usuario agrega música nueva, esta aparezca sin necesidad de reiniciar la app.
 * Control de Interfaz: Alterna entre mostrar la lista de canciones o el mensaje "No se encontraron canciones".
 
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/canciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="Canciones"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicla"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/canciones"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/sincanciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="NO SE ENCONTRARON CANCIONES"
+        android:visibility="gone" />
+
+</RelativeLayout>
+```
+
+___
+
+```Java
+public class MainActivity extends AppCompatActivity {
+
+    RecyclerView recyclerView;
+    TextView noCancion;
+    ArrayList<AudioModel> listaCanciones = new ArrayList<>();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_main);
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+        
+        recyclerView = findViewById(R.id.recicla);
+        noCancion = findViewById(R.id.sincanciones);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        checarPermiso();
+    }
+
+    void checarPermiso() {
+        String permiso;
+        if (Build.VERSION.SDK_INT >= 33) {
+            permiso = android.Manifest.permission.READ_MEDIA_AUDIO;
+        } else {
+            permiso = android.Manifest.permission.READ_EXTERNAL_STORAGE;
+        }
+
+        if (ContextCompat.checkSelfPermission(this, permiso) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{permiso}, 100);
+        } else {
+            // Escaneamos la carpeta de descargas por si hay archivos nuevos
+            File downloadsFolder = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            if (downloadsFolder.exists()) {
+                MediaScannerConnection.scanFile(this, new String[]{downloadsFolder.getAbsolutePath()}, null, (path, uri) -> {
+                    // Una vez escaneado, actualizamos la UI en el hilo principal
+                    runOnUiThread(this::getMusicList);
+                });
+            }
+            getMusicList();
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        if (requestCode == 100) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                getMusicList();
+            } else {
+                Toast.makeText(this, "Permiso denegado. No se puede cargar música.", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void getMusicList() {
+        listaCanciones.clear();
+        
+        String[] proyeccion = {
+                MediaStore.Audio.Media.TITLE,
+                MediaStore.Audio.Media.DATA,
+                MediaStore.Audio.Media.DURATION,
+                MediaStore.Audio.Media.ALBUM_ID
+        };
+
+        // Filtramos para obtener solo archivos que sean música
+        String seleccion = MediaStore.Audio.Media.IS_MUSIC + " != 0";
+
+        Cursor cursor = getContentResolver().query(
+                MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
+                proyeccion,
+                seleccion,
+                null,
+                null);
+
+        if (cursor != null) {
+            while (cursor.moveToNext()) {
+                String titulo = cursor.getString(0);
+                String ruta = cursor.getString(1);
+                String duracion = cursor.getString(2);
+                long albumId = cursor.getLong(3);
+
+                AudioModel dataSong = new AudioModel(ruta, titulo, duracion, albumId);
+                if (new File(dataSong.getRuta()).exists()) {
+                    listaCanciones.add(dataSong);
+                }
+            }
+            cursor.close();
+        }
+
+        Log.d("MusicPlayer", "Total canciones encontradas: " + listaCanciones.size());
+
+        if (listaCanciones.isEmpty()) {
+            noCancion.setVisibility(View.VISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        } else {
+            noCancion.setVisibility(View.GONE);
+            recyclerView.setVisibility(View.VISIBLE);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+            recyclerView.setAdapter(new MusicAdapter(listaCanciones, this));
+        }
+    }
+}
+```
+
+
+
+
 ## 3. MusicAdapter.java (Adaptador de Lista)
 
 * Actúa como puente entre la lista de canciones (datos) y el RecyclerView (interfaz visual).
@@ -124,6 +282,75 @@ ___
 * Carga de Miniaturas: Busca y muestra la pequeña imagen del álbum en cada fila de la lista.
 * Manejador de Clics: Detecta qué canción tocó el usuario, actualiza el índice global y lanza la pantalla del reproductor (MusicPlayerActivity).
 * Optimización: Usa getBindingAdapterPosition() para asegurar que siempre se abra la canción correcta, incluso si la lista cambia.
+
+```Java
+public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.ViewHolder> {
+
+    ArrayList<AudioModel> listaCanciones;
+    Context context;
+
+    public MusicAdapter(ArrayList<AudioModel> listaCanciones, Context context) {
+        this.listaCanciones = listaCanciones;
+        this.context = context;
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.music_item, parent, false);
+        return new ViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        AudioModel songData = listaCanciones.get(position);
+        holder.titulo.setText(songData.getTitulo());
+
+        // Cargar imagen del álbum en la lista
+        Uri sArtworkUri = Uri.parse("content://media/external/audio/albumart");
+        Uri uri = ContentUris.withAppendedId(sArtworkUri, songData.getAlbumId());
+        
+        holder.icono.setImageURI(null);
+        holder.icono.setImageURI(uri);
+
+        if (holder.icono.getDrawable() == null) {
+            holder.icono.setImageResource(R.drawable.music_note_svgrepo_com);
+        }
+
+        holder.itemView.setOnClickListener(v -> {
+            // Navegar a la actividad del reproductor
+            int currentPosition = holder.getBindingAdapterPosition();
+            if (currentPosition != RecyclerView.NO_POSITION) {
+                MyMediaPlayer.getInstance().reset();
+                MyMediaPlayer.currentIndex = currentPosition;
+                Intent intent = new Intent(context, MusicPlayerActivity.class);
+                intent.putExtra("LIST", listaCanciones);
+                intent.putExtra("INDEX", currentPosition);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
+        return listaCanciones.size();
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder {
+
+        TextView titulo;
+        ImageView icono;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            titulo = itemView.findViewById(R.id.titulo);
+            icono = itemView.findViewById(R.id.imagen);
+        }
+    }
+}
+
+```
 
 ## 4. MusicPlayerActivity.java (El Reproductor)
 * Gestiona la interfaz de usuario de reproducción y los controles de audio.
