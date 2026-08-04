@@ -100,6 +100,54 @@ ___
 * Es la clase base que define qué es una "Canción" dentro de tu código.
 * Función: Almacenar la información de cada archivo de audio encontrado.
 
+```Java
+ublic class AudioModel implements Serializable {
+    String ruta;
+    String titulo;
+    String duracion;
+    long albumId;
+
+    public AudioModel(String ruta, String titulo, String duracion, long albumId) {
+        this.ruta = ruta;
+        this.titulo = titulo;
+        this.duracion = duracion;
+        this.albumId = albumId;
+    }
+
+    public long getAlbumId() {
+        return albumId;
+    }
+
+    public void setAlbumId(long albumId) {
+        this.albumId = albumId;
+    }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getDuracion() {
+        return duracion;
+    }
+
+    public void setDuracion(String duracion) {
+        this.duracion = duracion;
+    }
+}
+```
+
 ### Atributos:
 
     * titulo: Nombre de la canción.
@@ -359,11 +407,271 @@ public class MusicAdapter extends RecyclerView.Adapter<MusicAdapter.ViewHolder> 
 * Visualización Estética: Muestra la portada del álbum en grande, aplica el efecto de texto en movimiento (Marquee) al título y gestiona los colores de los iconos (Tint).
 * Lógica de SeekBar: Permite al usuario "adelantar" o "atrasar" la canción arrastrando el círculo del control.
 
+```XML
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/titulo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="REPRODUCIENDO AHORA"
+        android:textColor="#BBBBBB"
+        android:textSize="12sp"
+        android:letterSpacing="0.2" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo_layout"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Nombre de la Canción"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:src="@drawable/directory_music_1636_svgrepo_com" />
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#FF4081"
+            android:thumbTint="#FF4081"
+            android:secondaryProgressTint="#55FF4081" />
+
+        <TextView
+            android:id="@+id/tiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbar"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:text="0:00"
+            android:textColor="#BBBBBB" />
+
+        <TextView
+            android:id="@+id/tiempototal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekbar"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:text="0:00"
+            android:textColor="#BBBBBB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tiempo"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/previa"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/skip_previous_svgrepo_com"
+                app:tint="#CCCCCC" />
+
+            <ImageView
+                android:id="@+id/playpausa"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/pause_circle_svgrepo_com"
+                app:tint="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/siguiente"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/skip_next_svgrepo_com"
+                app:tint="#CCCCCC" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+```
+
+```Java
+public class MusicPlayerActivity extends AppCompatActivity {
+
+    TextView titulo, tiempo, tiempototal;
+    SeekBar seekbar;
+    ImageView previa, playpausa, siguiente, icono;
+    ArrayList<AudioModel> listaCanciones;
+    AudioModel cancionActual;
+    int indexActual;
+    MediaPlayer mediaPlayer = MyMediaPlayer.getInstance();
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_music_player);
+
+        titulo = findViewById(R.id.titulo);
+        tiempo = findViewById(R.id.tiempo);
+        tiempototal = findViewById(R.id.tiempototal);
+        seekbar = findViewById(R.id.seekbar);
+        previa = findViewById(R.id.previa);
+        playpausa = findViewById(R.id.playpausa);
+        siguiente = findViewById(R.id.siguiente);
+        icono = findViewById(R.id.icono);
+
+        // Importante para el efecto de movimiento del texto
+        titulo.setSelected(true);
+
+        listaCanciones = (ArrayList<AudioModel>) getIntent().getSerializableExtra("LIST");
+        indexActual = getIntent().getIntExtra("INDEX", 0);
+
+        setResourcesWithMusic();
+
+        MusicPlayerActivity.this.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if (mediaPlayer != null) {
+                    seekbar.setProgress(mediaPlayer.getCurrentPosition());
+                    tiempo.setText(convertirAMMSS(mediaPlayer.getCurrentPosition() + ""));
+
+                    if (mediaPlayer.isPlaying()) {
+                        playpausa.setImageResource(R.drawable.pause_circle_svgrepo_com);
+                    } else {
+                        // Usamos un icono por defecto de Android ya que play_circle_svgrepo_com no existe
+                        playpausa.setImageResource(android.R.drawable.ic_media_play);
+                    }
+                }
+                new Handler().postDelayed(this, 100);
+            }
+        });
+
+        seekbar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (mediaPlayer != null && fromUser) {
+                    mediaPlayer.seekTo(progress);
+                }
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {}
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {}
+        });
+    }
+
+    void setResourcesWithMusic() {
+        cancionActual = listaCanciones.get(indexActual);
+        titulo.setText(cancionActual.getTitulo());
+        tiempototal.setText(convertirAMMSS(cancionActual.getDuracion()));
+
+        playpausa.setOnClickListener(v -> pausePlay());
+        siguiente.setOnClickListener(v -> playNextSong());
+        previa.setOnClickListener(v -> playPreviousSong());
+
+        // Cargar imagen del álbum
+        Uri sArtworkUri = Uri.parse("content://media/external/audio/albumart");
+        Uri uri = ContentUris.withAppendedId(sArtworkUri, cancionActual.getAlbumId());
+        
+        icono.setImageURI(null); // Limpiar imagen previa
+        icono.setImageURI(uri);
+
+        if (icono.getDrawable() == null) {
+            icono.setImageResource(R.drawable.directory_music_1636_svgrepo_com);
+        }
+
+        playMusic();
+    }
+
+    private void playMusic() {
+        mediaPlayer.reset();
+        try {
+            mediaPlayer.setDataSource(cancionActual.getRuta());
+            mediaPlayer.prepare();
+            mediaPlayer.start();
+            seekbar.setProgress(0);
+            seekbar.setMax(mediaPlayer.getDuration());
+        } catch (IOException e) {
+            Log.e("MusicPlayer", "Error al reproducir música", e);
+        }
+    }
+
+    private void playNextSong() {
+        if (indexActual == listaCanciones.size() - 1) return;
+        indexActual += 1;
+        mediaPlayer.reset();
+        setResourcesWithMusic();
+    }
+
+    private void playPreviousSong() {
+        if (indexActual == 0) return;
+        indexActual -= 1;
+        mediaPlayer.reset();
+        setResourcesWithMusic();
+    }
+
+    private void pausePlay() {
+        if (mediaPlayer.isPlaying()) mediaPlayer.pause();
+        else mediaPlayer.start();
+    }
+
+    public String convertirAMMSS(String duracion) {
+        long milis = Long.parseLong(duracion);
+        return String.format(Locale.US, "%02d:%02d",
+                TimeUnit.MILLISECONDS.toMinutes(milis) % TimeUnit.HOURS.toMinutes(1),
+                TimeUnit.MILLISECONDS.toSeconds(milis) % TimeUnit.MINUTES.toSeconds(1));
+    }
+}
+```
+
 ## 5. MyMediaPlayer.java (Gestor Global - Singleton)
 * Es una clase de utilidad que administra la instancia del reproductor de Android.
 * Patrón Singleton: Garantiza que solo exista una instancia de MediaPlayer en toda la app para evitar que se mezclen audios.
 * Persistencia: Permite que la música siga sonando aunque el usuario cambie de pantalla o minimice la aplicación.
 * Acceso Global: Proporciona un método estático (getInstance()) para que tanto la lista como el reproductor puedan controlar el mismo sonido.
+
+```Java
+public class MyMediaPlayer {
+    static MediaPlayer instance;
+
+    public static MediaPlayer getInstance() {
+        if (instance == null) {
+            instance = new MediaPlayer();
+        }
+        return instance;
+    }
+
+    public static int currentIndex = -1;
+}
+```
 
 ### Donde se llama esta aplicación?
 
@@ -389,3 +697,40 @@ En una aplicación móvil convencional, cada vez que creas un objeto usando el o
 
 * La clase controla su propio proceso de creación, asegurando que solo exista un único objeto en la memoria durante todo el ciclo de vida de la aplicación.
 * Si la instancia ya existe, te devuelve esa misma. Si no existe, la crea por primera vez y la reutiliza en el futuro.
+
+## 6. music_item.xml
+
+```XML
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:padding="5dp"
+        android:src="@drawable/music_note_svgrepo_com" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/imagen"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:text="Título Cancion"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>
+```
+
+## 7. AndroidManifest.java
+
+```XML
+     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+```
