@@ -103,3 +103,14 @@ Para que la aplicación sea dinámica:
 * Se llama al inicio de la clase para vincular la pantalla con el sonido.
 * La llamada: MediaPlayer mediaPlayer = MyMediaPlayer.getInstance();
 * **Para qué**: Para que esta actividad tenga el control sobre el objeto que está reproduciendo la música. Gracias a esto, cuando presionas el botón de "Pausa" o mueves el "SeekBar" en esta pantalla, le estás enviando la orden directamente al objeto global MyMediaPlayer.
+
+### ¿Qué es un Singleton?
+
+**Un Singleton (o patrón de diseño Singleton) es una técnica de Programación Orientada a Objetos (POO) que garantiza que una clase tenga una sola instancia en toda la aplicación y proporciona un punto de acceso global a ella.**
+
+En una aplicación móvil convencional, cada vez que creas un objeto usando el operador new (por ejemplo, MiClase objeto = new MiClase();), la memoria RAM almacena una nueva instancia independiente. Si otro componente de tu app necesita usar esa misma clase y vuelve a hacer un new, se crea un objeto totalmente nuevo que no comparte información con el anterior.
+
+#### Con un Singleton, esto se restringe de forma estricta:
+
+* La clase controla su propio proceso de creación, asegurando que solo exista un único objeto en la memoria durante todo el ciclo de vida de la aplicación.
+* Si la instancia ya existe, te devuelve esa misma. Si no existe, la crea por primera vez y la reutiliza en el futuro.
